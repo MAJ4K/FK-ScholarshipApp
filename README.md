@@ -2,4 +2,6 @@
 the front end for the scholarship app the future kings will be using
 
 ## Contributors
-Michael Jenkins
+- Michael Jenkins
+- Matthew Ward
+- Donovan Reid
