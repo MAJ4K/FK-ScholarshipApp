@@ -1,0 +1,20 @@
+:root{
+	--palette0a: #222;
+	--palette0b: #ddd;
+	--palette0: var(--palette0b);
+	--palette1: darkgoldenrod;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: none;
+	text-decoration: none;
+	outline: none;
+}
+
+/* testing backgrond colors */
+body{
+	background-color: var(--palette0);
+}
