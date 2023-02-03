@@ -18,3 +18,11 @@
 body{
 	background-color: var(--palette0);
 }
+
+.nav {
+	background-color: var(--palette1);
+}
+
+.carousel-item {
+	background-color: var(--palette1);
+}
