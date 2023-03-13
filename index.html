@@ -10,28 +10,22 @@
 	<script src="script.js"></script>
 	<title>Document</title>
 </head>
-<body>
+<body class="container">
 <!-- Navigation (Home, Add Sugestion, Profile)-->
-<ul class="nav justify-content-center nav-justified fixed-bottom ">
+<ul class="nav justify-content-center nav-justified fixed-bottom">
 	<li class="nav-item">
-	  <a class="nav-link" href="#">Home</a>
+		<a class="nav-link" href="#">Home</a>
 	</li>
 	<li class="nav-item">
-	  <a class="nav-link" href="#">Suggestions</a>
-	</li>
-	<li class="nav-item">
-	  <a class="nav-link" href="#">Favorites</a>
-	</li>
-	<li class="nav-item">
-	  <a class="nav-link" href="#">Applied</a>
+		<a class="nav-link" href="#">Suggestions</a>
 	</li>
 	<li class="nav-item">
 		<a class="nav-link" href="#">Profile</a>
-	  </li>
-  </ul>
+	</li>
+</ul>
 
 <!-- Carousel -->
-<div id="demo" class="carousel slide" data-bs-ride="carousel">
+<div id="demo" class="carousel sslide" data-bs-ride="carousel">
 
 	<!-- Indicators/dots -->
 	<div class="carousel-indicators">
@@ -52,24 +46,27 @@
 	<button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
 	  <span class="carousel-control-next-icon"></span>
 	</button>
-  </div>
+</div>
 
 <!-- Dynamic Tab (Navs) --> <!-- Filter Menu (Modal) (JavaScript) -->
-<!-- Nav tabs -->
-<ul class="nav nav-tabs">
+<ul class="nav nav-tabs nav-pills">
 	<li class="nav-item">
-	  <a class="nav-link active" data-bs-toggle="tab" href="Recommend1">Recommend 1</a>
+	  <a class="nav-link active" data-bs-toggle="tab" href="#Recommended">Recommended</a>
 	</li>
 	<li class="nav-item">
-	  <a class="nav-link" data-bs-toggle="tab" href="#Recommend2">Recommend 2</a>
+	  <a class="nav-link" data-bs-toggle="tab" href="#Favorites">Favorites</a>
 	</li>
-  </ul>
+	<li class="nav-item">
+	  <a class="nav-link" data-bs-toggle="tab" href="#Applied">Applied</a>
+	</li>
+</ul>
   
   <!-- Tab panes -->
-  <div class="tab-content">
-	<div class="tab-pane container active" id="Recommend 1">...</div>
-	<div class="tab-pane container fade" id="Recommend 2">...</div>
-  </div>
+<div class="tab-content">
+	<div class="tab-pane container active" id="Recommended">Rec</div>
+	<div class="tab-pane container fade" id="Favorites">Favs</div>
+	<div class="tab-pane container fade" id="Applied">App</div>
+</div>
 <!-- Card template (JavaScript Neccesary) -->
 <!-- Footer -->
 </body>
