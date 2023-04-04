@@ -12,62 +12,97 @@
 </head>
 <body class="container">
 <!-- Navigation (Home, Add Sugestion, Profile)-->
-<ul class="nav justify-content-center nav-justified fixed-bottom">
+<nav class=" nav nav-tabs justify-content-center nav-justified fixed-bottom">
 	<li class="nav-item">
-		<a class="nav-link" href="#">Home</a>
+		<a class="nav-link active" data-bs-toggle="tab" href="#HOME">Home</a>
 	</li>
 	<li class="nav-item">
-		<a class="nav-link" href="#">Suggestions</a>
+		<a class="nav-link" data-bs-toggle="tab" href="#SUGG">Suggestions</a>
 	</li>
 	<li class="nav-item">
-		<a class="nav-link" href="#">Profile</a>
+		<a class="nav-link" data-bs-toggle="tab" href="#PROF">Profile</a>
 	</li>
-</ul>
+</nav>
 
-<!-- Carousel -->
-<div id="demo" class="carousel sslide" data-bs-ride="carousel">
+<main class="tab-content">
+	<section class="tab-pane active" id="HOME">
+		<!-- Carousel -->
+		<div id="demo" class="carousel sslide" data-bs-ride="carousel">
+			<!-- Indicators/dots -->
+			<div class="carousel-indicators">
+				<button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+			</div>
+			<!-- The slideshow/carousel -->
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+				<img src="icons/logo-king.png" alt="Future Kings" class="d-block mx-auto">
+				</div>
+			</div>
+			<!-- Left and right controls/icons -->
+			<button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+				<span class="carousel-control-next-icon"></span>
+			</button>
+		</div>
 
-	<!-- Indicators/dots -->
-	<div class="carousel-indicators">
-	  <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-	</div>
-  
-	<!-- The slideshow/carousel -->
-	<div class="carousel-inner">
-	  <div class="carousel-item active">
-		<img src="la.jpg" alt="Los Angeles" class="d-block w-100">
-	  </div>
-	</div>
-  
-	<!-- Left and right controls/icons -->
-	<button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-	  <span class="carousel-control-prev-icon"></span>
-	</button>
-	<button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-	  <span class="carousel-control-next-icon"></span>
-	</button>
-</div>
-
-<!-- Dynamic Tab (Navs) --> <!-- Filter Menu (Modal) (JavaScript) -->
-<ul class="nav nav-tabs nav-pills">
-	<li class="nav-item">
-	  <a class="nav-link active" data-bs-toggle="tab" href="#Recommended">Recommended</a>
-	</li>
-	<li class="nav-item">
-	  <a class="nav-link" data-bs-toggle="tab" href="#Favorites">Favorites</a>
-	</li>
-	<li class="nav-item">
-	  <a class="nav-link" data-bs-toggle="tab" href="#Applied">Applied</a>
-	</li>
-</ul>
-  
-  <!-- Tab panes -->
-<div class="tab-content">
-	<div class="tab-pane container active" id="Recommended">Rec</div>
-	<div class="tab-pane container fade" id="Favorites">Favs</div>
-	<div class="tab-pane container fade" id="Applied">App</div>
-</div>
+		<!-- Dynamic Tab (Navs) --> <!-- Filter Menu (Modal) (JavaScript) -->
+		<nav class="d-flex flex-row bg-secondary sticky-top rounded-bottom">
+			<div class="w-100 btn-group overflow-auto" role="group" aria-label="Basic radio toggle button group">
+				<input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+				<label class="btn btn-outline-primary" for="btnradio1">Recommended</label>
+			
+				<input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+				<label class="btn btn-outline-primary" for="btnradio2">Favorites</label>
+			
+				<input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+				<label class="btn btn-outline-primary" for="btnradio3">Applied</label>
+			</div>
+			<img class="flex-shrink-1" id="filterbtn" src="icons/menuIcon.png" alt="filter">
+		</nav>
+			<!-- Tab panes -->
+		<div class="tab-content">
+			<div class="tab-pane container active" id="Recommended">Rec
+				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima suscipit impedit quis repellendus totam at natus nostrum pariatur, numquam fugiat inventore cumque odit. Doloremque optio, voluptatibus, repudiandae amet nesciunt error reiciendis, nemo nostrum nisi tempora perferendis facilis accusantium rerum consectetur? Praesentium doloribus quia, nam eos minima doloremque neque voluptatem nemo ipsum cupiditate commodi cumque. Nobis magnam in eos rerum quae quaerat voluptate iure ut repellat harum at, error natus velit! Nihil ad eveniet necessitatibus, ullam quos ratione ducimus vel excepturi fugiat fugit sequi corrupti dignissimos consequatur vero veniam nisi doloribus atque odit aperiam deleniti tenetur, quis repellendus doloremque repudiandae! Nulla similique quo quibusdam in, aliquid incidunt nam ducimus repudiandae provident nihil deserunt beatae suscipit nesciunt cumque explicabo iusto quas unde odio quos adipisci, eligendi quia velit rerum eos. Deleniti iusto ducimus illo debitis non ab obcaecati. Nam id, corporis repudiandae quidem omnis ipsum nulla non ipsa pariatur iste expedita ea fuga, illo necessitatibus eius voluptate quibusdam voluptatem cupiditate soluta, deleniti tempora ab. Reiciendis quae enim, explicabo maxime eum eveniet qui non ipsam ex, pariatur deserunt accusamus voluptatibus quidem distinctio esse ipsa ipsum quaerat possimus? Porro atque fugit ipsa dolorum incidunt enim dolore magni libero perspiciatis in numquam voluptas facere odit distinctio sunt aliquid vero quo dicta sed quidem adipisci, fugiat corporis a! Reprehenderit voluptates architecto repellendus quam cumque provident rerum expedita minima magnam, at culpa aspernatur, ipsum modi magni, perferendis nisi delectus animi beatae assumenda quod quia inventore tenetur suscipit corporis. Ipsum consequatur at earum tempora aliquid cupiditate aperiam veritatis cum incidunt architecto voluptatem quisquam sit quos iure autem non in ea, quae reprehenderit. Dolores amet explicabo qui molestias reprehenderit, dolorum sunt rerum doloribus corporis eos odio quos, error enim dolore officiis impedit quia illum autem eligendi facilis est dicta. Pariatur repellat hic dignissimos earum. Rem debitis nulla nesciunt illum libero ut fugiat atque in explicabo magni, sapiente doloremque deserunt numquam dolorum rerum impedit? Vel nisi cum possimus necessitatibus ipsa aut quos ipsum debitis, ut rerum quaerat error fugit, sit, dolores natus laboriosam reprehenderit explicabo et corrupti iure. Blanditiis sequi vero id quas numquam tempora unde dolor beatae esse? Nam velit quos cumque quas cupiditate hic blanditiis modi a, ex sequi officiis dolores optio nobis quaerat error magnam cum incidunt amet molestiae sapiente aperiam consequuntur iure eligendi debitis. Earum, necessitatibus? Repudiandae aperiam corporis dolorum dolorem eos sequi veritatis vitae a iusto quo. Aut vitae dolorem officia aliquam ea corrupti laboriosam dolore enim facere reiciendis, possimus dicta! Necessitatibus quae est accusantium dolorem et tenetur commodi accusamus sunt voluptatem sed. Necessitatibus recusandae, rem fuga fugiat, quas delectus voluptate, explicabo quisquam maxime pariatur illo vero inventore! Praesentium earum eveniet maxime repellendus numquam facilis neque culpa repudiandae vel quos commodi, animi architecto necessitatibus, quas et doloremque alias sequi rem fuga nesciunt explicabo nihil nostrum optio. Eveniet provident eos in rerum enim perspiciatis quidem aliquam, quae consectetur ipsum natus temporibus nobis quia, molestiae illo veritatis iure, non totam eligendi fuga. Eum porro ipsa nesciunt eius fugiat, reprehenderit accusantium incidunt fuga rem nisi odio adipisci quae, facilis dolores quasi repellendus consequuntur illum quos. Amet fuga iusto repellendus enim temporibus optio blanditiis et saepe corrupti debitis quis dicta eum unde corporis sapiente dolorem sed earum, expedita facere voluptatem! Repudiandae itaque natus obcaecati quia assumenda labore totam. Quas inventore, iusto ipsam tenetur quisquam enim natus aut quibusdam optio culpa eius eos provident, totam officiis eaque nihil possimus quam ducimus repellendus doloribus saepe nostrum voluptatum consequuntur. Expedita possimus amet ab quam illo quas, laboriosam voluptate commodi, magni perferendis similique consequuntur ullam impedit dolorem inventore quis enim reprehenderit minima quasi, fugit laborum excepturi iste! Incidunt magnam, placeat suscipit error sunt obcaecati iure quibusdam nam tempora accusantium optio voluptas, dolorem temporibus officiis reiciendis ab eligendi non provident deleniti repudiandae voluptatibus. Qui, blanditiis. Quae harum expedita doloribus officiis illum odio libero modi doloremque! Sed reiciendis vel voluptates ab consequatur perspiciatis! Praesentium aliquid explicabo esse? Cumque repudiandae sapiente sit consectetur. Quisquam molestias aliquid dolorem illum laudantium nobis et. Id neque hic tempora dolores autem. Rem, vero culpa, vel excepturi nemo ea quas minus enim velit sunt quod id ratione nulla omnis! Veritatis, expedita ratione eos labore voluptatibus inventore nisi quos? Ad provident perspiciatis delectus inventore enim at odio sapiente minima recusandae, esse velit, odit quas, molestias saepe accusamus voluptatibus! Veniam beatae non vitae distinctio expedita veritatis quibusdam deleniti suscipit blanditiis odit iusto, eveniet qui? Vitae accusamus harum vel laudantium aut culpa cupiditate sed veniam officia blanditiis. Cumque quo sunt atque corrupti eveniet minima, optio maxime hic soluta ducimus animi qui, error suscipit asperiores! Eos dolorum praesentium ipsum ducimus quo dolores consequatur laborum molestias. Quia sequi distinctio aliquam iste veritatis. Vel porro reprehenderit, vero quae tempore odit ducimus eum veniam harum delectus dolore voluptatum explicabo sint qui aspernatur dolorem, non quo molestias? Voluptate quis ipsam facilis eaque. Delectus cumque quas animi earum unde quia? Magni explicabo modi, nulla suscipit impedit repellat, doloribus facilis iure repudiandae natus iusto non eaque laudantium, eum minus laboriosam debitis! Beatae laborum earum ad neque cumque quidem maxime fugiat sint dolore perspiciatis doloribus, fugit incidunt iusto ab possimus natus! Ipsa fugiat repellat laboriosam velit commodi ducimus recusandae sunt. Nesciunt vel necessitatibus accusantium quas optio similique totam! Nam, fuga in. Enim facere perspiciatis labore animi ipsum tenetur, consequatur praesentium nemo distinctio sequi doloribus perferendis, accusamus provident ea voluptatibus eveniet hic omnis, non reiciendis iusto neque assumenda repudiandae. Harum minima odit doloremque minus quod nostrum adipisci deserunt sit. Tempora, ab error libero culpa animi at, aut expedita nobis porro est quaerat fugit cum minima doloribus maxime quis alias voluptas facilis iste assumenda itaque? Expedita sapiente corrupti, aut ut ipsum mollitia hic sit quaerat optio repellat similique voluptatem tempora iusto, doloremque itaque illum. Quaerat dignissimos nam ipsa quo at vitae, animi minus odit illum ex deleniti architecto. Odit quo, architecto consequuntur explicabo dolorum, dicta rerum quia nam inventore sunt quisquam doloribus commodi est officiis nesciunt nostrum deserunt temporibus provident libero natus. Minima tempora consectetur ab provident illo voluptatem optio cum a nisi eos! Molestias dolore pariatur quos sunt at deleniti voluptates, a ea!
+			</div>
+			<div class="tab-pane container fade" id="Favorites">Favs</div>
+			<div class="tab-pane container fade" id="Applied">App</div>
+		</div>
 <!-- Card template (JavaScript Neccesary) -->
 <!-- Footer -->
+	</section>
+	<section class="tab-pane container" id="SUGG"></section>
+	<section class="tab-pane container" id="PROF">
+		<form action="">
+			<img src="icons/user.png" height="100em" alt="profile picture" class="px-auto">
+			<div class="mb-3 row">
+				<label for="name" class="col-2 col-form-label">Name</label>
+				<span class="col-5">
+					<input type="text" readonly class="form-control-plaintext" id="name" value="John">
+				</span>
+				<span class="col-5">
+					<input type="text" readonly class="form-control-plaintext" id="name" value="Doe">
+				</span>
+				<label for="email" class="col-2 col-form-label">Email</label>
+				<span class="col-10">
+					<input type="text" readonly class="form-control-plaintext" id="email" value="email@example.com">
+				</span>
+				<label for="school" class="col-2 col-form-label">School</label>
+				<span class="col-10">
+					<input type="text" readonly class="form-control-plaintext" id="school" value="Gorge Mason">
+				</span>
+				<label for="year" class="col-4 col-form-label">Current year</label>
+				<span class="col-8">
+					<input type="text" readonly class="form-control-plaintext" id="year" value="Highschool Freshman">
+				</span>
+				<label for="major" class="col-4 col-form-label">Major</label>
+				<span class="col-8">
+					<input type="text" readonly class="form-control-plaintext" id="major" value="Engineering">
+				</span>
+			</div>
+		</form>
+	</section>
+</main>
 </body>
 </html>
