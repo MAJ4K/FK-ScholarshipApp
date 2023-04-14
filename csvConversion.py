@@ -14,6 +14,6 @@ def make_json(csvFilePath, jsonFilePath, feildrow = 0):
 		jsonf.write(json.dumps(data, indent=4))
 
 csvFilePath = r'test.csv'
-jsonFilePath = r'test.json'
+jsonFilePath = r'scholarships.json'
 
 make_json(csvFilePath, jsonFilePath, 1)

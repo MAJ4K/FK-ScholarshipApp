@@ -2,22 +2,55 @@ const filterGroup = document.getElementById('FGroup');
 const addfilterbtn = document.getElementById('addfltbtn');
 const flabelinp = document.getElementById('flabelinp');
 
+var sch_json = undefined
+fetch('./scholarships.json')
+  .then((response) => response.json())
+  .then((json) => sch_json = json)
+	.then(() => scholarshipsFetched());
 
 function addfilterbutton() {
-    if (!flabelinp.value) return;
-    const inp = document.createElement('input');
-    const lab = document.createElement('label');
-    const ident = "ts" + filterGroup.children.length + "fltrad";
+	if (!flabelinp.value) return;
+	const inp = document.createElement('input');
+	const lab = document.createElement('label');
+	const ident = "ts" + filterGroup.children.length + "fltrad";
 
-    inp.type = "radio";
-    inp.classList.add("btn-check");
-    inp.name = "fltRadio";
-    inp.id = ident;
-    lab.innerText = flabelinp.value;
-    lab.classList.add("btn");
-    lab.classList.add("btn-outline-secondary");
-    lab.htmlFor = ident
-    filterGroup.appendChild(inp);
-    filterGroup.appendChild(lab);
+	inp.type = "radio";
+	inp.classList.add("btn-check");
+	inp.name = "fltRadio";
+	inp.id = ident;
+	lab.innerText = flabelinp.value;
+	lab.classList.add("btn");
+	lab.classList.add("btn-outline-secondary");
+	lab.htmlFor = ident
+	filterGroup.appendChild(inp);
+	filterGroup.appendChild(lab);
 }
 
+function scholarshipsFetched() {
+	const scholarshipContainer = document.getElementById('SCHOLARSHIPCONTAINER');
+	sch_json.forEach(scholarship => {
+		const card = document.createElement('div');
+		var eligibilities = "";
+		Object.keys(scholarship).forEach(key => {
+			if (["Title","Opens","Due","Amount"].includes(key)
+			|| ["N/A","No","no","General"].includes(scholarship[key])){}
+			else if (["Yes"].includes(scholarship[key]))
+				{eligibilities += `<span class="badge bg-secondary">yes</span>`;}
+			else eligibilities += `<span class="badge bg-secondary">${scholarship[key]}</span>`;
+		});
+		card.classList.add('card');
+		card.classList.add('col-lg-6');
+		card.innerHTML = `
+			<img src="icons/logo-king.png" class="card-img">
+			<div class="card-divide"></div>
+			<div class="card-body">
+				<h4 class="card-title">${scholarship['Title']}</h4>
+				<p class="card-text">
+					${scholarship['Opens']}-${scholarship['Due']}
+					${scholarship['Amount']}
+				</p>
+				${eligibilities}
+			</div>`;
+		scholarshipContainer.appendChild(card);
+	});
+}
