@@ -20,3 +20,4 @@ function addfilterbutton() {
     filterGroup.appendChild(inp);
     filterGroup.appendChild(lab);
 }
+
