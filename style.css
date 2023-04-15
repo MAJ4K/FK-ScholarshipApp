@@ -149,6 +149,7 @@ body{
 .card{
     display: flex;
     flex-direction: row;
+    overflow: hidden;
 }
 .card-img {
     width: 100px;
