@@ -158,3 +158,10 @@ body{
     height: 100%; width: 2px;
     background-color: var(--palette0);
 }
+.card .badge>img{
+    max-height: 2em;
+}
+
+.filter-btn-group img{
+    max-height: 2em;
+}

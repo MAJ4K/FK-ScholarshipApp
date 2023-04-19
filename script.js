@@ -34,8 +34,62 @@ function scholarshipsFetched() {
 		Object.keys(scholarship).forEach(key => {
 			if (["Title","Opens","Due","Amount"].includes(key)
 			|| ["N/A","No","no","General"].includes(scholarship[key])){}
-			else if (["Yes"].includes(scholarship[key]))
-				{eligibilities += `<span class="badge bg-secondary">yes</span>`;}
+			else if (["Yes","Female","Male"].includes(scholarship[key])){
+				switch (key) {
+					case "Gender-based":
+						if (["Male","male"].includes(scholarship[key]))
+						eligibilities += `
+							<span class="badge bg-secondary">
+								<img src="icons/male.png" alt="male">
+							</span>
+							`;
+						if (["Female","female"].includes(scholarship[key]))
+						eligibilities += `
+							<span class="badge bg-secondary">
+								<img src="icons/female.png" alt="female">
+							</span>
+							`;
+						break;
+					case "Renewable":
+						eligibilities += `
+							<span class="badge bg-secondary">
+								<img src="icons/renewable.png" alt="Renewable">
+							</span>
+							`;
+						break;
+					case "Service/\r\ncharacter-based":
+						eligibilities += `
+							<span class="badge bg-secondary">
+								<img src="icons/character.png" alt="Service/Character-Based">
+							</span>
+							`;
+						break;
+					case "Academic Merit-based":
+						eligibilities += `
+							<span class="badge bg-secondary">
+								<img src="icons/merit.png" alt="Academic/Merit-Based">
+							</span>
+							`;
+						break;
+					case "Need-based":
+						eligibilities += `
+							<span class="badge bg-secondary">
+								<img src="icons/need.png" alt="Need-Based">
+							</span>
+							`;
+						break;
+					case "Must identify as Black/ minority":
+						eligibilities += `
+							<span class="badge bg-secondary">
+								<img src="icons/minority.png" alt="must identify as black/ minority">
+							</span>
+							`;
+						break;
+					default:
+						eligibilities += `<span class="badge bg-secondary">${scholarship[key]}</span>`;
+						break;
+				}
+			}
 			else eligibilities += `<span class="badge bg-secondary">${scholarship[key]}</span>`;
 		});
 		card.classList.add('card');
