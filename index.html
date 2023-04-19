@@ -131,7 +131,7 @@
 		</div>
 		<!-- Modal body -->
 		<form class="modal-body filterForm">
-			<div class="input-group">
+			<div class="input-group mb-2">
 				<span class="input-group-text">Filter Label</span>
 				<input type="text" class="form-control" id="flabelinp">
 			</div>
@@ -166,14 +166,61 @@
 				</label>
 			</div>
 			<label class="form-label">Range</label>
-			<div class="input-group">
-				<input type="range" class="form-range" step="10">
-				<input type="range" class="form-range" step="10">
+			<div class="input-group mb-2">
+				<input type="number" class="form-control">
+				<span class="input-group-text">to</span>
+				<input type="number" class="form-control">
 			</div>
-			<label class="form-label">Open Dates</label>
-			<div class="input-group">
-				<input type="range" class="form-range" step="12">
-				<input type="range" class="form-range" step="12">
+			<label class="form-label mt-3">Open Dates</label>
+			<div class="input-group mb-3">
+				<button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+				  Opens
+				</button>
+				<ul class="dropdown-menu">
+				  <li><a class="dropdown-item" href="#">Jan</a></li>
+				  <li><a class="dropdown-item" href="#">Feb</a></li>
+				  <li><a class="dropdown-item" href="#">Nov</a></li>
+				  <li><a class="dropdown-item" href="#">Dec</a></li>
+				</ul>
+				<span class="input-group-text">to</span>
+				<button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+					Closes
+				</button>
+				<ul class="dropdown-menu">
+				  <li><a class="dropdown-item" href="#">Jan</a></li>
+				  <li><a class="dropdown-item" href="#">Feb</a></li>
+				  <li><a class="dropdown-item" href="#">Nov</a></li>
+				  <li><a class="dropdown-item" href="#">Dec</a></li>
+				</ul>
+			</div>
+			<div class="input-group mt-3 mb-3">
+				<button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+				  Level
+				</button>
+				<ul class="dropdown-menu">
+				  <li><a class="dropdown-item" href="#">Middle School</a></li>
+				  <li><a class="dropdown-item" href="#">High School</a></li>
+				  <li><a class="dropdown-item" href="#">Undergrad</a></li>
+				  <li><a class="dropdown-item" href="#">Masters/PHD</a></li>
+				</ul>
+				<button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+					Year
+				</button>
+				<ul class="dropdown-menu">
+				  <li><a class="dropdown-item" href="#">Freshman</a></li>
+				  <li><a class="dropdown-item" href="#">Sophmore</a></li>
+				  <li><a class="dropdown-item" href="#">Junior</a></li>
+				  <li><a class="dropdown-item" href="#">Senior</a></li>
+				</ul>
+				<button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+					Major
+				</button>
+				<ul class="dropdown-menu">
+					<li><a class="dropdown-item" href="#">Physics</a></li>
+					<li><a class="dropdown-item" href="#">Mathematics</a></li>
+					<li><a class="dropdown-item" href="#">Engineering</a></li>
+					<li><a class="dropdown-item" href="#">information Technology</a></li>
+				</ul>
 			</div>
 		</form>
 		
