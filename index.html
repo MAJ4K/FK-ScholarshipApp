@@ -18,9 +18,9 @@
 	<li class="nav-item">
 		<a class="nav-link active" data-bs-toggle="tab" href="#HOME">Home</a>
 	</li>
-	<li class="nav-item">
+	<!-- <li class="nav-item">
 		<a class="nav-link" data-bs-toggle="tab" href="#SUGG">Suggestions</a>
-	</li>
+	</li> -->
 	<li class="nav-item">
 		<a class="nav-link" data-bs-toggle="tab" href="#PROF">Profile</a>
 	</li>
@@ -100,7 +100,7 @@
 <!-- Card template (JavaScript Neccesary) -->
 <!-- Footer -->
 	</section>
-	<section class="tab-pane container" id="SUGG"></section>
+	<!-- <section class="tab-pane container" id="SUGG"></section> -->
 	<section class="tab-pane container" id="PROF">
 		<form action="" id="PROFFORM" class="mx-auto">
 			<img src="icons/user.png" height="100em" alt="profile picture" class="m-2">
@@ -156,8 +156,6 @@
 				<span class="input-group-text">Filter Label</span>
 				<input type="text" class="form-control" name="filtername" id="flabelinp">
 			</div>
-			<div class="invalid-feedback">please choose a label</div>
-			<div class="invalid-feedback">label already in use</div>
 			<div class="filter-btn-group" role="group" aria-label="Basic toggle button group">
 				<input type="checkbox" class="btn-check" name="renewable" id="renewchk" autocomplete="off">
 				<label class="btn btn-outline-secondary" for="renewchk">
@@ -255,8 +253,9 @@
 		
 		  <!-- Modal footer -->
 		<div class="modal-footer">
+			<div class="text-danger" id="filterInvalidFeedback"></div>
 			<input class="btn btn-primary" type="submit" form="filterForm" 
-			value="Add Filter" data-bs-dismiss="modal" id="addfltbtn"/>
+			value="Add Filter" id="addfltbtn"/>
 		</div>
 	  </div>
 	</div>

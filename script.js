@@ -23,7 +23,16 @@ fetch('./scholarships.json')
 
 filterForm.addEventListener('submit', e => {
 	e.preventDefault();
-	if (!flabelinp.value) return false;
+	const feedbacklabel = document.getElementById('filterInvalidFeedback');
+	if (!flabelinp.value){
+		feedbacklabel.innerText = "filter label has no value."
+		return false;
+	}
+	if (!!localStorage.getItem(flabelinp.value)){
+		feedbacklabel.innerText = "filter label already in use."
+		return false;
+	}
+	feedbacklabel.innerText = ""
 	const inp = document.createElement('input');
 	const lab = document.createElement('label');
 	const ident = "ts" + numcustomflts + "fltrad";
@@ -201,6 +210,8 @@ filterForm.addEventListener('submit', e => {
 			scholarshipContainer.children[i].hidden = false;
 		} 
 	});
+	const closebtn = document.getElementById('filterModal').getElementsByClassName('btn-close')[0];
+	closebtn.click();
 });
 filterBtns.getElementsByTagName('input')[3].addEventListener('click',()=>{
 	delfltlab.hidden = true;
