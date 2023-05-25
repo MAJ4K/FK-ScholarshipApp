@@ -1,0 +1,79 @@
+:root{
+	--palette0: #FFFDEB;
+	--palette1: #be902c;
+	--palette2: #0000006c;
+	--palette3: #4169e1;
+	--palette4: #be902c;
+}
+
+*, *::after, *::before {
+	box-sizing: border-box;
+	padding: 0; margin: 0;
+	text-decoration: none;
+	outline: none;
+	border: none;
+}
+
+body{
+	width: 100vw; height: 100vh;
+	background-color: var(--palette0);
+	overflow: hidden;
+	display: grid;
+	grid-template-columns: auto 1fr;
+	grid-template-rows: 1fr auto;
+}
+
+#NAVIGATION {
+	grid-column: 1; grid-row: 1/-1;
+	display: flex;
+	flex-direction: column;
+}
+
+main {
+	grid-column: 2;
+	grid-row: 1/-1;
+	display: none;
+	overflow-y: scroll;
+}
+main.active{display: block;}
+
+#FILTERMENU {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+#FILTERMENU>section{
+	display: flex;
+	flex-direction: row;
+	gap: 0.5em;
+	overflow-x: scroll;
+	overflow-y: none;
+	scroll-behavior: smooth;
+}
+#FILTERMENU>section::-webkit-scrollbar{
+	display: none;
+}
+.content_card{
+	display: flex;
+	flex-direction: row;
+	border: var(--palette2) solid 1.5px;
+	background-color: whitesmoke;
+}
+.content_card>img{
+	height: auto; width: auto;
+	margin: auto 0;
+}
+.content_card>div:last-child{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.v_divider{width: 3px; background-color: var(--palette2);}
+
+@media screen and (max-width: 650px) {
+	#NAVIGATION {
+		grid-column: 1/-1; grid-row: 2;
+		flex-direction: row;
+	}
+	main { grid-column: 1/-1; grid-row: 1;}
+}

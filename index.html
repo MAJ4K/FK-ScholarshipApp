@@ -4,40 +4,34 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script defer src="script.js"></script>
-
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-	<link rel="stylesheet" href="style.css">
 	<link rel="shortcut icon" href="icons/logo-king.png" type="image/png">
 	<title>Document</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+	<link rel="stylesheet" href="layout.css">
+	<script defer src="script.js"></script>
 </head>
-<body class="container">
-<!-- Navigation (Home, Add Sugestion, Profile)-->
-<nav class=" nav nav-tabs justify-content-center nav-justified fixed-bottom">
-	<li class="nav-item">
-		<a class="nav-link active" data-bs-toggle="tab" href="#HOME">Home</a>
-	</li>
-	<!-- <li class="nav-item">
-		<a class="nav-link" data-bs-toggle="tab" href="#SUGG">Suggestions</a>
-	</li> -->
-	<li class="nav-item">
-		<a class="nav-link" data-bs-toggle="tab" href="#PROF">Profile</a>
-	</li>
-</nav>
+<body>
+	<!-- Navigation -->
+	<nav class="bg-secondary" id="NAVIGATION">
+			<input type="radio" class="btn-check" name="navig" id="option0" value="scholarships" autocomplete="off" checked>
+			<label class="btn btn-secondary w-100" for="option0">Scholarships</label>
 
-<main class="tab-content">
-	<section class="tab-pane active" id="HOME">
+			<input type="radio" class="btn-check" name="navig" id="option1" value="profile" autocomplete="off">
+			<label class="btn btn-secondary w-100" for="option1">Profile</label>
+	</nav>
+	<!-- Tabs -->
+	<main class="container active" id="scholarships">
 		<!-- Carousel -->
-		<div id="demo" class="carousel sslide" data-bs-ride="carousel">
+		<div id="demo" class="carousel slide mt-3" data-bs-ride="carousel">
 			<!-- Indicators/dots -->
 			<div class="carousel-indicators">
-				<button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+				<input type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active">
 			</div>
 			<!-- The slideshow/carousel -->
 			<div class="carousel-inner">
 				<div class="carousel-item active">
-				<img src="icons/logo-king.png" alt="Future Kings" class="d-block mx-auto">
+					<img src="icons/logo-king.png" alt="Future Kings" class="d-block">
 				</div>
 			</div>
 			<!-- Left and right controls/icons -->
@@ -48,218 +42,91 @@
 				<span class="carousel-control-next-icon"></span>
 			</button>
 		</div>
-
-		<!-- Dynamic Tab (Navs) --> <!-- Filter Menu (Modal) (JavaScript) -->
-		<nav class="d-flex flex-row bg-secondary sticky-top rounded-bottom">
-			<section class="w-100 d-flex flex-row overflow-auto" id="FilterBtns">
-				<div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-					<input type="radio" class="btn-check" name="fltRadio" id="recfltrad" autocomplete="off" checked>
-					<label class="btn btn-outline-primary" for="recfltrad">Recommended</label>
-				
-					<input type="radio" class="btn-check" name="fltRadio" id="favfltrad" autocomplete="off">
-					<label class="btn btn-outline-primary" for="favfltrad">Favorites</label>
-				
-					<input type="radio" class="btn-check" name="fltRadio" id="appfltrad" autocomplete="off">
-					<label class="btn btn-outline-primary" for="appfltrad">Applied</label>
+		<!-- Filter Menu -->
+		<div class="bg-light my-2 sticky-top p-0" id="FILTERMENU">
+			<section>
+				<div class="btn-group" role="group">
+					<input type="radio" class="btn-check" name="filters" id="Mflt0" autocomplete="off" checked>
+					<label class="btn btn-outline-primary" for="Mflt0">Recomended</label>
 					
-					<input type="radio" class="btn-check" name="fltRadio" id="allfltrad" autocomplete="off">
-					<label class="btn btn-outline-primary" for="allfltrad">All</label>
+					<input type="radio" class="btn-check" name="filters" id="Mflt1" autocomplete="off">
+					<label class="btn btn-outline-primary" for="Mflt1">Favorites</label>
+					
+					<input type="radio" class="btn-check" name="filters" id="Mflt2" autocomplete="off">
+					<label class="btn btn-outline-primary" for="Mflt2">Applied</label>
 				</div>
-				<div class="btn-group" role="group" aria-label="Basic radio toggle button group" id="FGroup">
+				<div class="btn-group" role="group">
+					<input type="radio" class="btn-check" name="filters" id="flt0" autocomplete="off" checked>
+					<label class="btn btn-outline-secondary" for="flt0">test1</label>
+					
+					<input type="radio" class="btn-check" name="filters" id="flt1" autocomplete="off">
+					<label class="btn btn-outline-secondary" for="flt1">test2</label>
+					
+					<input type="radio" class="btn-check" name="filters" id="flt2" autocomplete="off">
+					<label class="btn btn-outline-secondary" for="flt2">test23</label>
 				</div>
 			</section>
-			<!-- Button to Open Filter Modal -->
-			
-			<div class="btn-group" role="group" aria-label="Basic button group">
-				<input type="button" class="btn btn-aux p-0" id="delfltbtn" autocomplete="off">
-				<label class="btn btn-danger" for="delftlbtn" id="delfltlab" hidden>
-					<img style="height: 1em;" src="icons/trash.png" alt="filter">
-				</label>
-				<input type="button" class="btn btn-aux p-0" id="opnfltmenu" autocomplete="off">
-				<label class="btn btn-primary" for="openfltmenu" 
-				data-bs-toggle="modal" data-bs-target="#filterModal">
-					<img style="height: 1em;" src="icons/menuIcon.png" alt="filter">
-				</label>
+			<div class="btn-group" role="group">
+				<input type="button" class="btn-check" id="flttrash" autocomplete="off" checked>
+				<label class="btn btn-danger" for="flttrash">trash</label>
+				
+				<input type="button" class="btn-check" id="fltmenu" autocomplete="off">
+				<label class="btn btn-primary" for="fltmenu">menu</label>
 			</div>
-		</nav>
-			<!-- Tab panes -->
-		<section class="container-fluid pb-5 pt-1">
-			<section class="row" id="SCHOLARSHIPCONTAINER">
-				<!-- <div class="card col-lg-6">
-					<img src="icons/logo-king.png" class="card-img">
-					<div class="card-divide"></div>
-					<div class="card-body">
-						<h4 class="card-title">placeholder title</h4>
-						<p class="card-text">information about the scholarship</p>
-						<a href="#" class="card-link">to scholarship</a>
-						<a href="#" class="card-link">Another link</a>
+		</div>
+		<section class="container">
+			<section class="row" id="CONTENT_CONTAINER">
+				<div class="content_card rounded-2 col-md-6">
+					<img src="icons/logo-king.png" alt="ph">
+					<div class="v_divider"></div>
+					<div>
+						<h6>SIra Dorsey Foundation Scholarship (PWC Alpha Phi Alpha Chapter)</h6>
+						<p>$1000-$10000 January-July</p>
+						<div>with all the extra qualifiers</div>
 					</div>
-				</div> -->
+				</div>
+				
+				<div class="card col-md-6">
+					<div class="card-body">s</div>
+				</div>
+				<div class="card col-md-6">
+					<div class="card-body">Basic card</div>
+				</div>
+				<div class="card col-md-6">
+					<div class="card-body">Basic card</div>
+				</div>
+
 			</section>
 		</section>
-<!-- Card template (JavaScript Neccesary) -->
-<!-- Footer -->
-	</section>
-	<!-- <section class="tab-pane container" id="SUGG"></section> -->
-	<section class="tab-pane container" id="PROF">
-		<form action="" id="PROFFORM" class="mx-auto">
-			<img src="icons/user.png" height="100em" alt="profile picture" class="m-2">
-			<div class="mb-3 row" id="ProfData-inputs">
-				<div class="input-group">
-					<span class="input-group-text">NAME</span>
-					<input type="text" class="form-control" placeholder="First" disabled>
-					<input type="text" class="form-control" placeholder="Last" disabled> 
-				</div>
-				<div class="input-group">
-					<span class="input-group-text">EMAIL</span>
-					<input type="text" class="form-control" placeholder="email@example.com" disabled>
-				</div>
-				<div class="input-group">
-					<span class="input-group-text">SCHOOL</span>
-					<input type="text" class="form-control" placeholder="George Mason" disabled>
-				</div>
-				<div class="input-group">
-					<span class="input-group-text">CURRENT YEAR</span>
-					<input type="text" class="form-control" placeholder="Highschool Freshman" disabled>
-				</div>
-				<div class="input-group">
-					<span class="input-group-text">MAJOR</span>
-					<input type="text" class="form-control" placeholder="Engineering" disabled>
-				</div>
+	</main>
+	<main class="container" id="profile">
+		<img class="mx-auto my-3 d-block" src="icons/user.png" width="125px" alt="">
+		<form class="container">
+			<div class="input-group mb-1">
+				<span class="input-group-text">Name</span>
+				<input type="text" class="form-control" placeholder="First">
+				<input type="text" class="form-control" placeholder="Last">
 			</div>
-			<div class="btn-group" role="group" aria-label="Basic toggle button group" id="editprofinp">
-				<input type="button" class="btn-check" name="profcheck" id="profiletog" autocomplete="off" onclick="editProfile();">
-				<label class="btn btn-outline-primary" for="profiletog">Edit</label>
+			<div class="input-group mb-1">
+				<span class="input-group-text">Email</span>
+				<input type="email" class="form-control" placeholder="example@email.com">
 			</div>
-			<div class="btn-group" role="group" aria-label="Basic toggle button group" id="uedtprofinp" hidden>
-				<input type="button" class="btn-check" name="profcheck" id="profilesave" autocomplete="off" onclick="saveProfile();">
-				<label class="btn btn-success" for="profilesave">Save</label>
-				<input type="button" class="btn-check" name="profcheck" id="profileUndo" autocomplete="off" onclick="revertProfile();">
-				<label class="btn btn-danger" for="profileUndo">Cancel</label>
+			<div class="input-group mb-1">
+				<span class="input-group-text">Level</span>
+				<input type="email" class="form-control" placeholder="Highschool Sophmore">
 			</div>
-		</form>
-	</section>
-</main>
-
-<!-- Filter Modal -->
-<div class="modal" id="filterModal">
-	<div class="modal-dialog">
-	  <div class="modal-content">
-		<!-- Modal Header -->
-		<div class="modal-header">
-		  <h4 class="modal-title">Add Filter</h4>
-		  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-		</div>
-		<!-- Modal body -->
-		<form class="modal-body" id="filterForm">
-			<div class="input-group mb-2">
-				<span class="input-group-text">Filter Label</span>
-				<input type="text" class="form-control" name="filtername" id="flabelinp">
+			<div class="input-group mb-1">
+				<span class="input-group-text">Intended School</span>
+				<input type="email" class="form-control" placeholder="George Mason">
 			</div>
-			<div class="filter-btn-group" role="group" aria-label="Basic toggle button group">
-				<input type="checkbox" class="btn-check" name="renewable" id="renewchk" autocomplete="off">
-				<label class="btn btn-outline-secondary" for="renewchk">
-					<img src="icons/renewable.png" alt="renewable">
-				</label>
-				<input type="checkbox" class="btn-check" name="male" id="malechk" autocomplete="off">
-				<label class="btn btn-outline-secondary" for="malechk">
-					<img src="icons/male.png" alt="Male">
-				</label>
-				<input type="checkbox" class="btn-check" name="female" id="femalechk" autocomplete="off">
-				<label class="btn btn-outline-secondary" for="femalechk">
-					<img src="icons/female.png" alt="Female">
-				</label>
-				<input type="checkbox" class="btn-check" name="character" id="charchk" autocomplete="off">
-				<label class="btn btn-outline-secondary" for="charchk">
-					<img src="icons/character.png" alt="Character-Based">
-				</label>
-				<input type="checkbox" class="btn-check" name="merit" id="meritchk" autocomplete="off">
-				<label class="btn btn-outline-secondary" for="meritchk">
-					<img src="icons/merit.png" alt="Merit-Based">
-				</label>
-				<input type="checkbox" class="btn-check" name="need" id="needchk" autocomplete="off">
-				<label class="btn btn-outline-secondary" for="needchk">
-					<img src="icons/need.png" alt="Need-Based">
-				</label>
-				<input type="checkbox" class="btn-check" name="minority" id="minorchk" autocomplete="off">
-				<label class="btn btn-outline-secondary" for="minorchk">
-					<img src="icons/minority.png" alt="Minority-Based">
-				</label>
-			</div>
-			<label class="form-label">Range</label>
-			<div class="input-group">
-				<input type="number" class="form-control" name="rangef">
-				<span class="input-group-text">to</span>
-				<input type="number" class="form-control" name="ranget">
-			</div>
-			<label class="form-label">Open Dates</label>
 			<div class="input-group mb-3">
-				<select class="form-select" name="opens" aria-label="Default select example">
-					<option selected value="0">Opens</option>
-					<option value="1">January</option>
-					<option value="2">February</option>
-					<option value="3">March</option>
-					<option value="4">April</option>
-					<option value="5">May</option>
-					<option value="6">June</option>
-					<option value="7">July</option>
-					<option value="8">August</option>
-					<option value="9">September</option>
-					<option value="10">October</option>
-					<option value="11">November</option>
-					<option value="12">December</option>
-				</select>
-				<span class="input-group-text">to</span>
-				<select class="form-select" name="closes" aria-label="Default select example">
-					<option selected value="0">Due</option>
-					<option value="1">January</option>
-					<option value="2">February</option>
-					<option value="3">March</option>
-					<option value="4">April</option>
-					<option value="5">May</option>
-					<option value="6">June</option>
-					<option value="7">July</option>
-					<option value="8">August</option>
-					<option value="9">September</option>
-					<option value="10">October</option>
-					<option value="11">November</option>
-					<option value="12">December</option>
-				</select>
+				<span class="input-group-text">Major</span>
+				<input type="email" class="form-control" placeholder="Bussiness">
 			</div>
-			<div class="input-group mt-3 mb-3">
-				<select class="form-select" name="Level" aria-label="Default select example">
-					<option selected>Level</option>
-					<option value="Middleschool Middle">Middle School</option>
-					<option value="Highschool High hs">High School</option>
-					<option value="Undergrad">Undergrad</option>
-					<option value="Masters PHD">Masters/PHD</option>
-				</select>
-				<select class="form-select" name="Year" aria-label="Default select example">
-					<option selected>Year</option>
-					<option value="Freshman">Freshman</option>
-					<option value="Sophmore">Sophmore</option>
-					<option value="Junior">Junior</option>
-					<option value="Senior">Senior</option>
-				</select>
-				<select class="form-select" name="Major" aria-label="Default select example">
-					<option selected>Major</option>
-					<option value="STEM Physics">Physics</option>
-					<option value="STEM Mathematics">Mathematics</option>
-					<option value="STEM Engineering">Engineering</option>
-					<option value="STEM IT">information Technology</option>
-				</select>
-			</div>
+			<input type="button" class="btn btn-secondary" value="Edit">
+			<input type="button" class="btn btn-success" value="Save">
+			<input type="button" class="btn btn-danger" value="Cancel">			
 		</form>
-		
-		  <!-- Modal footer -->
-		<div class="modal-footer">
-			<div class="text-danger" id="filterInvalidFeedback"></div>
-			<input class="btn btn-primary" type="submit" form="filterForm" 
-			value="Add Filter" id="addfltbtn"/>
-		</div>
-	  </div>
-	</div>
-</div>
-
+	</main>
 </body>
 </html>
