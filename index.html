@@ -17,7 +17,7 @@
 			<input type="radio" class="btn-check" name="navig" id="option0" value="scholarships" autocomplete="off" checked>
 			<label class="btn btn-secondary w-100" for="option0">Scholarships</label>
 
-			<input type="radio" class="btn-check" name="navig" id="option1" value="profile" autocomplete="off">
+			<input type="radio" class="btn-check" name="navig" id="option1" value="PROFILE" autocomplete="off">
 			<label class="btn btn-secondary w-100" for="option1">Profile</label>
 	</nav>
 	<!-- Tabs -->
@@ -47,31 +47,28 @@
 			<section>
 				<div class="btn-group" role="group">
 					<input type="radio" class="btn-check" name="filters" id="Mflt0" autocomplete="off" checked>
-					<label class="btn btn-outline-primary" for="Mflt0">Recomended</label>
+					<label class="btn btn-outline-secondary" for="Mflt0">Recomended</label>
 					
 					<input type="radio" class="btn-check" name="filters" id="Mflt1" autocomplete="off">
-					<label class="btn btn-outline-primary" for="Mflt1">Favorites</label>
+					<label class="btn btn-outline-secondary" for="Mflt1">Favorites</label>
 					
 					<input type="radio" class="btn-check" name="filters" id="Mflt2" autocomplete="off">
-					<label class="btn btn-outline-primary" for="Mflt2">Applied</label>
+					<label class="btn btn-outline-secondary" for="Mflt2">Applied</label>
 				</div>
 				<div class="btn-group" role="group">
-					<input type="radio" class="btn-check" name="filters" id="flt0" autocomplete="off" checked>
-					<label class="btn btn-outline-secondary" for="flt0">test1</label>
-					
-					<input type="radio" class="btn-check" name="filters" id="flt1" autocomplete="off">
-					<label class="btn btn-outline-secondary" for="flt1">test2</label>
-					
-					<input type="radio" class="btn-check" name="filters" id="flt2" autocomplete="off">
-					<label class="btn btn-outline-secondary" for="flt2">test23</label>
 				</div>
 			</section>
 			<div class="btn-group" role="group">
 				<input type="button" class="btn-check" id="flttrash" autocomplete="off" checked>
-				<label class="btn btn-danger" for="flttrash">trash</label>
+				<label class="btn btn-danger p-auto" for="flttrash" hidden>
+					<img src="icons/trash.png" alt="remove" style="height: 1.4rem;">
+				</label>
 				
-				<input type="button" class="btn-check" id="fltmenu" autocomplete="off">
-				<label class="btn btn-primary" for="fltmenu">menu</label>
+				<input type="button" class="btn-check" id="fltmenu" autocomplete="off"
+					data-bs-toggle="modal" data-bs-target="#filterModal">
+				<label class="btn btn-secondary p-0 " for="fltmenu">
+					<img src="icons/plus.png" alt="add" style="height: 2.4rem;">
+				</label>
 			</div>
 		</div>
 		<section class="container">
@@ -99,34 +96,195 @@
 			</section>
 		</section>
 	</main>
-	<main class="container" id="profile">
+	<main class="container" id="PROFILE">
 		<img class="mx-auto my-3 d-block" src="icons/user.png" width="125px" alt="">
 		<form class="container">
 			<div class="input-group mb-1">
 				<span class="input-group-text">Name</span>
-				<input type="text" class="form-control" placeholder="First">
-				<input type="text" class="form-control" placeholder="Last">
+				<input type="text" class="form-control" placeholder="First" disabled>
+				<input type="text" class="form-control" placeholder="Last" disabled>
 			</div>
 			<div class="input-group mb-1">
 				<span class="input-group-text">Email</span>
-				<input type="email" class="form-control" placeholder="example@email.com">
+				<input type="email" class="form-control" placeholder="example@email.com" disabled>
 			</div>
 			<div class="input-group mb-1">
 				<span class="input-group-text">Level</span>
-				<input type="email" class="form-control" placeholder="Highschool Sophmore">
+				<input type="email" class="form-control" placeholder="Highschool Sophmore" disabled>
 			</div>
 			<div class="input-group mb-1">
 				<span class="input-group-text">Intended School</span>
-				<input type="email" class="form-control" placeholder="George Mason">
+				<input type="email" class="form-control" placeholder="George Mason" disabled>
 			</div>
 			<div class="input-group mb-3">
 				<span class="input-group-text">Major</span>
-				<input type="email" class="form-control" placeholder="Bussiness">
+				<input type="email" class="form-control" placeholder="Bussiness" disabled>
 			</div>
-			<input type="button" class="btn btn-secondary" value="Edit">
-			<input type="button" class="btn btn-success" value="Save">
-			<input type="button" class="btn btn-danger" value="Cancel">			
+			<input type="button" class="btn btn-secondary" value="Edit" onclick="editProfile();">
+			<input type="button" class="btn btn-success" value="Save" onclick="saveProfile(true)" hidden>
+			<input type="button" class="btn btn-danger" value="Cancel" onclick="saveProfile(false)" hidden>			
 		</form>
 	</main>
+
+	<!-- Button to Open the Modal -->
+	<input type="button" id="SCHDATABTN" data-bs-toggle="modal" data-bs-target="#scholarshipModal" hidden>
+	<!-- Scholarship Modal -->
+	<figure class="modal" id="scholarshipModal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+
+				<!-- Modal Header -->
+				<div class="modal-header">
+					<h4 class="modal-title">Scholarship Title</h4>
+					<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+				</div>
+
+				<!-- Modal body -->
+				<div class="modal-body">
+					Info about the scholarship
+				</div>
+
+				<!-- Modal footer -->
+				<div class="modal-footer">
+					<!-- <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button> -->
+					<input type="button" class="btn btn-primary w-100" value="Apply">
+				</div>
+
+			</div>
+		</div>
+	</figure>
+	<!-- Filter Modal -->
+	<figure class="modal" id="filterModal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+			<!-- Modal Header -->
+			<div class="modal-header">
+				<h4 class="modal-title">New Filter</h4>
+				<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+			</div>
+			<!-- Modal body -->
+			<form class="modal-body" id="FILTERFORM">
+				<div class="input-group mb-2">
+					<span class="input-group-text">Filter Label</span>
+					<input type="text" class="form-control" name="filtername" id="flabelinp">
+				</div>
+				<div class="filter-btn-group" role="group" aria-label="Basic toggle button group">
+					<input type="checkbox" class="btn-check" name="renewable" id="renewchk" autocomplete="off">
+					<label class="btn btn-outline-secondary" for="renewchk">
+						<img src="icons/renewable.png" alt="renewable">
+					</label>
+					<input type="checkbox" class="btn-check" name="male" id="malechk" autocomplete="off">
+					<label class="btn btn-outline-secondary" for="malechk">
+						<img src="icons/male.png" alt="Male">
+					</label>
+					<input type="checkbox" class="btn-check" name="female" id="femalechk" autocomplete="off">
+					<label class="btn btn-outline-secondary" for="femalechk">
+						<img src="icons/female.png" alt="Female">
+					</label>
+					<input type="checkbox" class="btn-check" name="character" id="charchk" autocomplete="off">
+					<label class="btn btn-outline-secondary" for="charchk">
+						<img src="icons/character.png" alt="Character-Based">
+					</label>
+					<input type="checkbox" class="btn-check" name="merit" id="meritchk" autocomplete="off">
+					<label class="btn btn-outline-secondary" for="meritchk">
+						<img src="icons/merit.png" alt="Merit-Based">
+					</label>
+					<input type="checkbox" class="btn-check" name="need" id="needchk" autocomplete="off">
+					<label class="btn btn-outline-secondary" for="needchk">
+						<img src="icons/need.png" alt="Need-Based">
+					</label>
+					<input type="checkbox" class="btn-check" name="minority" id="minorchk" autocomplete="off">
+					<label class="btn btn-outline-secondary" for="minorchk">
+						<img src="icons/minority.png" alt="Minority-Based">
+					</label>
+				</div>
+				<label class="form-label">Range</label>
+				<div class="input-group">
+					<input type="number" class="form-control" name="rangef">
+					<span class="input-group-text">to</span>
+					<input type="number" class="form-control" name="ranget">
+				</div>
+				<label class="form-label">Open Dates</label>
+				<div class="input-group mb-3">
+					<select class="form-select" name="opens" aria-label="Default select example">
+						<option selected="" value="0">Opens</option>
+						<option value="1">January</option>
+						<option value="2">February</option>
+						<option value="3">March</option>
+						<option value="4">April</option>
+						<option value="5">May</option>
+						<option value="6">June</option>
+						<option value="7">July</option>
+						<option value="8">August</option>
+						<option value="9">September</option>
+						<option value="10">October</option>
+						<option value="11">November</option>
+						<option value="12">December</option>
+					</select>
+					<span class="input-group-text">to</span>
+					<select class="form-select" name="closes" aria-label="Default select example">
+						<option selected="" value="0">Due</option>
+						<option value="1">January</option>
+						<option value="2">February</option>
+						<option value="3">March</option>
+						<option value="4">April</option>
+						<option value="5">May</option>
+						<option value="6">June</option>
+						<option value="7">July</option>
+						<option value="8">August</option>
+						<option value="9">September</option>
+						<option value="10">October</option>
+						<option value="11">November</option>
+						<option value="12">December</option>
+					</select>
+				</div>
+				<div class="input-group mt-3 mb-3">
+					<select class="form-select" name="Level" aria-label="Default select example">
+						<option selected="">Level</option>
+						<option value="Middleschool Middle">Middle School</option>
+						<option value="Highschool High hs">High School</option>
+						<option value="Undergrad">Undergrad</option>
+						<option value="Masters PHD">Masters/PHD</option>
+					</select>
+					<select class="form-select" name="Year" aria-label="Default select example">
+						<option selected="">Year</option>
+						<option value="Freshman">Freshman</option>
+						<option value="Sophmore">Sophmore</option>
+						<option value="Junior">Junior</option>
+						<option value="Senior">Senior</option>
+					</select>
+					<select class="form-select" name="Major" aria-label="Default select example">
+						<option selected="">Major</option>
+						<option value="STEM Physics">Physics</option>
+						<option value="STEM Mathematics">Mathematics</option>
+						<option value="STEM Engineering">Engineering</option>
+						<option value="STEM IT">information Technology</option>
+					</select>
+				</div>
+			</form>
+			
+				<!-- Modal footer -->
+			<div class="modal-footer">
+				<div class="text-danger" id="filterInvalidFeedback"></div>
+				<input class="btn btn-primary" type="submit" form="filterForm" value="Add Filter" id="addfltbtn">
+			</div>
+			</div>
+		</div>
+	</figure>
+	<!-- Are You Sure Modal -->
+	<input type="button" id="SUREBTN" data-bs-toggle="modal" data-bs-target="#sureModal" hidden>
+	<figure class="modal" id="sureModal">
+		<div class="modal-dialog">
+			<div class="modal-content container p-3">
+				<h4 class="modal-title mx-auto">Are you sure you want to delete this filter</h4>
+				<div class="input-group p-3">
+					<span class="input-group-text w-50">
+						<button type="button" class="btn btn-close w-100" data-bs-dismiss="modal"></button>
+					</span>
+					<input type="button" class="btn btn-danger w-50" value="Delete">
+				</div>
+			</div>
+		</div>
+	</figure>
 </body>
 </html>
