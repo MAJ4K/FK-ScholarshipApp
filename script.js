@@ -7,6 +7,7 @@ const maintabs = document.getElementsByTagName('main');
 const profileForm = document.getElementById("PROFILE");
 var profile = JSON.parse(localStorage.getItem("profile"));
 
+const tabfiles = ['Sheet1.json']
 const schdatabtn = document.getElementById("SCHDATABTN");
 const scholarshipContainer = document.getElementById("CONTENT_CONTAINER").children;
 
@@ -24,6 +25,7 @@ var filterdata = {
 	id: 023,
 	filters: {}
 };
+
 
 for (const [key, value] of Object.entries(JSON.parse(localStorage.getItem("filters"))['filters'])) {
 	addSecondFilter(key,value);
