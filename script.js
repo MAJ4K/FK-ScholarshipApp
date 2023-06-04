@@ -9,7 +9,7 @@ var profile = JSON.parse(localStorage.getItem("profile"));
 
 const tabfiles = ['Sheet1.json']
 const schdatabtn = document.getElementById("SCHDATABTN");
-const scholarshipContainer = document.getElementById("CONTENT_CONTAINER").children;
+const scholarshipContainer = document.getElementById("CONTENT_CONTAINER");
 
 const filtermenu = document.getElementById("FILTERMENU").children;
 const filter = {
@@ -26,6 +26,11 @@ var filterdata = {
 	filters: {}
 };
 
+var sch_json = undefined;
+fetch(tabfiles[0])
+  .then((response) => response.json())
+  .then((json) => sch_json = json)
+	.then(() => cardsFetched());
 
 for (const [key, value] of Object.entries(JSON.parse(localStorage.getItem("filters"))['filters'])) {
 	addSecondFilter(key,value);
@@ -105,12 +110,6 @@ function addSecondFilter(filtername,data) {
 function filterScholarships() {}
 
 
-for (const child of scholarshipContainer) {
-	child.addEventListener('click', () => {
-		schdatabtn.click();
-	}); 
-}
-
 
 for (const btn of navbtns) {
 	btn.addEventListener('change', ()=>{
@@ -165,4 +164,40 @@ function restoreProfileValues() {
 		}
 	}
 	return true;
+}
+
+function cardsFetched() {
+	for (const item of sch_json) {
+		if (item["Title"] == "None") continue;
+		const title = item["Title"][1];
+		const amtWnd = (item["Amount"] != "None") ? item["Amount"] : "";
+		const qualifiers = "Qualifiers";
+		scholarshipContainer.innerHTML += `
+		<div class="content_card rounded-2 col-md-6">
+			<img src="icons/logo-king.png" alt="ph">
+			<div class="v_divider"></div>
+			<div>
+				<h6>${title}</h6>
+				<p>${amtWnd}</p>
+				<span>${qualifiers}</span>
+			</div>
+		</div>`;
+	}
+	addContentModal();
+}
+function addContentModal() {
+	for (const [i, child] of [...scholarshipContainer.children].entries()) {
+		const title = child.getElementsByTagName('h6')[0].innerText;
+		const amtWnd = child.getElementsByTagName('p')[0].innerText;
+		const qualifiers = child.getElementsByTagName('span')[0].innerHTML;
+		const link = sch_json[i]["Title"][0];
+		child.addEventListener('click', () => {
+			const scholarshipModal = document.getElementById('scholarshipModal');
+			scholarshipModal.getElementsByClassName('modal-title')[0].innerText = title;
+			scholarshipModal.getElementsByClassName('modal-body')[0].innerText = amtWnd;
+			scholarshipModal.getElementsByClassName('modal-body')[0].innerHTML += qualifiers;
+			scholarshipModal.getElementsByTagName('a')[0].href = link;
+			schdatabtn.click();
+		});
+	}
 }
