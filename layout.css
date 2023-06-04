@@ -105,11 +105,18 @@ main.active{display: block;}
 #FILTERMENU>section::-webkit-scrollbar{
 	display: none;
 }
+
+#CONTENT_CONTAINER{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 0.25em;
+}
 .content_card{
 	display: flex;
 	flex-direction: row;
-	border: var(--palette2) solid 1.5px;
+	border: var(--palette2) solid 0.0625em;
 	background-color: whitesmoke;
+	cursor: pointer;
 }
 .content_card>img{
 	height: auto; width: auto;
@@ -121,11 +128,21 @@ main.active{display: block;}
 	flex-direction: column;
 }
 .v_divider{width: 3px; background-color: var(--palette2);}
+.content_card span img{
+	width: 24px; height: 24px;
+}
 
 #FILTERFORM img{
  max-width: 2em; max-height: 2em;
 }
 
+#scholarshipModal .modal-body img{
+	width: 24px; height: 24px;
+}
+
+@media screen and (max-width: 800px) {
+	#CONTENT_CONTAINER{grid-template-columns: 1fr;}
+}
 @media screen and (max-width: 650px) {
 	#NAVIGATION {
 		grid-column: 1/-1; grid-row: 2;
