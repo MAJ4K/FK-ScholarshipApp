@@ -22,9 +22,10 @@ const filter = {
 	dismissbtn: document.getElementById('filterModal').getElementsByClassName('btn-close')[0]
 }
 var filterdata = {
-	id: 023,
+	id: 23,
 	filters: {}
 };
+filterdata = JSON.parse(localStorage.getItem("filters"));
 
 var sch_json = undefined;
 fetch(tabfiles[0])
@@ -38,12 +39,13 @@ for (const [key, value] of Object.entries(JSON.parse(localStorage.getItem("filte
 filter.aux[0].addEventListener('click', ()=>{
 	surebtn.click();
 });
-for (const btns of filter.primaries) {
-	btns.addEventListener('click', ()=>{
-		filter.aux[0].hidden = true;
-		surdelbtn.removeEventListener('click',{});
-	});
-}
+filter.primaries[3].addEventListener('click', ()=>{
+	scholarshipContainer.style.setProperty('--all_card_display','flex');
+	filter.aux[0].hidden = true;
+	surdelbtn.removeEventListener('click',{});
+	if (document.getElementById("FILTERSTYLE"))
+		document.head.removeChild(document.getElementById("FILTERSTYLE"));
+});
 filter.addbtn.addEventListener('click', ()=>{
 	const filtername = filter.form.getElementsByTagName('input')[0].value;
 	if (!filtername) {filter.formerrdiv.innerText = "Invalid Filter Name"; return;}
@@ -107,7 +109,20 @@ function addSecondFilter(filtername,data) {
 	filter.secondaries.appendChild(inp);
 	filter.secondaries.appendChild(lab);
 }
-function filterScholarships() {}
+function filterScholarships(data) {
+	scholarshipContainer.style.setProperty('--all_card_display','flex');
+	if (document.getElementById("FILTERSTYLE"))
+		document.head.removeChild(document.getElementById("FILTERSTYLE"));
+	const filterstyle = document.createElement('style');
+	filterstyle.id = "FILTERSTYLE";
+	document.head.appendChild(filterstyle);
+	for (const key of Object.keys(data)) {
+		if (data[key] === true) {
+			filterstyle.innerHTML += `.content_card[${key}]{display: flex;}` 
+			scholarshipContainer.style.setProperty('--all_card_display','none');
+		}
+	}
+}
 
 
 
@@ -167,63 +182,65 @@ function restoreProfileValues() {
 }
 
 function cardsFetched() {
-	for (const item of sch_json) {
+	const scholarshipModal = document.getElementById('scholarshipModal');
+	for (const item of sch_json){
+		const rnw = /Yes|yes/.test(item['Renewable']);//1
+		const chr = /Yes|yes/.test(item['Service/\ncharacter-based']);
+		const ack = /Yes|yes/.test(item['Academic Merit-based']);//3
+		const ned = /Yes|yes/.test(item['Need-based']);
+		const fml = /Female|female/.test(item['Gender-based']);//6
+		const mle = (fml) ? false : /Male|male/.test(item['Gender-based']);//5
+		const mnr = /Yes|yes/.test(item['Must identify as Black/ minority']);
+
+		const card = document.createElement('div');
 		if (item["Title"] == "None") continue;
 		const title = item["Title"][1];
+		const link = item["Title"][0];
 		const amtWnd = `
 			${(item["Amount"] != "None") ? item["Amount"] : ""}
 			${(item["Opens"] != "None" && item["Due"] != "None") ? item["Opens"] + "-" + item["Due"]  :
-			 (item["Opens"] != "None") ? item["Opens"] : 
-			 (item["Due"] != "None") ? item["Due"] : ""}
+				(item["Opens"] != "None") ? item["Opens"] : 
+				(item["Due"] != "None") ? item["Due"] : ""}
 		`;
-		
 		const qtemp = (condition,icon) => {
 			return (condition) ? `
 				<span class="badge bg-secondary">
-					<img src="icons/${icon}.png" alt="Service/Character-Based">
+					<img src="icons/${icon}.png" alt="${icon}">
 				</span>
-				`: ''
+				`: '';
 		};
-		const rnw = /Yes|yes/.test(item['Renewable']);//1
-		const chr = /Yes|yes/.test(item['Service/\r\ncharacter-based']);
-		const ack = /Yes|yes/.test(item['Academic Merit-based']);//3
-		const ned = /Yes|yes/.test(item['Need-based']);
-		const mle = /Male|male/.test(item['Gender-based']);//5
-		const fml = /Female|female/.test(item['Gender-based']);//6
-		const mnr = /Yes|yes/.test(item['Must identify as Black/ minority']);
 		const qualifiers = `
 			${qtemp(rnw,"renewable")} ${qtemp(chr,"character")} ${qtemp(ack,"merit")}
-			${qtemp(ned,"need")} ${qtemp(mle,"male")} ${qtemp(fml,"female")}
+			${qtemp(ned,"need")} ${(fml) ? qtemp(fml,"female") : qtemp(mle,"male")}
 			${qtemp(mnr,"minority")}
 		`;
 
-		scholarshipContainer.innerHTML += `
-		<div class="content_card rounded-2">
-			<img src="icons/logo-king.png" alt="ph">
-			<div class="v_divider"></div>
-			<div>
-				<h6>${title}</h6>
-				<p>${amtWnd}</p>
-				<footer>${qualifiers}</footer>
-			</div>
+		card.innerHTML = `
+		<img src="icons/logo-king.png" alt="ph">
+		<div class="v_divider"></div>
+		<div>
+			<h6>${title}</h6>
+			<p>${amtWnd}</p>
+			<footer>${qualifiers}</footer>
 		</div>`;
-	}
-	addContentModal();
-}
-function addContentModal() {
-	for (const [i, child] of [...scholarshipContainer.children].entries()) {
-		const title = child.getElementsByTagName('h6')[0].innerText;
-		const amtWnd = child.getElementsByTagName('p')[0].innerText;
-		const qualifiers = child.getElementsByTagName('footer')[0].innerHTML;
-		const link = sch_json[i]["Title"][0];
-		child.addEventListener('click', () => {
-			const scholarshipModal = document.getElementById('scholarshipModal');
+
+		(rnw) ? card.setAttribute('renewable',rnw):"";
+		(chr) ? card.setAttribute('character',chr):"";
+		(ack) ? card.setAttribute('merit',ack):"";
+		(ned) ? card.setAttribute('need',ned):"";
+		(mle) ? card.setAttribute('male',mle):"";
+		(fml) ? card.setAttribute('female',fml):"";
+		(mnr) ? card.setAttribute('minority',mnr):"";
+		card.classList.add("content_card","rounded-2");
+	
+		card.addEventListener('click', () => {
 			scholarshipModal.getElementsByClassName('modal-title')[0].innerText = title;
 			scholarshipModal.getElementsByClassName('modal-body')[0].innerText = amtWnd;
 			scholarshipModal.getElementsByClassName('modal-body')[0].innerHTML += qualifiers;
 			scholarshipModal.getElementsByTagName('a')[0].href = link;
 			schdatabtn.click();
 		});
+		scholarshipContainer.appendChild(card);
 	}
 }
 ///////////////////////////////////////////////////////////////////
@@ -234,146 +251,3 @@ function addContentModal() {
 ///////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////
-//functional operations
-// inp.addEventListener('click', ()=>{
-// 	delfltlab.hidden = false;
-// 	currentflt = [inp,lab];
-// 	const dat = JSON.parse(localStorage.getItem(data['filtername']));
-// 	const famt = [dat['rangef'],dat['ranget']];
-// 	const fMajor = dat['Major'].toLowerCase();
-// 	const fLevel = dat['Level'].toLowerCase();
-// 	const fYear = dat['Year'].toLowerCase();
-
-// 	for (const i in sch_json) {
-// 		var amt = sch_json[i]['Amount'].replace(/,|\$/g,'').split(/-|\//);
-// 		for(const l in amt)	amt[l] = parseInt(amt[l]);
-
-// 		if (famt[0] && famt[1]){
-// 			if(!amt[0]){
-// 				scholarshipContainer.children[i].hidden = true;
-// 				continue;
-// 			}
-// 			if (Math.max(amt[0],famt[0]) > Math.min(famt[1],amt[amt.length - 1])){
-// 				scholarshipContainer.children[i].hidden = true;
-// 				continue;
-// 			}
-
-// 		}
-
-// 		const rnw = /Yes|yes/.test(sch_json[i]['Renewable']);//1
-// 		const chr = /Yes|yes/.test(sch_json[i]['Service/\r\ncharacter-based']);
-// 		const ack = /Yes|yes/.test(sch_json[i]['Academic Merit-based']);//3
-// 		const ned = /Yes|yes/.test(sch_json[i]['Need-based']);
-// 		const mle = /Male|male/.test(sch_json[i]['Gender-based']);//5
-// 		const fml = /Female|female/.test(sch_json[i]['Gender-based']);//6
-// 		const mnr = /Yes|yes/.test(sch_json[i]['Must identify as Black/ minority']);
-		
-// 		const level = sch_json[i]['Grade Eligibility'];
-// 		const year = sch_json[i]['Grade Eligibility'];
-// 		const major = sch_json[i]['Major Type'];
-
-// 		const dates = {
-// 			"January" : 1,"February" :2,"March" :3,"April" :4,
-// 			"May" :5,"June" :6,"July" :7,"August" :8,
-// 			"September" :9,"October" :10,"November" :11,"December" :12
-// 		};
-// 		var opn = [dates[sch_json[i]['Opens']], parseInt(dat['opens'])];
-// 		var due = [dates[sch_json[i]['Due']], parseInt(dat['closes'])];
-		
-// 		if ((opn[1] && !due[1]) && (opn[1] != opn[0])){
-// 			scholarshipContainer.children[i].hidden = true;
-// 			continue;
-// 		}
-// 		if ((!opn[1] && due[1]) && (due[0] != due[1])){
-// 			scholarshipContainer.children[i].hidden = true;
-// 			continue;
-// 		}
-// 		if (opn[1] && due[1]){
-// 			if (opn[0] == undefined) opn[0] = due[0];
-// 			if (due[0] == undefined) due[0] = opn[0];
-// 			if (opn[0] > due[0]) due[0] += 12;
-// 			if (opn[1] > due[1]) due[1] += 12;
-// 			if (Math.max(...opn) > Math.min(...due)){
-// 				scholarshipContainer.children[i].hidden = true;
-// 				continue;
-// 			}
-// 		}
-
-// 		var schooling = [1,1,1];
-// 		if (fLevel){
-// 			if (!level) {
-// 				scholarshipContainer.children[i].hidden = true;
-// 				continue;
-// 			}
-// 			var words1 = fLevel.split(/\s+/g),
-// 			words2 = level.toLowerCase().split(/\s+/g);
-
-// 			for (var k = 0; k < words1.length; k++) {
-// 				for (var j = 0; j < words2.length; j++) {
-// 					if (words1[k] == words2[j]) {
-// 						schooling[0] = 1;
-// 					}
-// 				}
-// 			}
-// 		}
-// 		if (fMajor){
-// 			if (!level) {
-// 				scholarshipContainer.children[i].hidden = true;
-// 				continue;
-// 			}
-// 			var words1 = fMajor.split(/\s+/g),
-// 			words2 = major.toLowerCase().split(/\s+/g);
-
-// 			for (var k = 0; k < words1.length; k++) {
-// 				for (var j = 0; j < words2.length; j++) {
-// 					if (words1[k] == words2[j]) {
-// 						schooling[1] = 1;
-// 					}
-// 				}
-// 			}
-// 		}
-// 		if (fYear){
-// 			if (!level) {
-// 				scholarshipContainer.children[i].hidden = true;
-// 				continue;
-// 			}
-// 			var words1 = fYear.split(/\s+/g),
-// 			words2 = year.toLowerCase().split(/\s+/g);
-
-// 			for (var k = 0; k < words1.length; k++) {
-// 				for (var j = 0; j < words2.length; j++) {
-// 					if (words1[k] == words2[j]) {
-// 						schooling[2] = 1;
-// 					}
-// 				}
-// 			}
-// 		}
-// 		if ((Math.max(...schooling) == 0) && (fYear || fLevel || fMajor)){
-// 			scholarshipContainer.children[i].hidden = true;
-// 			continue;
-// 		}
-
-// 		if (dat['renewable'] || dat['character'] 
-// 		||dat['merit'] || dat['need'] || dat['male'] 
-// 		||dat['female'] || dat['minority']){
-// 			const idk = [
-// 				dat['renewable'] && rnw,
-// 				dat['character'] && chr,
-// 				dat['merit'] && ack,
-// 				dat['need'] && ned,
-// 				dat['male'] && mle,
-// 				dat['female'] && fml,
-// 				dat['minority'] && mnr
-// 			]
-// 			var condition = false;
-// 			for (const tst of idk) {
-// 				if (tst) condition = true;
-// 			}
-// 			if (!condition) {
-// 				scholarshipContainer.children[i].hidden = true;
-// 				continue;
-// 			};
-// 		}
-// 		scholarshipContainer.children[i].hidden = false;
-// 	} 
-// });*/

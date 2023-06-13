@@ -110,14 +110,31 @@ main.active{display: block;}
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 0.25em;
+	--all_card_display: flex;
+	--rnw_card_display: none;
+	--chr_card_display: none;
+	--ack_card_display: none;
+	--ned_card_display: none;
+	--mle_card_display: none;
+	--fml_card_display: none;
+	--mnr_card_display: none;
 }
 .content_card{
-	display: flex;
+	display: var(--all_card_display);
 	flex-direction: row;
 	border: var(--palette2) solid 0.0625em;
 	background-color: whitesmoke;
 	cursor: pointer;
 }
+/* 
+.content_card[renewable]{display: var(--rnw_card_display);}
+.content_card[character]{display: var(--chr_card_display);}
+.content_card[merit]{display: var(--ack_card_display);}
+.content_card[need]{display: var(--ned_card_display);}
+.content_card[male]{display: var(--mle_card_display);}
+.content_card[female]{display: var(--fml_card_display);}
+.content_card[minority]{display: var(--mnr_card_display);}
+*/
 .content_card>img{
 	height: auto; width: auto;
 	margin: auto 0;
@@ -136,8 +153,8 @@ main.active{display: block;}
  max-width: 2em; max-height: 2em;
 }
 
-#scholarshipModal .modal-body img{
-	width: 24px; height: 24px;
+#scholarshipModal img{
+	width: 2em; height: 2em;
 }
 
 @media screen and (max-width: 800px) {
