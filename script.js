@@ -5,6 +5,8 @@ for (const btn of navbtns) {
 		const relatedtab = document.getElementById(btn.value);
 		const contentTabs = document.getElementsByTagName('main');
 		for (const tab of contentTabs) tab.classList.remove('active');
+		for (const btn of navbtns) btn.classList.remove('active');
 		relatedtab.classList.add('active');
+		btn.classList.add('active');
 	});
 }
