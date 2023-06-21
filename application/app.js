@@ -33,9 +33,10 @@ fetch(tabfiles[0])
   .then((json) => sch_json = json)
 	.then(() => cardsFetched());
 
-for (const [key, value] of Object.entries(JSON.parse(localStorage.getItem("filters"))['filters'])) {
-	addSecondFilter(key,value);
-}
+if (localStorage.getItem("filters"))
+	for (const [key, value] of Object.entries(JSON.parse(localStorage.getItem("filters"))['filters'])) {
+		addSecondFilter(key,value);
+	}
 filter.aux[0].addEventListener('click', ()=>{
 	surebtn.click();
 });
@@ -171,7 +172,7 @@ function saveProfile(save) {
 }
 function restoreProfileValues() {
 	const profileItems = profileForm.getElementsByTagName('div');
-	if (Object.keys(profile).length === 0) return;
+	if (!profile||Object.keys(profile).length === 0) return;
 	for (const item of profileItems) {
 		const name = item.children[0].innerText;
 		for(const i in item.getElementsByTagName('input')){
@@ -205,7 +206,7 @@ function cardsFetched() {
 		const qtemp = (condition,icon) => {
 			return (condition) ? `
 				<span class="badge bg-secondary">
-					<img src="icons/${icon}.png" alt="${icon}">
+					<img src="/icons/${icon}.png" alt="${icon}">
 				</span>
 				`: '';
 		};
@@ -216,7 +217,7 @@ function cardsFetched() {
 		`;
 
 		card.innerHTML = `
-		<img src="icons/logo-king.png" alt="ph">
+		<img src="/icons/logo-king.png" alt="ph">
 		<div class="v_divider"></div>
 		<div>
 			<h6>${title}</h6>

@@ -1,0 +1,15 @@
+{
+	"name":"PWA Test",
+	"short_name":"PWA Test",
+	"start_url":".",
+	"background_color":"#6dcbd1",
+	"theme_color":"#003442",
+	"display":"standalone",
+	"icons":[
+		{
+			"src":"icons/fklogo.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	]
+}

@@ -1,0 +1,169 @@
+:root{
+	--palette0: #FFFDEB;
+	--palette1: #be902c;
+	--palette2: #0000006c;
+	--palette3: #4169e1;
+	--palette4: goldenrod;
+	--bs-secondary:var(--palette1);
+	--bs-secondary-rgb: 190,144,44;
+}
+
+.btn-primary {
+	--bs-btn-color: #fff;
+	--bs-btn-bg: var(--palette2);
+	--bs-btn-border-color: var(--palette2);
+	--bs-btn-hover-color: #fff;
+	--bs-btn-hover-bg: var(--palette2);
+	--bs-btn-hover-border-color: var(--palette2);
+	--bs-btn-focus-shadow-rgb: 130,138,145;
+	--bs-btn-active-color: #fff;
+	--bs-btn-active-bg: var(--palette2);
+	--bs-btn-active-border-color: var(--palette2);
+	--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}.btn-secondary {
+	--bs-btn-color: #fff;
+	--bs-btn-bg: var(--palette1);
+	--bs-btn-border-color: var(--palette1);
+	--bs-btn-hover-color: #fff;
+	--bs-btn-hover-bg: var(--palette4);
+	--bs-btn-hover-border-color: var(--palette4);
+	--bs-btn-focus-shadow-rgb: 130,138,145;
+	--bs-btn-active-color: #fff;
+	--bs-btn-active-bg: var(--palette4);
+	--bs-btn-active-border-color: var(--palette4);
+	--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.btn-outline-primary {
+	--bs-btn-color: var(--palette2);
+	--bs-btn-border-color: var(--palette2);
+	--bs-btn-hover-color: #fff;
+	--bs-btn-hover-bg: var(--palette2);
+	--bs-btn-hover-border-color: var(--palette2);
+	--bs-btn-focus-shadow-rgb: 108,117,125;
+	--bs-btn-active-color: #fff;
+	--bs-btn-active-bg: var(--palette2);
+	--bs-btn-active-border-color: var(--palette2);
+	--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.btn-outline-secondary {
+	--bs-btn-color: var(--palette4);
+	--bs-btn-border-color: var(--palette4);
+	--bs-btn-hover-color: #fff;
+	--bs-btn-hover-bg: var(--palette4);
+	--bs-btn-hover-border-color: var(--palette4);
+	--bs-btn-focus-shadow-rgb: 108,117,125;
+	--bs-btn-active-color: #fff;
+	--bs-btn-active-bg: var(--palette4);
+	--bs-btn-active-border-color: var(--palette4);
+	--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+*, *::after, *::before {
+	box-sizing: border-box;
+	padding: 0; margin: 0;
+	text-decoration: none;
+	outline: none;
+	border: none;
+}
+
+body{
+	width: 100vw; height: 100vh;
+	background-color: var(--palette0);
+	overflow: hidden;
+	display: grid;
+	grid-template-columns: auto 1fr;
+	grid-template-rows: 1fr auto;
+}
+
+#NAVIGATION {
+	grid-column: 1; grid-row: 1/-1;
+	display: flex;
+	flex-direction: column;
+}
+
+main {
+	grid-column: 2;
+	grid-row: 1/-1;
+	display: none;
+	overflow-y: scroll;
+}
+main.active{display: block;}
+
+#FILTERMENU {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+#FILTERMENU>section{
+	display: flex;
+	flex-direction: row;
+	gap: 0.5em;
+	overflow-x: scroll;
+	overflow-y: none;
+	scroll-behavior: smooth;
+}
+#FILTERMENU>section::-webkit-scrollbar{
+	display: none;
+}
+
+#CONTENT_CONTAINER{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 0.25em;
+	--all_card_display: flex;
+	--rnw_card_display: none;
+	--chr_card_display: none;
+	--ack_card_display: none;
+	--ned_card_display: none;
+	--mle_card_display: none;
+	--fml_card_display: none;
+	--mnr_card_display: none;
+}
+.content_card{
+	display: var(--all_card_display);
+	flex-direction: row;
+	border: var(--palette2) solid 0.0625em;
+	background-color: whitesmoke;
+	cursor: pointer;
+}
+/* 
+.content_card[renewable]{display: var(--rnw_card_display);}
+.content_card[character]{display: var(--chr_card_display);}
+.content_card[merit]{display: var(--ack_card_display);}
+.content_card[need]{display: var(--ned_card_display);}
+.content_card[male]{display: var(--mle_card_display);}
+.content_card[female]{display: var(--fml_card_display);}
+.content_card[minority]{display: var(--mnr_card_display);}
+*/
+.content_card>img{
+	height: auto; width: auto;
+	margin: auto 0;
+}
+.content_card>div:last-child{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.v_divider{width: 3px; background-color: var(--palette2);}
+.content_card span img{
+	width: 24px; height: 24px;
+}
+
+#FILTERFORM img{
+ max-width: 2em; max-height: 2em;
+}
+
+#scholarshipModal img{
+	width: 2em; height: 2em;
+}
+
+@media screen and (max-width: 800px) {
+	#CONTENT_CONTAINER{grid-template-columns: 1fr;}
+}
+@media screen and (max-width: 650px) {
+	#NAVIGATION {
+		grid-column: 1/-1; grid-row: 2;
+		flex-direction: row;
+	}
+	main { grid-column: 1/-1; grid-row: 1;}
+}
