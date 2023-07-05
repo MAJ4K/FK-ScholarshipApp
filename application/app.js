@@ -10,6 +10,8 @@ var profile = JSON.parse(localStorage.getItem("profile"));
 const tabfiles = ['Sheet1.json']
 const schdatabtn = document.getElementById("SCHDATABTN");
 const scholarshipContainer = document.getElementById("CONTENT_CONTAINER");
+const modalfavorite = document.getElementById('SCHOLARSHIPFAVORITE');
+const modalapplied= document.getElementById('SCHOLARSHIAPPLIED');
 
 const filtermenu = document.getElementById("FILTERMENU").children;
 const filter = {
@@ -25,7 +27,8 @@ var filterdata = {
 	id: 23,
 	filters: {}
 };
-filterdata = JSON.parse(localStorage.getItem("filters"));
+if(JSON.parse(localStorage.getItem("filters")))
+	filterdata = JSON.parse(localStorage.getItem("filters"));
 
 var sch_json = undefined;
 fetch(tabfiles[0])
@@ -40,8 +43,10 @@ if (localStorage.getItem("filters"))
 filter.aux[0].addEventListener('click', ()=>{
 	surebtn.click();
 });
+filter.primaries[1].addEventListener('click',()=>{filterFavorite()});
+filter.primaries[2].addEventListener('click',()=>{filterApplied()});
 filter.primaries[3].addEventListener('click', ()=>{
-	scholarshipContainer.style.setProperty('--all_card_display','flex');
+	scholarshipContainer.style.setProperty('--all_card_display','grid');
 	filter.aux[0].hidden = true;
 	surdelbtn.removeEventListener('click',{});
 	if (document.getElementById("FILTERSTYLE"))
@@ -110,18 +115,52 @@ function addSecondFilter(filtername,data) {
 	filter.secondaries.appendChild(inp);
 	filter.secondaries.appendChild(lab);
 }
+function filterFavorite() {
+	scholarshipContainer.style.setProperty('--all_card_display','grid');
+	if (document.getElementById("FILTERSTYLE"))
+		document.head.removeChild(document.getElementById("FILTERSTYLE"));
+	const filterstyle = document.createElement('style');
+	filterstyle.id = "FILTERSTYLE";
+	document.head.appendChild(filterstyle);	
+	filterstyle.innerHTML = `.content_card[favorite="true"]{display: grid;}` 
+	scholarshipContainer.style.setProperty('--all_card_display','none');
+}
+function filterApplied() {
+	scholarshipContainer.style.setProperty('--all_card_display','grid');
+	if (document.getElementById("FILTERSTYLE"))
+		document.head.removeChild(document.getElementById("FILTERSTYLE"));
+	const filterstyle = document.createElement('style');
+	filterstyle.id = "FILTERSTYLE";
+	document.head.appendChild(filterstyle);	
+	filterstyle.innerHTML = `.content_card[applied="true"]{display: grid;}` 
+	scholarshipContainer.style.setProperty('--all_card_display','none');
+}
 function filterScholarships(data) {
-	scholarshipContainer.style.setProperty('--all_card_display','flex');
+	scholarshipContainer.style.setProperty('--all_card_display','grid');
 	if (document.getElementById("FILTERSTYLE"))
 		document.head.removeChild(document.getElementById("FILTERSTYLE"));
 	const filterstyle = document.createElement('style');
 	filterstyle.id = "FILTERSTYLE";
 	document.head.appendChild(filterstyle);
+
+	// const geo = /Geography/.test(data['Geography']);
+	const glg = /Level/.test(data['Level']);
+	const maj = /Major/.test(data['Major']);
+	// const elg = /Special/.test(data['Special']);
+
+	//  
+	const primefilter = `${(glg) ? '':`[gradee="${data['Level']}"]`}${(maj) ? '':`[major="${data['Major']}"]`}`;
+	var styleApplied = false;
 	for (const key of Object.keys(data)) {
 		if (data[key] === true) {
-			filterstyle.innerHTML += `.content_card[${key}]{display: flex;}` 
+			styleApplied = true;
+			filterstyle.innerHTML += `.content_card[${key}]${primefilter}{display: grid;}` 
 			scholarshipContainer.style.setProperty('--all_card_display','none');
 		}
+	}
+	if (!styleApplied) {
+		filterstyle.innerHTML += `.content_card${primefilter}{display: grid;}`
+		scholarshipContainer.style.setProperty('--all_card_display','none');
 	}
 }
 
@@ -182,6 +221,19 @@ function restoreProfileValues() {
 	return true;
 }
 
+var schModalCard = undefined;
+modalfavorite.addEventListener('click',()=>{
+	if (schModalCard.getAttribute('favorite') == "true")
+		schModalCard.setAttribute('favorite',false);
+	else
+		schModalCard.setAttribute('favorite',true);
+});
+modalapplied.addEventListener('click',()=>{
+	if (schModalCard.getAttribute('applied') == "true")
+		schModalCard.setAttribute('applied',false);
+	else
+		schModalCard.setAttribute('applied',true);
+});
 function cardsFetched() {
 	const scholarshipModal = document.getElementById('scholarshipModal');
 	for (const item of sch_json){
@@ -193,10 +245,17 @@ function cardsFetched() {
 		const mle = (fml) ? false : /Male|male/.test(item['Gender-based']);//5
 		const mnr = /Yes|yes/.test(item['Must identify as Black/ minority']);
 
+		const gpa = /N\/A|None|none/.test(item['GPA']);
+		const geo = /N\/A|None|none/.test(item['Geography']);
+		const elg = /N\/A|None|none/.test(item['Special Eligibility']);
+		const glg = /N\/A|None|none/.test(item['Grade Eligibility']);
+		const maj = /General|general|None|none/.test(item['Major Type']);
+
 		const card = document.createElement('div');
 		if (item["Title"] == "None") continue;
 		const title = item["Title"][1];
 		const link = item["Title"][0];
+		const img = "/icons/logo-king.png";
 		const amtWnd = `
 			${(item["Amount"] != "None") ? item["Amount"] : ""}
 			${(item["Opens"] != "None" && item["Due"] != "None") ? item["Opens"] + "-" + item["Due"]  :
@@ -210,14 +269,28 @@ function cardsFetched() {
 				</span>
 				`: '';
 		};
+		const etemp = (condition,text) => {
+			return (!condition) ? `
+				<span class="badge bg-secondary">
+					${text}
+				</span>
+				`: '';
+		};
 		const qualifiers = `
 			${qtemp(rnw,"renewable")} ${qtemp(chr,"character")} ${qtemp(ack,"merit")}
 			${qtemp(ned,"need")} ${(fml) ? qtemp(fml,"female") : qtemp(mle,"male")}
-			${qtemp(mnr,"minority")}
+			${qtemp(mnr,"minority")} ${etemp(gpa,item['GPA'] + " GPA")} ${etemp(geo,item['Geography'])}
+			${etemp(elg,item['Special Eligibility'])} ${etemp(glg,item['Grade Eligibility'])}
+			${etemp(maj,item['Major Type'])}
 		`;
 
 		card.innerHTML = `
-		<img src="/icons/logo-king.png" alt="ph">
+		<span class="overlay">
+			<img src="/icons/activeStar.png" class="fav">
+			<img src="/icons/activeSave.png" class="sav">
+			<img src="/icons/trash.png" class="err">
+		</span>
+		<img src="${img}" alt="ph">
 		<div class="v_divider"></div>
 		<div>
 			<h6>${title}</h6>
@@ -225,6 +298,9 @@ function cardsFetched() {
 			<footer>${qualifiers}</footer>
 		</div>`;
 
+		card.setAttribute('favorite',false);
+		card.setAttribute('applied',false);
+		card.setAttribute('error',false);
 		(rnw) ? card.setAttribute('renewable',rnw):"";
 		(chr) ? card.setAttribute('character',chr):"";
 		(ack) ? card.setAttribute('merit',ack):"";
@@ -232,9 +308,16 @@ function cardsFetched() {
 		(mle) ? card.setAttribute('male',mle):"";
 		(fml) ? card.setAttribute('female',fml):"";
 		(mnr) ? card.setAttribute('minority',mnr):"";
+		(!geo) ? card.setAttribute('Geography',item['Geography']):"";
+		(!glg) ? card.setAttribute('GradeE',item['Grade Eligibility']):"";
+		(!maj) ? card.setAttribute('Major',item['Major Type']):"";
+		(!elg) ? card.setAttribute('Special',item['Special Eligibility']):"";
+		
 		card.classList.add("content_card","rounded-2");
+		if (!isValidUrl(link)) card.setAttribute('error',true);
 	
 		card.addEventListener('click', () => {
+			schModalCard = card;
 			scholarshipModal.getElementsByClassName('modal-title')[0].innerText = title;
 			scholarshipModal.getElementsByClassName('modal-body')[0].innerText = amtWnd;
 			scholarshipModal.getElementsByClassName('modal-body')[0].innerHTML += qualifiers;
@@ -252,3 +335,11 @@ function cardsFetched() {
 ///////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////
+function isValidUrl(string) {
+  try {
+    new URL(string);
+    return true;
+  } catch (err) {
+    return false;
+  }
+}

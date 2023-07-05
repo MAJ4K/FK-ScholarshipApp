@@ -110,7 +110,7 @@ main.active{display: block;}
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 0.25em;
-	--all_card_display: flex;
+	--all_card_display: grid;
 	--rnw_card_display: none;
 	--chr_card_display: none;
 	--ack_card_display: none;
@@ -121,7 +121,8 @@ main.active{display: block;}
 }
 .content_card{
 	display: var(--all_card_display);
-	flex-direction: row;
+	grid-template-columns: auto auto 1fr;
+	grid-template-rows: 1fr;
 	border: var(--palette2) solid 0.0625em;
 	background-color: whitesmoke;
 	cursor: pointer;
@@ -138,16 +139,43 @@ main.active{display: block;}
 .content_card>img{
 	height: auto; width: auto;
 	margin: auto 0;
+	grid-row: 1; grid-column: 1;
 }
 .content_card>div:last-child{
 	width: 100%;
 	display: flex;
 	flex-direction: column;
+	grid-row: 1; grid-column: 3;
+	
 }
-.v_divider{width: 3px; background-color: var(--palette2);}
-.content_card span img{
-	width: 24px; height: 24px;
+.v_divider{
+	grid-row: 1; grid-column: 2;
+	width: 3px; background-color: var(--palette2);}
+.content_card footer {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 0.2rem;
 }
+.content_card span.badge {
+	height: 32px; 
+	display: flex;
+	align-items: center;
+	max-width: 10rem;
+	overflow: hidden;
+}
+.content_card span.badge img{ height: 24px; }
+.content_card>.overlay{
+	display: flex;
+	flex-direction: column;
+	align-items: end;
+	grid-column: 1/-1;
+	grid-row: 1/-1;
+}
+.content_card>.overlay>*{display: none;}
+.content_card[error="true"]>.overlay>.err{display: block;}
+.content_card[favorite="true"]>.overlay>.fav{display: block;}
+.content_card[applied="true"]>.overlay>.sav{display: block;}
 
 #FILTERFORM img{
  max-width: 2em; max-height: 2em;
