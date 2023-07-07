@@ -3,38 +3,42 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Scholarships</title>
-	<link rel="shortcut icon" href="icons/logo-king.png" type="image/png">
-	<link rel="stylesheet" href="layout.css">
-	<script defer src="script.js"></script>
+	<title>Table Feed</title>
+	<style>
+		*{
+			box-sizing: border-box;
+			text-decoration: none;
+			margin: 0; padding: 0;
+			outline: none;
+			border: none;
+		}
+		body{
+			width: 100vw; height: 100vh;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			gap: 0.25em;
+		}
+		figure{
+			background-color: black;
+			padding: 1em;
+			border-radius: 1em;
+			max-width: 95vw;
+			width: 40em;
+		}
+		button{
+			border-radius: 1em;
+		}
+	</style>
 </head>
 <body>
-	<nav>
-		<input type="button" value="FirstTab">
-		<input type="button" value="SecondTab">
-		<input type="button" value="INPUTDATA" class="active">
-		<input type="button" value="Users">
-	</nav>
-	<span>
-		<main id="FirstTab" style="background-color: wheat;">
-			<span><img src="icons/female.png" alt="Advertisements"></span>
-			<div class="stickymenu">This is a test filter area</div>
-			<section class="n-column" n=2>
-				<div class="card">
-					<img src="icons/logo-king.png" alt="placeholder">
-					<div>
-						<h4>Hello World</h4>
-						<p>Hello World</p>
-						the card data goes here
-					</div>
-				</div>
-			</section>
-		</main>
-		<main id="SecondTab" style="background-color: gray;"></main>
-		<main id="INPUTDATA" class="active">
-			<img src="icons/plus.svg" width="100px" height="100px">
-		</main>
-		<main id="Users"></main>
-	</span>
+	<figure>
+		<h1>Log In</h1>
+		<p title="Hello"></p>
+		<button class="" type="button">
+			<img src="icons/logo-king.png"> FutureKings
+		</button>
+	</figure>
 </body>
 </html>
