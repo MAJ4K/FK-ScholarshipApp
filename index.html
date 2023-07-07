@@ -3,6 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="manifest" href="manifest.json">
+	<meta name="theme-color" content="#003442">
+	<link rel="shortcut icon" href="icons/logo-king.png" type="image/png">
+	<link rel="apple-touch-icon" href="icons/logo-king.png">
 	<title>Table Feed</title>
 	<style>
 		*{
@@ -19,26 +24,66 @@
 			align-items: center;
 			justify-content: center;
 			gap: 0.25em;
+			background-color: #ddd;
 		}
 		figure{
-			background-color: black;
 			padding: 1em;
 			border-radius: 1em;
 			max-width: 95vw;
 			width: 40em;
 		}
-		button{
-			border-radius: 1em;
+		button{cursor: pointer;}
+		p[title]{
+			height: 0.2em; width: 100%;
+			margin: 0.25em 0;
+			background-color: rgba(0, 0, 0, 0.546);
 		}
+		.frosted{
+			background: linear-gradient(135, #ffffff1a, #fff0);
+			-webkit-backdrop-filter: blur(10px);
+			
+			border: 1px solid #ffffff2e;
+			box-shadow: 0 8px 32px 0 #0000005e;
+		}
+		.loginBtn{
+			width: 100%;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+			font-size: larger;
+			font-weight: bolder;
+			border-radius: 100rem;
+			padding: 0.25em 0;
+		}
+		.loginBtn img{height: 3rem;}
 	</style>
 </head>
 <body>
-	<figure>
+	<figure class="frosted">
 		<h1>Log In</h1>
 		<p title="Hello"></p>
-		<button class="" type="button">
-			<img src="icons/logo-king.png"> FutureKings
+		<button class="loginBtn" type="button">
+			<img src="icons/fklogo.png"> FutureKings
 		</button>
 	</figure>
 </body>
+	<script>
+		if ('serviceWorker' in navigator){
+			navigator.serviceWorker.register(`sw.js`)
+			.then(registration =>{
+				console.log("SW Registered", registration);
+			}).catch (err => {
+				console.error("SW Registration Failed!", err);
+			});
+		} else {
+			console.error("This app is not supported");
+		}
+
+		const loginBtns = document.getElementsByClassName('loginBtn');
+
+		loginBtns[0].addEventListener('click', ()=>{
+			console.log("hello from index");
+		});
+	</script>
 </html>
