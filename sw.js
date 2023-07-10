@@ -42,17 +42,3 @@ firebase.initializeApp(config);
 function loginToApp() {
 	console.log("hello from sw.js");
 }
-/*
-<script src="https://www.gstatic.com/firebasejs/8.0/firebase.js"></script>
-<script>
-	const config = {
-		apiKey: "AIzaSyDbID1v5io7yGBCh57hX1GxPcpHDBJdpW0",
-		authDomain: "fk-tempfeedapp.firebaseapp.com",
-		projectId: "fk-tempfeedapp",
-		storageBucket: "fk-tempfeedapp.appspot.com",
-		messagingSenderId: "999171750618",
-		appId: "1:999171750618:web:b9ed2bad07e2f8051c03e3"
-	};
-	firebase.initializeApp(config);
-</script>
-*/
