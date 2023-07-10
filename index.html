@@ -41,6 +41,7 @@
 		.frosted{
 			background: linear-gradient(135, #ffffff1a, #fff0);
 			-webkit-backdrop-filter: blur(10px);
+			backdrop-filter: blur(10px);
 			
 			border: 1px solid #ffffff2e;
 			box-shadow: 0 8px 32px 0 #0000005e;
@@ -73,6 +74,9 @@
 			navigator.serviceWorker.register(`sw.js`)
 			.then(registration =>{
 				console.log("SW Registered", registration);
+				executeLogin = () => {
+					registration.active.postMessage({type:"login",data:"login yo"});
+				};
 			}).catch (err => {
 				console.error("SW Registration Failed!", err);
 			});
@@ -82,8 +86,11 @@
 
 		const loginBtns = document.getElementsByClassName('loginBtn');
 
+		var executeLogin = undefined;
+
 		loginBtns[0].addEventListener('click', ()=>{
-			console.log("hello from index");
+			executeLogin();
 		});
+
 	</script>
 </html>
