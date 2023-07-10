@@ -70,12 +70,18 @@
 	</figure>
 </body>
 	<script>
+		const messageHandler = {
+			logedIn: toApp,
+		}
 		if ('serviceWorker' in navigator){
 			navigator.serviceWorker.register(`sw.js`)
 			.then(registration =>{
 				console.log("SW Registered", registration);
 				executeLogin = () => {
 					registration.active.postMessage({type:"login",data:"login yo"});
+					registration.active.onmessage = (e) => {
+						messageHandler[e.data.type](e.data.data);
+					};
 				};
 			}).catch (err => {
 				console.error("SW Registration Failed!", err);
@@ -88,9 +94,12 @@
 
 		var executeLogin = undefined;
 
-		loginBtns[0].addEventListener('click', ()=>{
-			executeLogin();
-		});
+		loginBtns[0].addEventListener('click', ()=>{executeLogin();});
+
+		function toApp(event) {
+			console.log(event)
+			// window.location.href = "application/app.html"
+		}
 
 	</script>
 </html>
