@@ -173,6 +173,7 @@ main.active{display: block;}
 	grid-row: 1/-1;
 }
 .content_card>.overlay>*{display: none;}
+.content_card>.overlay img{height: 32px;}
 .content_card[error="true"]>.overlay>.err{display: block;}
 .content_card[favorite="true"]>.overlay>.fav{display: block;}
 .content_card[applied="true"]>.overlay>.sav{display: block;}

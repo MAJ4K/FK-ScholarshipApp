@@ -253,8 +253,8 @@ function cardsFetched() {
 
 		const card = document.createElement('div');
 		if (item["Title"] == "None") continue;
-		const title = item["Title"][1];
-		const link = item["Title"][0];
+		const title = item["Title"];
+		const link = item["link"];
 		const img = "/icons/logo-king.png";
 		const amtWnd = `
 			${(item["Amount"] != "None") ? item["Amount"] : ""}
@@ -288,7 +288,7 @@ function cardsFetched() {
 		<span class="overlay">
 			<img src="/icons/activeStar.png" class="fav">
 			<img src="/icons/activeSave.png" class="sav">
-			<img src="/icons/trash.png" class="err">
+			<img src="/icons/warning.png" class="err">
 		</span>
 		<img src="${img}" alt="ph">
 		<div class="v_divider"></div>

@@ -1,9 +1,7 @@
 [
     {
-        "Title": [
-            "https://www.google.com/url?q=https://www.hamiltonscholars.org/program-overview&sa=D&ust=1606097319637000&usg=AFQjCNEeL2l_C92NooDi-OE4gmRvM2vF6Q",
-            "Alexander Hamilton Scholars"
-        ],
+        "Title": "Alexander Hamilton Scholars",
+        "link": "https://www.google.com/url?q=https://www.hamiltonscholars.org/program-overview&sa=D&ust=1606097319637000&usg=AFQjCNEeL2l_C92NooDi-OE4gmRvM2vF6Q",
         "Opens": "November",
         "Due": "January",
         "Amount": "500",
@@ -20,10 +18,8 @@
         "Must identify as Black/ minority": "None"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://www.chameleonjohn.com/scholarship/universities/apply&sa=D&ust=1606097319638000&usg=AFQjCNH0Fmw_efVQ3oAnNyNqAwUukdLsNg",
-            "Annual USA University Student Scholarship"
-        ],
+        "Title": "Annual USA University Student Scholarship",
+        "link": "https://www.google.com/url?q=https://www.chameleonjohn.com/scholarship/universities/apply&sa=D&ust=1606097319638000&usg=AFQjCNH0Fmw_efVQ3oAnNyNqAwUukdLsNg",
         "Opens": "None",
         "Due": "January",
         "Amount": "1000",
@@ -40,10 +36,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://learnmore.scholarsapply.org/thebaxterfoundation/&sa=D&ust=1606097319639000&usg=AFQjCNFUUqDX6DIycV91fEjJML4uiXO7Lw",
-            "Baxter International Foundation"
-        ],
+        "Title": "Baxter International Foundation",
+        "link": "https://www.google.com/url?q=https://learnmore.scholarsapply.org/thebaxterfoundation/&sa=D&ust=1606097319639000&usg=AFQjCNFUUqDX6DIycV91fEjJML4uiXO7Lw",
         "Opens": "None",
         "Due": "January",
         "Amount": "1500",
@@ -60,10 +54,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://www.reaganfoundation.org/education/scholarship-programs/ge-reagan-foundation-scholarship-program/&sa=D&ust=1606097319640000&usg=AFQjCNH1xz7_mVhEPNhjw8JKyYDrRPJeBg",
-            "GE-Reagan Foundation Scholarship Program"
-        ],
+        "Title": "GE-Reagan Foundation Scholarship Program",
+        "link": "https://www.google.com/url?q=https://www.reaganfoundation.org/education/scholarship-programs/ge-reagan-foundation-scholarship-program/&sa=D&ust=1606097319640000&usg=AFQjCNH1xz7_mVhEPNhjw8JKyYDrRPJeBg",
         "Opens": "None",
         "Due": "January",
         "Amount": "40000",
@@ -80,10 +72,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            null,
-            "Profile in Courage Essay Contest"
-        ],
+        "Title": "Profile in Courage Essay Contest",
+        "link": null,
         "Opens": "None",
         "Due": "January",
         "Amount": "$500-$10,000",
@@ -100,10 +90,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://www.ronbrown.org/&sa=D&ust=1606097319641000&usg=AFQjCNGFRnvzoHeohW-1B_rXONsWax2Sow",
-            "Ron Brown Scholar Program"
-        ],
+        "Title": "Ron Brown Scholar Program",
+        "link": "https://www.google.com/url?q=https://www.ronbrown.org/&sa=D&ust=1606097319641000&usg=AFQjCNGFRnvzoHeohW-1B_rXONsWax2Sow",
         "Opens": "None",
         "Due": "January",
         "Amount": "40000",
@@ -120,10 +108,8 @@
         "Must identify as Black/ minority": "Yes"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://womensleadership.kpmg.us/charitable/application-overview.html&sa=D&ust=1606097319642000&usg=AFQjCNGBy0sT2K7lp-jTxvBg96IUy6hphg",
-            "KPMG Future Leaders Program"
-        ],
+        "Title": "KPMG Future Leaders Program",
+        "link": "https://www.google.com/url?q=https://womensleadership.kpmg.us/charitable/application-overview.html&sa=D&ust=1606097319642000&usg=AFQjCNGBy0sT2K7lp-jTxvBg96IUy6hphg",
         "Opens": "None",
         "Due": "January",
         "Amount": "10000",
@@ -140,10 +126,8 @@
         "Must identify as Black/ minority": "no"
     },
     {
-        "Title": [
-            null,
-            "Leta Hollingworth Scholarhip"
-        ],
+        "Title": "Leta Hollingworth Scholarhip",
+        "link": null,
         "Opens": "None",
         "Due": "January",
         "Amount": "1000",
@@ -160,10 +144,8 @@
         "Must identify as Black/ minority": "no"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://pointfoundation.org/thepoint/scholarship/&sa=D&ust=1606097319644000&usg=AFQjCNEtM3UL-YZrLumPv2uiSrN0pCKsiA",
-            "Point Foundation Scholaship"
-        ],
+        "Title": "Point Foundation Scholaship",
+        "link": "https://www.google.com/url?q=https://pointfoundation.org/thepoint/scholarship/&sa=D&ust=1606097319644000&usg=AFQjCNEtM3UL-YZrLumPv2uiSrN0pCKsiA",
         "Opens": "November",
         "Due": "January",
         "Amount": "None",
@@ -180,10 +162,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=http://www.mensafoundation.org/what-we-do/scholarships/us-scholarship-process/&sa=D&ust=1606097319645000&usg=AFQjCNEbhHy-uOl7OGlY3lPbYNFIyVHDpg",
-            "Mensa Foundation U.S. Scholarship"
-        ],
+        "Title": "Mensa Foundation U.S. Scholarship",
+        "link": "https://www.google.com/url?q=http://www.mensafoundation.org/what-we-do/scholarships/us-scholarship-process/&sa=D&ust=1606097319645000&usg=AFQjCNEbhHy-uOl7OGlY3lPbYNFIyVHDpg",
         "Opens": "2022-10-07 00:00:00",
         "Due": "January",
         "Amount": "None",
@@ -200,10 +180,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://zphib1920.org/eblast/2019/april/Founders-Centennial-Scholarship-packet.pdf&sa=D&ust=1606097319646000&usg=AFQjCNF5pzFwikj_WRQLi5L-pXThDvmjoA",
-            "Zeta Phi Beta Founder's Centennial Scholarship"
-        ],
+        "Title": "Zeta Phi Beta Founder's Centennial Scholarship",
+        "link": "https://www.google.com/url?q=https://zphib1920.org/eblast/2019/april/Founders-Centennial-Scholarship-packet.pdf&sa=D&ust=1606097319646000&usg=AFQjCNF5pzFwikj_WRQLi5L-pXThDvmjoA",
         "Opens": "August",
         "Due": "January",
         "Amount": "100000",
@@ -220,10 +198,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=http://www.apiasf.org/scholarship_apiasf.html&sa=D&ust=1606097319646000&usg=AFQjCNGFNyGhMuJ5zoC6iuyMkQ3DxlZ0qA",
-            "APIASF Scholarship Program"
-        ],
+        "Title": "APIASF Scholarship Program",
+        "link": "https://www.google.com/url?q=http://www.apiasf.org/scholarship_apiasf.html&sa=D&ust=1606097319646000&usg=AFQjCNGFNyGhMuJ5zoC6iuyMkQ3DxlZ0qA",
         "Opens": "September",
         "Due": "January",
         "Amount": "$2,500-$20,000",
@@ -240,10 +216,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=http://www.deltaetaboule.com/index.php/about-delta-eta-boule-foundation/scholarship-program-a/scholarship-program&sa=D&ust=1606097319647000&usg=AFQjCNEP6mCChNc_pNhaHz0TU-c772CWtQ",
-            "Delta Eta Boule"
-        ],
+        "Title": "Delta Eta Boule",
+        "link": "https://www.google.com/url?q=http://www.deltaetaboule.com/index.php/about-delta-eta-boule-foundation/scholarship-program-a/scholarship-program&sa=D&ust=1606097319647000&usg=AFQjCNEP6mCChNc_pNhaHz0TU-c772CWtQ",
         "Opens": "None",
         "Due": "January",
         "Amount": "2500",
@@ -260,10 +234,8 @@
         "Must identify as Black/ minority": "Yes"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://coolidgescholars.org/about/&sa=D&ust=1606097319648000&usg=AFQjCNHfIoZfLc0eTaMssBmO6r9pftasnw",
-            "Calvin Coolidge Scholarship"
-        ],
+        "Title": "Calvin Coolidge Scholarship",
+        "link": "https://www.google.com/url?q=https://coolidgescholars.org/about/&sa=D&ust=1606097319648000&usg=AFQjCNHfIoZfLc0eTaMssBmO6r9pftasnw",
         "Opens": "October",
         "Due": "January",
         "Amount": "full costs",
@@ -280,10 +252,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            null,
-            "Lamkin Foundation Scholarship"
-        ],
+        "Title": "Lamkin Foundation Scholarship",
+        "link": null,
         "Opens": "None",
         "Due": "February",
         "Amount": "1000",
@@ -300,10 +270,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://www.jackierobinson.org/&sa=D&ust=1606097319650000&usg=AFQjCNE_GU2Ao1x3OT24fomdDDn7QlTXhA",
-            "Jackie Robinson Foundation"
-        ],
+        "Title": "Jackie Robinson Foundation",
+        "link": "https://www.google.com/url?q=https://www.jackierobinson.org/&sa=D&ust=1606097319650000&usg=AFQjCNE_GU2Ao1x3OT24fomdDDn7QlTXhA",
         "Opens": "None",
         "Due": "February",
         "Amount": "30000",
@@ -320,10 +288,8 @@
         "Must identify as Black/ minority": "Yes"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://bjconline.org/contest/&sa=D&ust=1606097319651000&usg=AFQjCNH3s5FSNgLTBXYDtoRgVJIbonkIcg",
-            "Religious Liberty"
-        ],
+        "Title": "Religious Liberty",
+        "link": "https://www.google.com/url?q=https://bjconline.org/contest/&sa=D&ust=1606097319651000&usg=AFQjCNH3s5FSNgLTBXYDtoRgVJIbonkIcg",
         "Opens": "None",
         "Due": "February",
         "Amount": "None",
@@ -340,10 +306,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://www.reaganfoundation.org/education/scholarship-programs/ronald-reagan-presidential-foundation-scholars-program/&sa=D&ust=1606097319651000&usg=AFQjCNFihtrM1rJniXyaUU1AClSehBJvzQ",
-            "Ronald Reagan Presidential Foundation Scholars"
-        ],
+        "Title": "Ronald Reagan Presidential Foundation Scholars",
+        "link": "https://www.google.com/url?q=https://www.reaganfoundation.org/education/scholarship-programs/ronald-reagan-presidential-foundation-scholars-program/&sa=D&ust=1606097319651000&usg=AFQjCNFihtrM1rJniXyaUU1AClSehBJvzQ",
         "Opens": "None",
         "Due": "February",
         "Amount": "$1-10,000",
@@ -360,10 +324,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://nshssfoundation.org/scholarships/hollister-co-anti-bullying-scholarship-program/&sa=D&ust=1606097319652000&usg=AFQjCNGJEb2tjkZEcnrH5L-cxw9zr61wXQ",
-            "Hollister Co Anti-Bullying Scholarhsip"
-        ],
+        "Title": "Hollister Co Anti-Bullying Scholarhsip",
+        "link": "https://www.google.com/url?q=https://nshssfoundation.org/scholarships/hollister-co-anti-bullying-scholarship-program/&sa=D&ust=1606097319652000&usg=AFQjCNGJEb2tjkZEcnrH5L-cxw9zr61wXQ",
         "Opens": "None",
         "Due": "February",
         "Amount": "2500",
@@ -380,10 +342,8 @@
         "Must identify as Black/ minority": "None"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://www.hsf.net/scholarship&sa=D&ust=1606097319653000&usg=AFQjCNHvaGhGKJmdlHv3sGP1Pn-HlWdA3Q",
-            "HSF Scholarhsip"
-        ],
+        "Title": "HSF Scholarhsip",
+        "link": "https://www.google.com/url?q=https://www.hsf.net/scholarship&sa=D&ust=1606097319653000&usg=AFQjCNHvaGhGKJmdlHv3sGP1Pn-HlWdA3Q",
         "Opens": "None",
         "Due": "February",
         "Amount": "$500-5,000",
@@ -400,10 +360,8 @@
         "Must identify as Black/ minority": "None"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://spirit.prudential.com/about/program-overview?lp%3D14869&sa=D&ust=1606097319654000&usg=AFQjCNGMCkbsH3Mwr5Bdp_h9KO-ZQgzmew",
-            "Prudential Spirit of Community Awards"
-        ],
+        "Title": "Prudential Spirit of Community Awards",
+        "link": "https://www.google.com/url?q=https://spirit.prudential.com/about/program-overview?lp%3D14869&sa=D&ust=1606097319654000&usg=AFQjCNGMCkbsH3Mwr5Bdp_h9KO-ZQgzmew",
         "Opens": "None",
         "Due": "February",
         "Amount": "1-5,000",
@@ -420,10 +378,8 @@
         "Must identify as Black/ minority": "Yes"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=http://www.cifstate.org/parents-students/awards_and_scholarships/scholar-athlete&sa=D&ust=1606097319654000&usg=AFQjCNGVtrdonlBzVFgMNBUW2mnLwqQCsw",
-            "CIF Scholar-Athlete of the Year"
-        ],
+        "Title": "CIF Scholar-Athlete of the Year",
+        "link": "https://www.google.com/url?q=http://www.cifstate.org/parents-students/awards_and_scholarships/scholar-athlete&sa=D&ust=1606097319654000&usg=AFQjCNGVtrdonlBzVFgMNBUW2mnLwqQCsw",
         "Opens": "None",
         "Due": "February",
         "Amount": "5000",
@@ -440,10 +396,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=http://www.niada.com/foundation_scholarship.php&sa=D&ust=1606097319655000&usg=AFQjCNG-h063x-aXrN4lYaUqzuMY7Bdvtg",
-            "NIADA Foundation Regional Scholarship"
-        ],
+        "Title": "NIADA Foundation Regional Scholarship",
+        "link": "https://www.google.com/url?q=http://www.niada.com/foundation_scholarship.php&sa=D&ust=1606097319655000&usg=AFQjCNG-h063x-aXrN4lYaUqzuMY7Bdvtg",
         "Opens": "Now",
         "Due": "February",
         "Amount": "3500",
@@ -460,10 +414,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://www.pasociety.com/scholarships&sa=D&ust=1606097319656000&usg=AFQjCNHI3O_MOb-SmU9d8vH0vaywRq7YAw",
-            "Benjamin Franklin scholar award"
-        ],
+        "Title": "Benjamin Franklin scholar award",
+        "link": "https://www.google.com/url?q=https://www.pasociety.com/scholarships&sa=D&ust=1606097319656000&usg=AFQjCNHI3O_MOb-SmU9d8vH0vaywRq7YAw",
         "Opens": "January",
         "Due": "February",
         "Amount": "None",
@@ -480,10 +432,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://www.livemasscholarship.com/%23how&sa=D&ust=1606097319657000&usg=AFQjCNE6tamQQ1XTuJrysLOu1FNoqUcdCw",
-            "Live Mas Scholarshhip"
-        ],
+        "Title": "Live Mas Scholarshhip",
+        "link": "https://www.google.com/url?q=https://www.livemasscholarship.com/%23how&sa=D&ust=1606097319657000&usg=AFQjCNE6tamQQ1XTuJrysLOu1FNoqUcdCw",
         "Opens": "January",
         "Due": "February",
         "Amount": "25000",
@@ -500,10 +450,8 @@
         "Must identify as Black/ minority": "no"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=http://www.vrg.org/student/scholar.htm&sa=D&ust=1606097319657000&usg=AFQjCNGBAl3XzWhR7cqX8ub74xx4QPopSw",
-            "Vegetarian Resource Group Scholarship"
-        ],
+        "Title": "Vegetarian Resource Group Scholarship",
+        "link": "https://www.google.com/url?q=http://www.vrg.org/student/scholar.htm&sa=D&ust=1606097319657000&usg=AFQjCNGBAl3XzWhR7cqX8ub74xx4QPopSw",
         "Opens": "August",
         "Due": "February",
         "Amount": "$5,000/$10,000",
@@ -520,10 +468,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://www.liveoutloud.info/programs/scholarship/&sa=D&ust=1606097319658000&usg=AFQjCNGpHFIAgWnnjPmLAebsYlRK8Xcu8A",
-            "Live Out Loud Educational Scholarship"
-        ],
+        "Title": "Live Out Loud Educational Scholarship",
+        "link": "https://www.google.com/url?q=https://www.liveoutloud.info/programs/scholarship/&sa=D&ust=1606097319658000&usg=AFQjCNGpHFIAgWnnjPmLAebsYlRK8Xcu8A",
         "Opens": "None",
         "Due": "March",
         "Amount": "10000",
@@ -540,10 +486,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://www.microsoft.com/en-us/diversity/programs/microsoftdisabilityscholarship.aspx&sa=D&ust=1606097319659000&usg=AFQjCNGCH6UWBIJHBRouxzRv7oiPCkHbaw",
-            "Microsoft disAbility Scholarship"
-        ],
+        "Title": "Microsoft disAbility Scholarship",
+        "link": "https://www.google.com/url?q=https://www.microsoft.com/en-us/diversity/programs/microsoftdisabilityscholarship.aspx&sa=D&ust=1606097319659000&usg=AFQjCNGCH6UWBIJHBRouxzRv7oiPCkHbaw",
         "Opens": "February",
         "Due": "March",
         "Amount": "5000",
@@ -560,10 +504,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://www.ncsecufoundation.org/Projects/Scholarships.html&sa=D&ust=1606097319660000&usg=AFQjCNFDnsBzKTfeTCBkhyISAHOz8KvA8A",
-            "SECU Scholarhship"
-        ],
+        "Title": "SECU Scholarhship",
+        "link": "https://www.google.com/url?q=https://www.ncsecufoundation.org/Projects/Scholarships.html&sa=D&ust=1606097319660000&usg=AFQjCNFDnsBzKTfeTCBkhyISAHOz8KvA8A",
         "Opens": "None",
         "Due": "March",
         "Amount": "10000",
@@ -580,10 +522,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=http://www.ustafoundation.com/grants_scholarships/rosalind_p_walter_college_scholarship/&sa=D&ust=1606097319660000&usg=AFQjCNGU_OxpYAi9ENOe2O3iMZart8UH-g",
-            "Rosalind P. Walter College Scholarship"
-        ],
+        "Title": "Rosalind P. Walter College Scholarship",
+        "link": "https://www.google.com/url?q=http://www.ustafoundation.com/grants_scholarships/rosalind_p_walter_college_scholarship/&sa=D&ust=1606097319660000&usg=AFQjCNGU_OxpYAi9ENOe2O3iMZart8UH-g",
         "Opens": "Now",
         "Due": "March",
         "Amount": "2500",
@@ -600,10 +540,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=http://www.deltafoundation.net/charitable-engagement-services/scholarships-and-internships&sa=D&ust=1606097319661000&usg=AFQjCNFYJSjwakOZHom0YOhH81M-QowLNg",
-            "Delta Foundation/HBCU"
-        ],
+        "Title": "Delta Foundation/HBCU",
+        "link": "https://www.google.com/url?q=http://www.deltafoundation.net/charitable-engagement-services/scholarships-and-internships&sa=D&ust=1606097319661000&usg=AFQjCNFYJSjwakOZHom0YOhH81M-QowLNg",
         "Opens": "Now",
         "Due": "March",
         "Amount": "Varies",
@@ -620,10 +558,8 @@
         "Must identify as Black/ minority": "Yes"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://www.hsf.net/scholarship&sa=D&ust=1606097319662000&usg=AFQjCNHZbziAbh04MvSuApQagB1DYohc3g",
-            "Hispanic Scholarship Fund"
-        ],
+        "Title": "Hispanic Scholarship Fund",
+        "link": "https://www.google.com/url?q=https://www.hsf.net/scholarship&sa=D&ust=1606097319662000&usg=AFQjCNHZbziAbh04MvSuApQagB1DYohc3g",
         "Opens": "January",
         "Due": "March",
         "Amount": "$500-$5,000",
@@ -640,10 +576,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://www.acs.org/content/acs/en/funding-and-awards/scholarships/acsscholars/apply.html&sa=D&ust=1606097319663000&usg=AFQjCNENfFL4B3Ye3LffMwl18ICYNsyVRg",
-            "American Chemical Society Scholars Program"
-        ],
+        "Title": "American Chemical Society Scholars Program",
+        "link": "https://www.google.com/url?q=https://www.acs.org/content/acs/en/funding-and-awards/scholarships/acsscholars/apply.html&sa=D&ust=1606097319663000&usg=AFQjCNENfFL4B3Ye3LffMwl18ICYNsyVRg",
         "Opens": "2020-11-01 00:00:00",
         "Due": "March",
         "Amount": "5000",
@@ -660,10 +594,8 @@
         "Must identify as Black/ minority": "Yes"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=http://www.aabe.org/index.php?component%3Dpages%26id%3D4&sa=D&ust=1606097319663000&usg=AFQjCNHXvmuCx_mZm2HF6QQp3jIweN0O4w",
-            "American Association of Blacks in Energy"
-        ],
+        "Title": "American Association of Blacks in Energy",
+        "link": "https://www.google.com/url?q=http://www.aabe.org/index.php?component%3Dpages%26id%3D4&sa=D&ust=1606097319663000&usg=AFQjCNHXvmuCx_mZm2HF6QQp3jIweN0O4w",
         "Opens": "None",
         "Due": "March",
         "Amount": "None",
@@ -680,10 +612,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://online.foundationsource.com/public/home/splawnscholarship&sa=D&ust=1606097319664000&usg=AFQjCNElPgQ3rxKDSGc-owlEkIZ1VV0e5w",
-            "Don and Roy Splawn Charitable Foundation West Scholarship Grant Program"
-        ],
+        "Title": "Don and Roy Splawn Charitable Foundation West Scholarship Grant Program",
+        "link": "https://www.google.com/url?q=https://online.foundationsource.com/public/home/splawnscholarship&sa=D&ust=1606097319664000&usg=AFQjCNElPgQ3rxKDSGc-owlEkIZ1VV0e5w",
         "Opens": "None",
         "Due": "March/Sep",
         "Amount": "$250-2,000",
@@ -700,10 +630,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://feea.org/our-programs/scholarships/%23scholar&sa=D&ust=1606097319665000&usg=AFQjCNHyEVBbz8zWUyd85JdNf4BQy7LoRw",
-            "Federal Emplyees Education and Assitance"
-        ],
+        "Title": "Federal Emplyees Education and Assitance",
+        "link": "https://www.google.com/url?q=https://feea.org/our-programs/scholarships/%23scholar&sa=D&ust=1606097319665000&usg=AFQjCNHyEVBbz8zWUyd85JdNf4BQy7LoRw",
         "Opens": "August",
         "Due": "March",
         "Amount": "$1-5,000",
@@ -720,10 +648,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=http://www.gmff.foundation/scholarships/&sa=D&ust=1606097319665000&usg=AFQjCNF22g6iHsZ1twA_d6O6c8PZjj_mAg",
-            "The Last Dollar Scholarship"
-        ],
+        "Title": "The Last Dollar Scholarship",
+        "link": "https://www.google.com/url?q=http://www.gmff.foundation/scholarships/&sa=D&ust=1606097319665000&usg=AFQjCNF22g6iHsZ1twA_d6O6c8PZjj_mAg",
         "Opens": "December",
         "Due": "March",
         "Amount": "varies",
@@ -740,10 +666,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://www.moneysolver.org/scholarships/st-patricks-day-scholarship/?utm_source%3Dscholarshipscom%26utm_medium%3Dlisting%26utm_campaign%3Dmarch&sa=D&ust=1606097319666000&usg=AFQjCNEli4Gq1VeWmCLKqfrZc0s_iCeZIQ",
-            "St Patrick's Day scholarship"
-        ],
+        "Title": "St Patrick's Day scholarship",
+        "link": "https://www.google.com/url?q=https://www.moneysolver.org/scholarships/st-patricks-day-scholarship/?utm_source%3Dscholarshipscom%26utm_medium%3Dlisting%26utm_campaign%3Dmarch&sa=D&ust=1606097319666000&usg=AFQjCNEli4Gq1VeWmCLKqfrZc0s_iCeZIQ",
         "Opens": "Now",
         "Due": "March",
         "Amount": "1000",
@@ -760,10 +684,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://tmcf.org/our-scholarships/current-scholarships/tmcf-kellogg-company-fund-scholarship/11540&sa=D&ust=1606097319667000&usg=AFQjCNHonuTsFyXefJaoZ4DKNpP7C_uJ6w",
-            "TMCF Kellog Company Fund Scholarship"
-        ],
+        "Title": "TMCF Kellog Company Fund Scholarship",
+        "link": "https://www.google.com/url?q=https://tmcf.org/our-scholarships/current-scholarships/tmcf-kellogg-company-fund-scholarship/11540&sa=D&ust=1606097319667000&usg=AFQjCNHonuTsFyXefJaoZ4DKNpP7C_uJ6w",
         "Opens": "None",
         "Due": "March",
         "Amount": "7000",
@@ -780,10 +702,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=http://www.engebretsonfoundation.org/application.html&sa=D&ust=1606097319668000&usg=AFQjCNEugXCThY9lhmK64VeMaI6bChRBlg",
-            "Engebretson Scholarship"
-        ],
+        "Title": "Engebretson Scholarship",
+        "link": "https://www.google.com/url?q=http://www.engebretsonfoundation.org/application.html&sa=D&ust=1606097319668000&usg=AFQjCNEugXCThY9lhmK64VeMaI6bChRBlg",
         "Opens": "Now",
         "Due": "March",
         "Amount": "5000",
@@ -800,10 +720,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=http://www.afsa.org/essay-contest&sa=D&ust=1606097319668000&usg=AFQjCNEGqOc_AAnBZehfHF3D7XHsgBNq-Q",
-            "American Foreign Service Scholarship"
-        ],
+        "Title": "American Foreign Service Scholarship",
+        "link": "https://www.google.com/url?q=http://www.afsa.org/essay-contest&sa=D&ust=1606097319668000&usg=AFQjCNEGqOc_AAnBZehfHF3D7XHsgBNq-Q",
         "Opens": "None",
         "Due": "March",
         "Amount": "2500",
@@ -820,10 +738,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://www.microsoft.com/en-us/diversity/programs/blacks-scholarships.aspx&sa=D&ust=1606097319669000&usg=AFQjCNHH73stSzFyvtRhetpo-sM1kGK4fQ",
-            "Blacks at Microsoft"
-        ],
+        "Title": "Blacks at Microsoft",
+        "link": "https://www.google.com/url?q=https://www.microsoft.com/en-us/diversity/programs/blacks-scholarships.aspx&sa=D&ust=1606097319669000&usg=AFQjCNHH73stSzFyvtRhetpo-sM1kGK4fQ",
         "Opens": "None",
         "Due": "March",
         "Amount": "5000",
@@ -840,10 +756,8 @@
         "Must identify as Black/ minority": "Yes"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://www.pge.com/en_US/residential/in-your-community/education-programs/grants-and-scholarships/bright-mind-scholarships/bright-mind-scholarships.page&sa=D&ust=1606097319670000&usg=AFQjCNGzzusRvwLEKcWjfMsC4APOwYDpeQ",
-            "Better Together STEM Scholarsip"
-        ],
+        "Title": "Better Together STEM Scholarsip",
+        "link": "https://www.google.com/url?q=https://www.pge.com/en_US/residential/in-your-community/education-programs/grants-and-scholarships/bright-mind-scholarships/bright-mind-scholarships.page&sa=D&ust=1606097319670000&usg=AFQjCNGzzusRvwLEKcWjfMsC4APOwYDpeQ",
         "Opens": "None",
         "Due": "March",
         "Amount": "$1-10,000",
@@ -860,10 +774,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://www.tmcf.org/our-scholarships/current-scholarships/tmcf-walmart-foundation-first-generation-scholarship/14292&sa=D&ust=1606097319671000&usg=AFQjCNHd_48X9DPBlUT7fZ9WaNPmxuaBiQ",
-            "Thurgood Marshall College Fund and Walmart"
-        ],
+        "Title": "Thurgood Marshall College Fund and Walmart",
+        "link": "https://www.google.com/url?q=https://www.tmcf.org/our-scholarships/current-scholarships/tmcf-walmart-foundation-first-generation-scholarship/14292&sa=D&ust=1606097319671000&usg=AFQjCNHd_48X9DPBlUT7fZ9WaNPmxuaBiQ",
         "Opens": "None",
         "Due": "March",
         "Amount": "6200",
@@ -880,10 +792,8 @@
         "Must identify as Black/ minority": "Yes"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://www.dccollegesuccessfoundation.org/scholarships/l1000/eligibility&sa=D&ust=1606097319672000&usg=AFQjCNHuheu85TJ5JdqOe_pn_AveOFbtJw",
-            "DC Leadership 1000 Scholarship"
-        ],
+        "Title": "DC Leadership 1000 Scholarship",
+        "link": "https://www.google.com/url?q=https://www.dccollegesuccessfoundation.org/scholarships/l1000/eligibility&sa=D&ust=1606097319672000&usg=AFQjCNHuheu85TJ5JdqOe_pn_AveOFbtJw",
         "Opens": "Now",
         "Due": "March",
         "Amount": "5000",
@@ -900,10 +810,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=http://communityfoundation.org/scholarships/apply/&sa=D&ust=1606097319673000&usg=AFQjCNGdrMc4XWMYEh6cl4W9w3fLUGffGQ",
-            "Community Foundation of Western MA"
-        ],
+        "Title": "Community Foundation of Western MA",
+        "link": "https://www.google.com/url?q=http://communityfoundation.org/scholarships/apply/&sa=D&ust=1606097319673000&usg=AFQjCNGdrMc4XWMYEh6cl4W9w3fLUGffGQ",
         "Opens": "January",
         "Due": "March",
         "Amount": "8000",
@@ -920,10 +828,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://www.gallerycollection.com/ScholarshipOfficialRules.pdf&sa=D&ust=1606097319673000&usg=AFQjCNHUj75c8VpgBxwpSKbTnrFgjHNg0Q",
-            "Create-A-Greeting-Card Scholarhsip Contest"
-        ],
+        "Title": "Create-A-Greeting-Card Scholarhsip Contest",
+        "link": "https://www.google.com/url?q=https://www.gallerycollection.com/ScholarshipOfficialRules.pdf&sa=D&ust=1606097319673000&usg=AFQjCNHUj75c8VpgBxwpSKbTnrFgjHNg0Q",
         "Opens": "May",
         "Due": "March",
         "Amount": "10000",
@@ -940,10 +846,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://akaeaf.org/scholarships&sa=D&ust=1606097319674000&usg=AFQjCNHZJdDZ9g76hZZnEbYWm0-NGrlIog",
-            "AKA Foundation"
-        ],
+        "Title": "AKA Foundation",
+        "link": "https://www.google.com/url?q=https://akaeaf.org/scholarships&sa=D&ust=1606097319674000&usg=AFQjCNHZJdDZ9g76hZZnEbYWm0-NGrlIog",
         "Opens": "None",
         "Due": "April",
         "Amount": "2500",
@@ -960,10 +864,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=http://www.naacpldf.org/herbert-lehman-education-fund-scholarship&sa=D&ust=1606097319675000&usg=AFQjCNEJlvlE0CoIHguUXw8Iuy_n2KCAwQ",
-            "Herbert Lehman Education Fund"
-        ],
+        "Title": "Herbert Lehman Education Fund",
+        "link": "https://www.google.com/url?q=http://www.naacpldf.org/herbert-lehman-education-fund-scholarship&sa=D&ust=1606097319675000&usg=AFQjCNEJlvlE0CoIHguUXw8Iuy_n2KCAwQ",
         "Opens": "None",
         "Due": "April",
         "Amount": "8000",
@@ -980,10 +882,8 @@
         "Must identify as Black/ minority": "Yes"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://npg.org/2019-npg-essay-scholarship-contest.html&sa=D&ust=1606097319676000&usg=AFQjCNGvhu3ktKXSY22tO4IZA4QlDB_8gw",
-            "NPG Essay Contest"
-        ],
+        "Title": "NPG Essay Contest",
+        "link": "https://www.google.com/url?q=https://npg.org/2019-npg-essay-scholarship-contest.html&sa=D&ust=1606097319676000&usg=AFQjCNGvhu3ktKXSY22tO4IZA4QlDB_8gw",
         "Opens": "None",
         "Due": "April",
         "Amount": "$750-2,000",
@@ -1000,10 +900,8 @@
         "Must identify as Black/ minority": "Yes"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://www.penguinrandomhouse.com/signet-essay-contest/&sa=D&ust=1606097319677000&usg=AFQjCNEQlBo1E_biCiSU-oMOzs1XOdMHMA",
-            "Signet Classics Student Scholarship contest"
-        ],
+        "Title": "Signet Classics Student Scholarship contest",
+        "link": "https://www.google.com/url?q=https://www.penguinrandomhouse.com/signet-essay-contest/&sa=D&ust=1606097319677000&usg=AFQjCNEQlBo1E_biCiSU-oMOzs1XOdMHMA",
         "Opens": "None",
         "Due": "April",
         "Amount": "1000",
@@ -1020,10 +918,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://www.wealthbyhealth.org/scholarship-programs&sa=D&ust=1606097319678000&usg=AFQjCNFTcshaVu3GpM1Z892YAXIkqEu_hQ",
-            "Steps for Change Scholarship"
-        ],
+        "Title": "Steps for Change Scholarship",
+        "link": "https://www.google.com/url?q=https://www.wealthbyhealth.org/scholarship-programs&sa=D&ust=1606097319678000&usg=AFQjCNFTcshaVu3GpM1Z892YAXIkqEu_hQ",
         "Opens": "None",
         "Due": "April",
         "Amount": "2000",
@@ -1040,10 +936,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://www.cbcfinc.org/scholarships/&sa=D&ust=1606097319678000&usg=AFQjCNGTcY4lfeaMNR7OZqGIAOAo0Tnm3Q",
-            "CBC Spouses Essay contest"
-        ],
+        "Title": "CBC Spouses Essay contest",
+        "link": "https://www.google.com/url?q=https://www.cbcfinc.org/scholarships/&sa=D&ust=1606097319678000&usg=AFQjCNGTcY4lfeaMNR7OZqGIAOAo0Tnm3Q",
         "Opens": "February",
         "Due": "April",
         "Amount": "$500-1,500",
@@ -1060,10 +954,8 @@
         "Must identify as Black/ minority": "Yes"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=http://janetlogandailyfoundation.org/application.asp&sa=D&ust=1606097319687000&usg=AFQjCNHYYl5TbAmvyJF94Jee_l2umbMsvQ",
-            "Janet Logan Daily Foundation Scholarship"
-        ],
+        "Title": "Janet Logan Daily Foundation Scholarship",
+        "link": "https://www.google.com/url?q=http://janetlogandailyfoundation.org/application.asp&sa=D&ust=1606097319687000&usg=AFQjCNHYYl5TbAmvyJF94Jee_l2umbMsvQ",
         "Opens": "February",
         "Due": "April",
         "Amount": "10000",
@@ -1080,10 +972,8 @@
         "Must identify as Black/ minority": "no"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://www.sportsunlimitedinc.com/scholarship.html&sa=D&ust=1606097319688000&usg=AFQjCNGPEIqDD-awEwBk8C08rF0HHg3ijQ",
-            "Sports Unlimited Scholarship"
-        ],
+        "Title": "Sports Unlimited Scholarship",
+        "link": "https://www.google.com/url?q=https://www.sportsunlimitedinc.com/scholarship.html&sa=D&ust=1606097319688000&usg=AFQjCNGPEIqDD-awEwBk8C08rF0HHg3ijQ",
         "Opens": "Now",
         "Due": "April",
         "Amount": "1000",
@@ -1100,10 +990,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://www.cbcfinc.org/scholarships/&sa=D&ust=1606097319689000&usg=AFQjCNFgVae7W_S66v7aH7zyq1PajeiUmg",
-            "CBC Spouses Performing Arts scholarship"
-        ],
+        "Title": "CBC Spouses Performing Arts scholarship",
+        "link": "https://www.google.com/url?q=https://www.cbcfinc.org/scholarships/&sa=D&ust=1606097319689000&usg=AFQjCNFgVae7W_S66v7aH7zyq1PajeiUmg",
         "Opens": "None",
         "Due": "April",
         "Amount": "None",
@@ -1120,10 +1008,8 @@
         "Must identify as Black/ minority": "Yes"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://www.cbcfinc.org/scholarships/&sa=D&ust=1606097319690000&usg=AFQjCNGV0VuCW1oiT0M21zOcINg60BN_EQ",
-            "CBC Spouses Visual Arts scholarship"
-        ],
+        "Title": "CBC Spouses Visual Arts scholarship",
+        "link": "https://www.google.com/url?q=https://www.cbcfinc.org/scholarships/&sa=D&ust=1606097319690000&usg=AFQjCNGV0VuCW1oiT0M21zOcINg60BN_EQ",
         "Opens": "None",
         "Due": "April",
         "Amount": "None",
@@ -1140,10 +1026,8 @@
         "Must identify as Black/ minority": "Yes"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://www.cbcfinc.org/scholarships/&sa=D&ust=1606097319691000&usg=AFQjCNFvK0Jyhesa5qSqv4wS0VpqR6yo7A",
-            "CBC Spouse Education scholarship"
-        ],
+        "Title": "CBC Spouse Education scholarship",
+        "link": "https://www.google.com/url?q=https://www.cbcfinc.org/scholarships/&sa=D&ust=1606097319691000&usg=AFQjCNFvK0Jyhesa5qSqv4wS0VpqR6yo7A",
         "Opens": "None",
         "Due": "April",
         "Amount": "None",
@@ -1160,10 +1044,8 @@
         "Must identify as Black/ minority": "Yes"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://www.cbcfinc.org/scholarships/&sa=D&ust=1606097319692000&usg=AFQjCNGqwPQOw0sl_lk64W8_sZTXH6B5PA",
-            "United Health Louis Stokes scholarship"
-        ],
+        "Title": "United Health Louis Stokes scholarship",
+        "link": "https://www.google.com/url?q=https://www.cbcfinc.org/scholarships/&sa=D&ust=1606097319692000&usg=AFQjCNGqwPQOw0sl_lk64W8_sZTXH6B5PA",
         "Opens": "None",
         "Due": "April",
         "Amount": "None",
@@ -1180,10 +1062,8 @@
         "Must identify as Black/ minority": "Yes"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://www.shawncartersf.com/&sa=D&ust=1606097319693000&usg=AFQjCNFC7cypggsoe9q2kUHcNoqjZGfNRQ",
-            "Shawn Carter Foundation"
-        ],
+        "Title": "Shawn Carter Foundation",
+        "link": "https://www.google.com/url?q=https://www.shawncartersf.com/&sa=D&ust=1606097319693000&usg=AFQjCNFC7cypggsoe9q2kUHcNoqjZGfNRQ",
         "Opens": "2020-04-01 00:00:00",
         "Due": "2020-04-30 00:00:00",
         "Amount": "$1,000-1,500",
@@ -1200,10 +1080,8 @@
         "Must identify as Black/ minority": "Yes"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://www.bottlingerlaw.com/scholarship/&sa=D&ust=1606097319694000&usg=AFQjCNF2DQT-lV_qSqWxrIpqDRh5eztAsw",
-            "Bottlinger Law"
-        ],
+        "Title": "Bottlinger Law",
+        "link": "https://www.google.com/url?q=https://www.bottlingerlaw.com/scholarship/&sa=D&ust=1606097319694000&usg=AFQjCNF2DQT-lV_qSqWxrIpqDRh5eztAsw",
         "Opens": "Now",
         "Due": "2020-04-15 00:00:00",
         "Amount": "1000",
@@ -1220,10 +1098,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://www.dibellalawoffice.com/scholarship/requirements.html&sa=D&ust=1606097319695000&usg=AFQjCNHcKnlTyuKS8_Us90MwioZBFFJs1w",
-            "DiBella Law Offices"
-        ],
+        "Title": "DiBella Law Offices",
+        "link": "https://www.google.com/url?q=https://www.dibellalawoffice.com/scholarship/requirements.html&sa=D&ust=1606097319695000&usg=AFQjCNHcKnlTyuKS8_Us90MwioZBFFJs1w",
         "Opens": "None",
         "Due": "april",
         "Amount": "500",
@@ -1240,10 +1116,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=http://www.studentawardsearch.com/scholarships.htm&sa=D&ust=1606097319696000&usg=AFQjCNFEhLkssm4Zid_matBoDfAnHuXmHw",
-            "B Davis"
-        ],
+        "Title": "B Davis",
+        "link": "https://www.google.com/url?q=http://www.studentawardsearch.com/scholarships.htm&sa=D&ust=1606097319696000&usg=AFQjCNFEhLkssm4Zid_matBoDfAnHuXmHw",
         "Opens": "Now",
         "Due": "2020-05-22 00:00:00",
         "Amount": "1000",
@@ -1260,10 +1134,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://www.melissastonebergerfoundation.org/applying-for-a-scholarship.html&sa=D&ust=1606097319697000&usg=AFQjCNHyJJt6KZuPXeAZ6Vp113yV-Zn4Hw",
-            "The Melissa Stoneberger Scholarship"
-        ],
+        "Title": "The Melissa Stoneberger Scholarship",
+        "link": "https://www.google.com/url?q=https://www.melissastonebergerfoundation.org/applying-for-a-scholarship.html&sa=D&ust=1606097319697000&usg=AFQjCNHyJJt6KZuPXeAZ6Vp113yV-Zn4Hw",
         "Opens": "None",
         "Due": "2020-05-01 00:00:00",
         "Amount": "None",
@@ -1280,10 +1152,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://weisblattlaw.com/the-weisblatt-law-firm-llc-1000-00-scholarship/&sa=D&ust=1606097319698000&usg=AFQjCNHd4XzcAcwuk4tB_qwXHCzwP1JXIQ",
-            "Weisblatt Law Firm, LLC"
-        ],
+        "Title": "Weisblatt Law Firm, LLC",
+        "link": "https://www.google.com/url?q=https://weisblattlaw.com/the-weisblatt-law-firm-llc-1000-00-scholarship/&sa=D&ust=1606097319698000&usg=AFQjCNHd4XzcAcwuk4tB_qwXHCzwP1JXIQ",
         "Opens": "None",
         "Due": "2020-05-01 00:00:00",
         "Amount": "1000",
@@ -1300,10 +1170,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://americancollegefoundation.org/college-planning-college-financial-aid-acf-welcome/&sa=D&ust=1606097319699000&usg=AFQjCNE_7M7WJeI8zVO7WF2v-G-Hd2ozIg",
-            "American Scholarship"
-        ],
+        "Title": "American Scholarship",
+        "link": "https://www.google.com/url?q=https://americancollegefoundation.org/college-planning-college-financial-aid-acf-welcome/&sa=D&ust=1606097319699000&usg=AFQjCNE_7M7WJeI8zVO7WF2v-G-Hd2ozIg",
         "Opens": "None",
         "Due": "May",
         "Amount": "5000",
@@ -1320,10 +1188,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://www.aynrand.org/students/essay-contests%23atlasshrugged-1&sa=D&ust=1606097319700000&usg=AFQjCNF9DiqByF_R15Fkk6mwU9ZuK3GW1w",
-            "Ayn Rand Essay Contests"
-        ],
+        "Title": "Ayn Rand Essay Contests",
+        "link": "https://www.google.com/url?q=https://www.aynrand.org/students/essay-contests%23atlasshrugged-1&sa=D&ust=1606097319700000&usg=AFQjCNF9DiqByF_R15Fkk6mwU9ZuK3GW1w",
         "Opens": "None",
         "Due": "May",
         "Amount": "$50-$10,000",
@@ -1340,10 +1206,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=http://www.cpscholarship.com/apply-for-usa/&sa=D&ust=1606097319702000&usg=AFQjCNG9_gsOhgC-zgWDvzHrCzbLVX9oZg",
-            "Carrignton Philbert Scholarship"
-        ],
+        "Title": "Carrignton Philbert Scholarship",
+        "link": "https://www.google.com/url?q=http://www.cpscholarship.com/apply-for-usa/&sa=D&ust=1606097319702000&usg=AFQjCNG9_gsOhgC-zgWDvzHrCzbLVX9oZg",
         "Opens": "None",
         "Due": "May",
         "Amount": "2500",
@@ -1360,10 +1224,8 @@
         "Must identify as Black/ minority": "Yes"
     },
     {
-        "Title": [
-            null,
-            "Stephen Bufton Memorial Educational Fund"
-        ],
+        "Title": "Stephen Bufton Memorial Educational Fund",
+        "link": null,
         "Opens": "None",
         "Due": "2023-05-15 00:00:00",
         "Amount": "$2,000-10,000",
@@ -1380,10 +1242,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://www.stonewallfoundation.org/scholarships/&sa=D&ust=1606097319704000&usg=AFQjCNFVdTCElItSpRNC2IGPu7BDJuJb2A",
-            "Levin-Goffe Schlarship for LGBTQI Immigrants"
-        ],
+        "Title": "Levin-Goffe Schlarship for LGBTQI Immigrants",
+        "link": "https://www.google.com/url?q=https://www.stonewallfoundation.org/scholarships/&sa=D&ust=1606097319704000&usg=AFQjCNFVdTCElItSpRNC2IGPu7BDJuJb2A",
         "Opens": "None",
         "Due": "June",
         "Amount": "25000",
@@ -1400,10 +1260,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://www.stonewallfoundation.org/scholarships/&sa=D&ust=1606097319705000&usg=AFQjCNGTThg8ylao4NXizvLQrgoVpTyvjg",
-            "Traub-Dicker Rainbow Scholarship"
-        ],
+        "Title": "Traub-Dicker Rainbow Scholarship",
+        "link": "https://www.google.com/url?q=https://www.stonewallfoundation.org/scholarships/&sa=D&ust=1606097319705000&usg=AFQjCNGTThg8ylao4NXizvLQrgoVpTyvjg",
         "Opens": "April",
         "Due": "June",
         "Amount": "$1,500, 3,000",
@@ -1420,10 +1278,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=http://www.cfge.org/grants_student.php%23award2&sa=D&ust=1606097319706000&usg=AFQjCNGBrCyubXnQBnDlEhOZdtR3DaWClw",
-            "Margaret Gosfield College Grant"
-        ],
+        "Title": "Margaret Gosfield College Grant",
+        "link": "https://www.google.com/url?q=http://www.cfge.org/grants_student.php%23award2&sa=D&ust=1606097319706000&usg=AFQjCNGBrCyubXnQBnDlEhOZdtR3DaWClw",
         "Opens": "None",
         "Due": "June",
         "Amount": "1000",
@@ -1440,10 +1296,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=http://www.abbottandfenner.com/scholarships.php&sa=D&ust=1606097319707000&usg=AFQjCNFtDhVQBddUdLiKngjJPvQtxYB6cQ",
-            "Abbot and Fenner"
-        ],
+        "Title": "Abbot and Fenner",
+        "link": "https://www.google.com/url?q=http://www.abbottandfenner.com/scholarships.php&sa=D&ust=1606097319707000&usg=AFQjCNFtDhVQBddUdLiKngjJPvQtxYB6cQ",
         "Opens": "None",
         "Due": "June",
         "Amount": "1000",
@@ -1460,10 +1314,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://scholarsapply.org/sterbenz-ryan/&sa=D&ust=1606097319708000&usg=AFQjCNGzFZk4XQ9D4H6DR-PgAGpeoKKQtw",
-            "Sterbenz-Ryan Scholarship"
-        ],
+        "Title": "Sterbenz-Ryan Scholarship",
+        "link": "https://www.google.com/url?q=https://scholarsapply.org/sterbenz-ryan/&sa=D&ust=1606097319708000&usg=AFQjCNGzFZk4XQ9D4H6DR-PgAGpeoKKQtw",
         "Opens": "None",
         "Due": "June",
         "Amount": "$5,000-15,000",
@@ -1480,10 +1332,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://www.naaia.org/scholarship/&sa=D&ust=1606097319709000&usg=AFQjCNHMAUdJQy_mKrl0l7BUxvI0e_60pw",
-            "JL Tillman Scholarship Fund"
-        ],
+        "Title": "JL Tillman Scholarship Fund",
+        "link": "https://www.google.com/url?q=https://www.naaia.org/scholarship/&sa=D&ust=1606097319709000&usg=AFQjCNHMAUdJQy_mKrl0l7BUxvI0e_60pw",
         "Opens": "None",
         "Due": "July",
         "Amount": "varies",
@@ -1500,10 +1350,8 @@
         "Must identify as Black/ minority": "Yes"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://www.cia.gov/careers/student-opportunities/undergraduate-scholarship-program.html&sa=D&ust=1606097319710000&usg=AFQjCNHkQyt9vPFijuT6Sw5Oka8RKNS_Pw",
-            "CIA Scholarships"
-        ],
+        "Title": "CIA Scholarships",
+        "link": "https://www.google.com/url?q=https://www.cia.gov/careers/student-opportunities/undergraduate-scholarship-program.html&sa=D&ust=1606097319710000&usg=AFQjCNHkQyt9vPFijuT6Sw5Oka8RKNS_Pw",
         "Opens": "None",
         "Due": "July",
         "Amount": "18000",
@@ -1520,10 +1368,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://margarianlaw.com/Scholarship/&sa=D&ust=1606097319711000&usg=AFQjCNFBak2kk-QkgCzJXtud5DBt-JS7Hg",
-            "Margarian Scholarship"
-        ],
+        "Title": "Margarian Scholarship",
+        "link": "https://www.google.com/url?q=https://margarianlaw.com/Scholarship/&sa=D&ust=1606097319711000&usg=AFQjCNFBak2kk-QkgCzJXtud5DBt-JS7Hg",
         "Opens": "None",
         "Due": "July",
         "Amount": "1000",
@@ -1540,10 +1386,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://thepeckfirm.com/peck-law-firm-scholarship/&sa=D&ust=1606097319712000&usg=AFQjCNF9-bRxDQ28kyz9v83kd1kzsuSbHQ",
-            "Peck Law Firm"
-        ],
+        "Title": "Peck Law Firm",
+        "link": "https://www.google.com/url?q=https://thepeckfirm.com/peck-law-firm-scholarship/&sa=D&ust=1606097319712000&usg=AFQjCNF9-bRxDQ28kyz9v83kd1kzsuSbHQ",
         "Opens": "None",
         "Due": "July",
         "Amount": "2000",
@@ -1560,10 +1404,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://smartscholarshipprod.service-now.com/smart&sa=D&ust=1606097319713000&usg=AFQjCNEAjl_RZfN8Ql3v0D0NlkujT3eZcw",
-            "SMART Scholarship"
-        ],
+        "Title": "SMART Scholarship",
+        "link": "https://www.google.com/url?q=https://smartscholarshipprod.service-now.com/smart&sa=D&ust=1606097319713000&usg=AFQjCNEAjl_RZfN8Ql3v0D0NlkujT3eZcw",
         "Opens": "August",
         "Due": "None",
         "Amount": "varies",
@@ -1580,10 +1422,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://www.goedekers.com/college-scholarship&sa=D&ust=1606097319714000&usg=AFQjCNEQ0lnLDH-BQS9RJPr4yECU3ug9ew",
-            "Goedeker"
-        ],
+        "Title": "Goedeker",
+        "link": "https://www.google.com/url?q=https://www.goedekers.com/college-scholarship&sa=D&ust=1606097319714000&usg=AFQjCNEQ0lnLDH-BQS9RJPr4yECU3ug9ew",
         "Opens": "None",
         "Due": "July",
         "Amount": "500",
@@ -1600,10 +1440,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://www.duffylawct.com/duffy-law-llc-1000-scholarship/&sa=D&ust=1606097319715000&usg=AFQjCNFVMBH6zQyCmOQlK_5ISc41M68PPQ",
-            "Duffy Law"
-        ],
+        "Title": "Duffy Law",
+        "link": "https://www.google.com/url?q=https://www.duffylawct.com/duffy-law-llc-1000-scholarship/&sa=D&ust=1606097319715000&usg=AFQjCNFVMBH6zQyCmOQlK_5ISc41M68PPQ",
         "Opens": "None",
         "Due": "2021",
         "Amount": "1000",
@@ -1620,10 +1458,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://www.coloradolaw.net/scholarship/&sa=D&ust=1606097319716000&usg=AFQjCNHK9FpkpnUNZAIdCaLd7TX6209Q-w",
-            "Bachus & Schenker, LLC"
-        ],
+        "Title": "Bachus & Schenker, LLC",
+        "link": "https://www.google.com/url?q=https://www.coloradolaw.net/scholarship/&sa=D&ust=1606097319716000&usg=AFQjCNHK9FpkpnUNZAIdCaLd7TX6209Q-w",
         "Opens": "None",
         "Due": "2020-07-30 00:00:00",
         "Amount": "2000",
@@ -1640,10 +1476,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://resumecompanion.com/scholarship/&sa=D&ust=1606097319717000&usg=AFQjCNEJZgN-mBt23rC44KesmPO08Rny3Q",
-            "Resume Companion Scholarship"
-        ],
+        "Title": "Resume Companion Scholarship",
+        "link": "https://www.google.com/url?q=https://resumecompanion.com/scholarship/&sa=D&ust=1606097319717000&usg=AFQjCNEJZgN-mBt23rC44KesmPO08Rny3Q",
         "Opens": "None",
         "Due": "July",
         "Amount": "1000",
@@ -1660,10 +1494,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=http://us.stop-hunger.org/home/grants/2018-scholars.html&sa=D&ust=1606097319718000&usg=AFQjCNFeY7D0GUKch6mIFenWVnupsfgeCA",
-            "Stephen J. Brady Stop Hunger Scholarship"
-        ],
+        "Title": "Stephen J. Brady Stop Hunger Scholarship",
+        "link": "https://www.google.com/url?q=http://us.stop-hunger.org/home/grants/2018-scholars.html&sa=D&ust=1606097319718000&usg=AFQjCNFeY7D0GUKch6mIFenWVnupsfgeCA",
         "Opens": "Spring",
         "Due": "August",
         "Amount": "None",
@@ -1680,10 +1512,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://scholarships.uncf.org/Program/Details/54f45439-d2a7-422c-8745-ed71b9b4db0e&sa=D&ust=1606097319719000&usg=AFQjCNFI5rNHi_YW0sVpsct0aL5fNir5jQ",
-            "Procter and Gamble Scholarship"
-        ],
+        "Title": "Procter and Gamble Scholarship",
+        "link": "https://www.google.com/url?q=https://scholarships.uncf.org/Program/Details/54f45439-d2a7-422c-8745-ed71b9b4db0e&sa=D&ust=1606097319719000&usg=AFQjCNFI5rNHi_YW0sVpsct0aL5fNir5jQ",
         "Opens": "None",
         "Due": "August",
         "Amount": "5000",
@@ -1700,10 +1530,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://adamkutnercares.com/submission-process-for-adam-kutners-helping-future-lawyers-scholarship-has-ended/&sa=D&ust=1606097319720000&usg=AFQjCNGY3G9VHPBSt3d31Oyyntpi7bMX8Q",
-            "Adam Kutner"
-        ],
+        "Title": "Adam Kutner",
+        "link": "https://www.google.com/url?q=https://adamkutnercares.com/submission-process-for-adam-kutners-helping-future-lawyers-scholarship-has-ended/&sa=D&ust=1606097319720000&usg=AFQjCNGY3G9VHPBSt3d31Oyyntpi7bMX8Q",
         "Opens": "None",
         "Due": "August",
         "Amount": "2500",
@@ -1720,10 +1548,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://scholarships.uncf.org/Program/Details/821f4e68-0e72-43b9-889f-046b618dbfdd&sa=D&ust=1606097319721000&usg=AFQjCNGRIxS8I3iKxuTtB0UjADiBkTslQg",
-            "Procter and Gamble STEM Scholarship"
-        ],
+        "Title": "Procter and Gamble STEM Scholarship",
+        "link": "https://www.google.com/url?q=https://scholarships.uncf.org/Program/Details/821f4e68-0e72-43b9-889f-046b618dbfdd&sa=D&ust=1606097319721000&usg=AFQjCNGRIxS8I3iKxuTtB0UjADiBkTslQg",
         "Opens": "None",
         "Due": "August",
         "Amount": "5000",
@@ -1740,10 +1566,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://www.dennyshungryforeducation.com/scholarships-dennysmemorialscholarship-college&sa=D&ust=1606097319721000&usg=AFQjCNFQAeEZM-IQ3R3MVOLm4g4Bhk2yTQ",
-            "Denny's Memorial Scholarship"
-        ],
+        "Title": "Denny's Memorial Scholarship",
+        "link": "https://www.google.com/url?q=https://www.dennyshungryforeducation.com/scholarships-dennysmemorialscholarship-college&sa=D&ust=1606097319721000&usg=AFQjCNFQAeEZM-IQ3R3MVOLm4g4Bhk2yTQ",
         "Opens": "None",
         "Due": "August",
         "Amount": "$2,500, $5,000",
@@ -1760,10 +1584,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://www.phillyinjurylawyer.com/scholarship/&sa=D&ust=1606097319723000&usg=AFQjCNGsAWXpmocnqKR2XAeFdMvOPojnJw",
-            "Philly Injury Law"
-        ],
+        "Title": "Philly Injury Law",
+        "link": "https://www.google.com/url?q=https://www.phillyinjurylawyer.com/scholarship/&sa=D&ust=1606097319723000&usg=AFQjCNGsAWXpmocnqKR2XAeFdMvOPojnJw",
         "Opens": "None",
         "Due": "August",
         "Amount": "1500",
@@ -1780,10 +1602,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=http://www.gmsp.org/gates-millennium-scholars-program/&sa=D&ust=1606097319724000&usg=AFQjCNEVyT1LfqJffhXEH9XjFju5rKKgJA",
-            "Gates Millenial Scholars"
-        ],
+        "Title": "Gates Millenial Scholars",
+        "link": "https://www.google.com/url?q=http://www.gmsp.org/gates-millennium-scholars-program/&sa=D&ust=1606097319724000&usg=AFQjCNEVyT1LfqJffhXEH9XjFju5rKKgJA",
         "Opens": "July",
         "Due": "2020-09-15 00:00:00",
         "Amount": "all remaining costs",
@@ -1800,10 +1620,8 @@
         "Must identify as Black/ minority": "yes and/or indian/asian/hispanic"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://www.bryancameroneducationfoundation.org/&sa=D&ust=1606097319725000&usg=AFQjCNFzimhategltypCqGpsHugwYtEKyw",
-            "Bryan Cameron Education Foundation"
-        ],
+        "Title": "Bryan Cameron Education Foundation",
+        "link": "https://www.google.com/url?q=https://www.bryancameroneducationfoundation.org/&sa=D&ust=1606097319725000&usg=AFQjCNFzimhategltypCqGpsHugwYtEKyw",
         "Opens": "None",
         "Due": "2020-09-11 00:00:00",
         "Amount": "full tuition",
@@ -1820,10 +1638,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://www.aynrand.org/students/essay-contests%23atlasshrugged-1&sa=D&ust=1606097319726000&usg=AFQjCNH-n3bW5nosyv8smOGIsgeCJ7i0vQ",
-            "Ayn Rand Essay Contests"
-        ],
+        "Title": "Ayn Rand Essay Contests",
+        "link": "https://www.google.com/url?q=https://www.aynrand.org/students/essay-contests%23atlasshrugged-1&sa=D&ust=1606097319726000&usg=AFQjCNH-n3bW5nosyv8smOGIsgeCJ7i0vQ",
         "Opens": "None",
         "Due": "September",
         "Amount": "$100-$25,000",
@@ -1840,10 +1656,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://scholars.horatioalger.org/scholarships/about-our-scholarship-programs/&sa=D&ust=1606097319727000&usg=AFQjCNEPwvpcDDf2aRjGc_caYOChojbqdw",
-            "Horatio Alger Scholarship"
-        ],
+        "Title": "Horatio Alger Scholarship",
+        "link": "https://www.google.com/url?q=https://scholars.horatioalger.org/scholarships/about-our-scholarship-programs/&sa=D&ust=1606097319727000&usg=AFQjCNEPwvpcDDf2aRjGc_caYOChojbqdw",
         "Opens": "None",
         "Due": "October",
         "Amount": "$10,000, $25,000",
@@ -1860,10 +1674,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://www.coca-colascholarsfoundation.org/&sa=D&ust=1606097319728000&usg=AFQjCNF9tont-8MxXu_HYBnwltEIZjdFgg",
-            "Coca-Cola Scholarship"
-        ],
+        "Title": "Coca-Cola Scholarship",
+        "link": "https://www.google.com/url?q=https://www.coca-colascholarsfoundation.org/&sa=D&ust=1606097319728000&usg=AFQjCNF9tont-8MxXu_HYBnwltEIZjdFgg",
         "Opens": "2020-08-01 00:00:00",
         "Due": "October",
         "Amount": "20000",
@@ -1880,10 +1692,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://scholarships.gmsp.org/Program/Details/dbc1c3e6-0423-4e1c-8bec-0bce8b7eba2d&sa=D&ust=1606097319729000&usg=AFQjCNFkF9SDokF01VfLOlEjIRJ3y05_EQ",
-            "Michael Jackson Scholarship"
-        ],
+        "Title": "Michael Jackson Scholarship",
+        "link": "https://www.google.com/url?q=https://scholarships.gmsp.org/Program/Details/dbc1c3e6-0423-4e1c-8bec-0bce8b7eba2d&sa=D&ust=1606097319729000&usg=AFQjCNFkF9SDokF01VfLOlEjIRJ3y05_EQ",
         "Opens": "None",
         "Due": "October",
         "Amount": "5000",
@@ -1900,10 +1710,8 @@
         "Must identify as Black/ minority": "yes"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://www.vfw.org/community/youth-and-education/youth-scholarships&sa=D&ust=1606097319730000&usg=AFQjCNHIbZOuvU4CewriZ0CeoKhkZGUNWg",
-            "Voice of Democracy"
-        ],
+        "Title": "Voice of Democracy",
+        "link": "https://www.google.com/url?q=https://www.vfw.org/community/youth-and-education/youth-scholarships&sa=D&ust=1606097319730000&usg=AFQjCNHIbZOuvU4CewriZ0CeoKhkZGUNWg",
         "Opens": "August",
         "Due": "October",
         "Amount": "$1,000-30,000",
@@ -1920,10 +1728,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=http://www.jumpstart-scholarship.net/about/&sa=D&ust=1606097319731000&usg=AFQjCNH-ak-GcyiwnHlgj42H8d_joHRVRQ",
-            "College JumpStart Scholarship"
-        ],
+        "Title": "College JumpStart Scholarship",
+        "link": "https://www.google.com/url?q=http://www.jumpstart-scholarship.net/about/&sa=D&ust=1606097319731000&usg=AFQjCNH-ak-GcyiwnHlgj42H8d_joHRVRQ",
         "Opens": "August",
         "Due": "October",
         "Amount": "None",
@@ -1940,10 +1746,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://www.dellscholars.org/&sa=D&ust=1606097319732000&usg=AFQjCNEqfnMNxesx1GfgmBVIS2B9bjvx4A",
-            "Dell Scholars"
-        ],
+        "Title": "Dell Scholars",
+        "link": "https://www.google.com/url?q=https://www.dellscholars.org/&sa=D&ust=1606097319732000&usg=AFQjCNEqfnMNxesx1GfgmBVIS2B9bjvx4A",
         "Opens": "2020-10-01 00:00:00",
         "Due": "November",
         "Amount": "20000",
@@ -1960,10 +1764,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=http://www.scienceambassadorscholarship.org/%23intro&sa=D&ust=1606097319733000&usg=AFQjCNH8AzQomNIn0YI7gOn_05Y-Wsj_Cw",
-            "Science Ambassador Scholarship"
-        ],
+        "Title": "Science Ambassador Scholarship",
+        "link": "https://www.google.com/url?q=http://www.scienceambassadorscholarship.org/%23intro&sa=D&ust=1606097319733000&usg=AFQjCNH8AzQomNIn0YI7gOn_05Y-Wsj_Cw",
         "Opens": "Fall",
         "Due": "November",
         "Amount": "None",
@@ -1980,10 +1782,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://www.intelligencecareers.gov/icstudents.html&sa=D&ust=1606097319734000&usg=AFQjCNGMs3bY7PjvLjmlFkZwkt0idPIwSw",
-            "Stokes Educational Scholarship"
-        ],
+        "Title": "Stokes Educational Scholarship",
+        "link": "https://www.google.com/url?q=https://www.intelligencecareers.gov/icstudents.html&sa=D&ust=1606097319734000&usg=AFQjCNGMs3bY7PjvLjmlFkZwkt0idPIwSw",
         "Opens": "September",
         "Due": "November",
         "Amount": "30000",
@@ -2000,10 +1800,8 @@
         "Must identify as Black/ minority": "None"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://www.elks.org/scholars/scholarships/mvs.cfm&sa=D&ust=1606097319735000&usg=AFQjCNFblb-MkgPU2BKw4P71PNcnwKUSFg",
-            "Elks National Scholarship"
-        ],
+        "Title": "Elks National Scholarship",
+        "link": "https://www.google.com/url?q=https://www.elks.org/scholars/scholarships/mvs.cfm&sa=D&ust=1606097319735000&usg=AFQjCNFblb-MkgPU2BKw4P71PNcnwKUSFg",
         "Opens": "August",
         "Due": "November",
         "Amount": "$4,000-$50,000",
@@ -2020,10 +1818,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=http://www.danielsfund.org/scholarships/&sa=D&ust=1606097319736000&usg=AFQjCNFgKZ94XU9dlmv1u7PAQqk0A6ywHA",
-            "Daniels Scholarsip"
-        ],
+        "Title": "Daniels Scholarsip",
+        "link": "https://www.google.com/url?q=http://www.danielsfund.org/scholarships/&sa=D&ust=1606097319736000&usg=AFQjCNFgKZ94XU9dlmv1u7PAQqk0A6ywHA",
         "Opens": "October",
         "Due": "November",
         "Amount": "all remaining costs",
@@ -2040,10 +1836,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=http://www.ca4.uscourts.gov/public-education/essay-contest-2019&sa=D&ust=1606097319738000&usg=AFQjCNE9zKeB-lw8JvYXqd6i4n8EZflqXQ",
-            "Fourth Circuit Essay Contest"
-        ],
+        "Title": "Fourth Circuit Essay Contest",
+        "link": "https://www.google.com/url?q=http://www.ca4.uscourts.gov/public-education/essay-contest-2019&sa=D&ust=1606097319738000&usg=AFQjCNE9zKeB-lw8JvYXqd6i4n8EZflqXQ",
         "Opens": "None",
         "Due": "November",
         "Amount": "None",
@@ -2060,10 +1854,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://jackandjillfoundation.org/scholarships/&sa=D&ust=1606097319739000&usg=AFQjCNGDwE_mFzw5Dd1pNr6x991-TmPWtA",
-            "Jack and Jill of America Foundation Scholarship"
-        ],
+        "Title": "Jack and Jill of America Foundation Scholarship",
+        "link": "https://www.google.com/url?q=https://jackandjillfoundation.org/scholarships/&sa=D&ust=1606097319739000&usg=AFQjCNGDwE_mFzw5Dd1pNr6x991-TmPWtA",
         "Opens": "October",
         "Due": "November",
         "Amount": "$1,500-$2,500",
@@ -2080,10 +1872,8 @@
         "Must identify as Black/ minority": "no"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://corporate.comcast.com/news-information/news-feed/recognizing-the-best-and-brightest-nationwide&sa=D&ust=1606097319740000&usg=AFQjCNFn4aJQDzXGTw4MjH-zidJEVQ94XA",
-            "Comcast Leaders and Achievers Program"
-        ],
+        "Title": "Comcast Leaders and Achievers Program",
+        "link": "https://www.google.com/url?q=https://corporate.comcast.com/news-information/news-feed/recognizing-the-best-and-brightest-nationwide&sa=D&ust=1606097319740000&usg=AFQjCNFn4aJQDzXGTw4MjH-zidJEVQ94XA",
         "Opens": "October",
         "Due": "November",
         "Amount": "2500",
@@ -2100,10 +1890,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://www.jkcf.org/our-scholarships/college-scholarship-program/faqs/&sa=D&ust=1606097319741000&usg=AFQjCNFpSeuG6jwT5inCA8tNwSzZvLPugg",
-            "Jack Kent Cooke Foundation"
-        ],
+        "Title": "Jack Kent Cooke Foundation",
+        "link": "https://www.google.com/url?q=https://www.jkcf.org/our-scholarships/college-scholarship-program/faqs/&sa=D&ust=1606097319741000&usg=AFQjCNFpSeuG6jwT5inCA8tNwSzZvLPugg",
         "Opens": "None",
         "Due": "December",
         "Amount": "40000",
@@ -2120,10 +1908,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://footlockerscholarathletes.com/&sa=D&ust=1606097319742000&usg=AFQjCNHgWFDq42hs102jY8C48psavfvSvQ",
-            "Foot Locker Scholar Athletes"
-        ],
+        "Title": "Foot Locker Scholar Athletes",
+        "link": "https://www.google.com/url?q=https://footlockerscholarathletes.com/&sa=D&ust=1606097319742000&usg=AFQjCNHgWFDq42hs102jY8C48psavfvSvQ",
         "Opens": "September/October",
         "Due": "December",
         "Amount": "20000",
@@ -2140,10 +1926,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://www.davidsongifted.org/Fellows-Scholarship&sa=D&ust=1606097319743000&usg=AFQjCNFoccDr88tltjpfKRMui6fpbKNx4A",
-            "Davidson Fellows"
-        ],
+        "Title": "Davidson Fellows",
+        "link": "https://www.google.com/url?q=https://www.davidsongifted.org/Fellows-Scholarship&sa=D&ust=1606097319743000&usg=AFQjCNFoccDr88tltjpfKRMui6fpbKNx4A",
         "Opens": "None",
         "Due": "December",
         "Amount": "$10,000, $25,000, $50,000",
@@ -2160,10 +1944,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://buildyourfuture.withgoogle.com/scholarships/generation-google-scholarship/&sa=D&ust=1606097319744000&usg=AFQjCNFXJmSTh9lErMsxxBeYqKGWk8JY6w",
-            "Generation Google Scholarship"
-        ],
+        "Title": "Generation Google Scholarship",
+        "link": "https://www.google.com/url?q=https://buildyourfuture.withgoogle.com/scholarships/generation-google-scholarship/&sa=D&ust=1606097319744000&usg=AFQjCNFXJmSTh9lErMsxxBeYqKGWk8JY6w",
         "Opens": "None",
         "Due": "December",
         "Amount": "10000",
@@ -2180,10 +1962,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://bkmclamorefoundation.org/who-we-are/programs/burger-king-scholars-program/&sa=D&ust=1606097319745000&usg=AFQjCNGHrx4VOhBQEgTusvRS7op-5g_eRw",
-            "Burger King Scholars"
-        ],
+        "Title": "Burger King Scholars",
+        "link": "https://www.google.com/url?q=https://bkmclamorefoundation.org/who-we-are/programs/burger-king-scholars-program/&sa=D&ust=1606097319745000&usg=AFQjCNGHrx4VOhBQEgTusvRS7op-5g_eRw",
         "Opens": "2020-10-15 00:00:00",
         "Due": "December",
         "Amount": "1000",
@@ -2200,10 +1980,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=http://www.catchabreakscholar.org/&sa=D&ust=1606097319746000&usg=AFQjCNFA7RBdBpikfyZMgzin3g60-HelwQ",
-            "Catch a Break! Scholarship"
-        ],
+        "Title": "Catch a Break! Scholarship",
+        "link": "https://www.google.com/url?q=http://www.catchabreakscholar.org/&sa=D&ust=1606097319746000&usg=AFQjCNFA7RBdBpikfyZMgzin3g60-HelwQ",
         "Opens": "November",
         "Due": "December",
         "Amount": "up to $10,000",
@@ -2220,10 +1998,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=http://www.blackprofessionalmen.org/scholarship/&sa=D&ust=1606097319747000&usg=AFQjCNHNG6brz07h5sPbctxBCK83vboc-w",
-            "Black Professional Men Scholarship"
-        ],
+        "Title": "Black Professional Men Scholarship",
+        "link": "https://www.google.com/url?q=http://www.blackprofessionalmen.org/scholarship/&sa=D&ust=1606097319747000&usg=AFQjCNHNG6brz07h5sPbctxBCK83vboc-w",
         "Opens": "2020-08-01 00:00:00",
         "Due": "December",
         "Amount": "1000",
@@ -2240,10 +2016,8 @@
         "Must identify as Black/ minority": "Yes"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://www.imagine-america.org/students/scholarships-education/highschoolscholarships/&sa=D&ust=1606097319748000&usg=AFQjCNGZ9YLyyzjZBvGWArIhgW-K_NBihg",
-            "Imagine America High School Scholarship Program"
-        ],
+        "Title": "Imagine America High School Scholarship Program",
+        "link": "https://www.google.com/url?q=https://www.imagine-america.org/students/scholarships-education/highschoolscholarships/&sa=D&ust=1606097319748000&usg=AFQjCNGZ9YLyyzjZBvGWArIhgW-K_NBihg",
         "Opens": "None",
         "Due": "December",
         "Amount": "1000",
@@ -2260,10 +2034,8 @@
         "Must identify as Black/ minority": "no"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://www.dennyshungryforeducation.com/scholarships-mjf&sa=D&ust=1606097319749000&usg=AFQjCNGVOXgFb9JQePCje6CJ6szQ5dg52Q",
-            "Magic Johnson Foundation Scholarship"
-        ],
+        "Title": "Magic Johnson Foundation Scholarship",
+        "link": "https://www.google.com/url?q=https://www.dennyshungryforeducation.com/scholarships-mjf&sa=D&ust=1606097319749000&usg=AFQjCNGVOXgFb9JQePCje6CJ6szQ5dg52Q",
         "Opens": "September",
         "Due": "December",
         "Amount": "1000",
@@ -2280,10 +2052,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://www.dennyshungryforeducation.com/scholarships-uspaacc&sa=D&ust=1606097319750000&usg=AFQjCNEIMQIr-UlNA0tZLJQM8jnScb77Hg",
-            "USPAACC Scholarship"
-        ],
+        "Title": "USPAACC Scholarship",
+        "link": "https://www.google.com/url?q=https://www.dennyshungryforeducation.com/scholarships-uspaacc&sa=D&ust=1606097319750000&usg=AFQjCNEIMQIr-UlNA0tZLJQM8jnScb77Hg",
         "Opens": "2020-09-01 00:00:00",
         "Due": "December",
         "Amount": "3000",
@@ -2300,10 +2070,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://www.dennyshungryforeducation.com/scholarships-tjf&sa=D&ust=1606097319751000&usg=AFQjCNFb7COPcapoAmyTYatIFi4KMkHyDA",
-            "Hungry for Education scholarhip"
-        ],
+        "Title": "Hungry for Education scholarhip",
+        "link": "https://www.google.com/url?q=https://www.dennyshungryforeducation.com/scholarships-tjf&sa=D&ust=1606097319751000&usg=AFQjCNFb7COPcapoAmyTYatIFi4KMkHyDA",
         "Opens": "2020-09-03 00:00:00",
         "Due": "December",
         "Amount": "None",
@@ -2320,10 +2088,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://www.dennyshungryforeducation.com/scholarships-tjf&sa=D&ust=1606097319752000&usg=AFQjCNEaHwn8mm8MDrk22Gq52y2V5hx9cQ",
-            "Future Filmmakers Scholarship"
-        ],
+        "Title": "Future Filmmakers Scholarship",
+        "link": "https://www.google.com/url?q=https://www.dennyshungryforeducation.com/scholarships-tjf&sa=D&ust=1606097319752000&usg=AFQjCNEaHwn8mm8MDrk22Gq52y2V5hx9cQ",
         "Opens": "August",
         "Due": "December",
         "Amount": "None",
@@ -2340,10 +2106,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://us.axa.com/axa-foundation/AXA-achievement-scholarship.html&sa=D&ust=1606097319753000&usg=AFQjCNFggbISKkiHon6RNsGYt4yuCSV2iA",
-            "AXA Achievement"
-        ],
+        "Title": "AXA Achievement",
+        "link": "https://www.google.com/url?q=https://us.axa.com/axa-foundation/AXA-achievement-scholarship.html&sa=D&ust=1606097319753000&usg=AFQjCNFggbISKkiHon6RNsGYt4yuCSV2iA",
         "Opens": "2020-09-01 00:00:00",
         "Due": "December",
         "Amount": "$2,500, $10,000, $25,000",
@@ -2360,10 +2124,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://formswift.com/startup-scholarship&sa=D&ust=1606097319754000&usg=AFQjCNFvlfBj5CUW-2KygoX0Ot2P5F26-A",
-            "FormSwift Business Infographic"
-        ],
+        "Title": "FormSwift Business Infographic",
+        "link": "https://www.google.com/url?q=https://formswift.com/startup-scholarship&sa=D&ust=1606097319754000&usg=AFQjCNFvlfBj5CUW-2KygoX0Ot2P5F26-A",
         "Opens": "None",
         "Due": "rolling",
         "Amount": "1000",
@@ -2380,10 +2142,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://www.aauw.org/what-we-do/educational-funding-and-awards/local-scholarships/&sa=D&ust=1606097319755000&usg=AFQjCNFxWSnryVx95nhKxcVySkdBAMWbMQ",
-            "AAUW"
-        ],
+        "Title": "AAUW",
+        "link": "https://www.google.com/url?q=https://www.aauw.org/what-we-do/educational-funding-and-awards/local-scholarships/&sa=D&ust=1606097319755000&usg=AFQjCNFxWSnryVx95nhKxcVySkdBAMWbMQ",
         "Opens": "varies",
         "Due": "varies",
         "Amount": "varies",
@@ -2400,10 +2160,8 @@
         "Must identify as Black/ minority": "No"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://spirit.prudential.com/about/program-overview&sa=D&ust=1606097319756000&usg=AFQjCNHV3Bh8mTtbFrGZBdbXbMgkc7q0fw",
-            "Prudential Spirit of Community Awards"
-        ],
+        "Title": "Prudential Spirit of Community Awards",
+        "link": "https://www.google.com/url?q=https://spirit.prudential.com/about/program-overview&sa=D&ust=1606097319756000&usg=AFQjCNHV3Bh8mTtbFrGZBdbXbMgkc7q0fw",
         "Opens": "None",
         "Due": "None",
         "Amount": "None",
@@ -2420,10 +2178,8 @@
         "Must identify as Black/ minority": "None"
     },
     {
-        "Title": [
-            "https://www.google.com/url?q=https://www.legion.org/scholarships/samsung&sa=D&ust=1606097319756000&usg=AFQjCNF7KWR766F_cb_XIGkVAceECu2QLg",
-            "American Legion Scholarship"
-        ],
+        "Title": "American Legion Scholarship",
+        "link": "https://www.google.com/url?q=https://www.legion.org/scholarships/samsung&sa=D&ust=1606097319756000&usg=AFQjCNF7KWR766F_cb_XIGkVAceECu2QLg",
         "Opens": "None",
         "Due": "None",
         "Amount": "None",
@@ -2440,10 +2196,8 @@
         "Must identify as Black/ minority": "None"
     },
     {
-        "Title": [
-            null,
-            "Greenhouse Scholars"
-        ],
+        "Title": "Greenhouse Scholars",
+        "link": null,
         "Opens": "Fall",
         "Due": "None",
         "Amount": "None",
@@ -2460,10 +2214,8 @@
         "Must identify as Black/ minority": "None"
     },
     {
-        "Title": [
-            null,
-            "Constitutional Officers Association of Georgia"
-        ],
+        "Title": "Constitutional Officers Association of Georgia",
+        "link": null,
         "Opens": "December",
         "Due": "None",
         "Amount": "None",
@@ -2480,10 +2232,8 @@
         "Must identify as Black/ minority": "None"
     },
     {
-        "Title": [
-            null,
-            "Ira Dorsey Foundation Scholarship (PWC Alpha Phi Alpha Chapter)"
-        ],
+        "Title": "Ira Dorsey Foundation Scholarship (PWC Alpha Phi Alpha Chapter)",
+        "link": null,
         "Opens": "2022-10-01 00:00:00",
         "Due": "2023-04-15 00:00:00",
         "Amount": "3000",
@@ -2500,10 +2250,8 @@
         "Must identify as Black/ minority": "None"
     },
     {
-        "Title": [
-            "Ira Dorsey Scholarship (PWC Alpha Phi Alpha Chapter)",
-            "Ira Dorsey Foundation Rainer HBCU Scholarship"
-        ],
+        "Title": "Ira Dorsey Foundation Rainer HBCU Scholarship",
+        "link": "Ira Dorsey Scholarship (PWC Alpha Phi Alpha Chapter)",
         "Opens": "2022-10-01 00:00:00",
         "Due": "2023-04-15 00:00:00",
         "Amount": "5000",
@@ -2520,10 +2268,8 @@
         "Must identify as Black/ minority": "None"
     },
     {
-        "Title": [
-            "Ira Dorsey Scholarship (PWC Alpha Phi Alpha Chapter)",
-            "Ira Dorsey Foundation Blackwell Cyber Scholarship"
-        ],
+        "Title": "Ira Dorsey Foundation Blackwell Cyber Scholarship",
+        "link": "Ira Dorsey Scholarship (PWC Alpha Phi Alpha Chapter)",
         "Opens": "2022-10-01 00:00:00",
         "Due": "2023-04-15 00:00:00",
         "Amount": "2500",
@@ -2540,10 +2286,8 @@
         "Must identify as Black/ minority": "None"
     },
     {
-        "Title": [
-            null,
-            "JGH (ZUL Chapter Alpha Phi Alpha) Scholarship"
-        ],
+        "Title": "JGH (ZUL Chapter Alpha Phi Alpha) Scholarship",
+        "link": null,
         "Opens": "2022-10-01 00:00:00",
         "Due": "2023-03-17 00:00:00",
         "Amount": "2000",
@@ -2556,40 +2300,6 @@
         "Gender-based": "N/A",
         "GPA": "None",
         "Geography": "No VA - focused on Fairfax & Loudoun Counties",
-        "Special Eligibility": "None",
-        "Must identify as Black/ minority": "None"
-    },
-    {
-        "Title": "None",
-        "Opens": "None",
-        "Due": "None",
-        "Amount": "None",
-        "Renewable": "None",
-        "Major Type": "None",
-        "Grade Eligibility": "None",
-        "Service/\ncharacter-based": "None",
-        "Academic Merit-based": "None",
-        "Need-based": "None",
-        "Gender-based": "None",
-        "GPA": "None",
-        "Geography": "None",
-        "Special Eligibility": "None",
-        "Must identify as Black/ minority": "None"
-    },
-    {
-        "Title": "None",
-        "Opens": "None",
-        "Due": "None",
-        "Amount": "None",
-        "Renewable": "None",
-        "Major Type": "None",
-        "Grade Eligibility": "None",
-        "Service/\ncharacter-based": "None",
-        "Academic Merit-based": "None",
-        "Need-based": "None",
-        "Gender-based": "None",
-        "GPA": "None",
-        "Geography": "None",
         "Special Eligibility": "None",
         "Must identify as Black/ minority": "None"
     }

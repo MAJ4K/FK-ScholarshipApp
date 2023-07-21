@@ -38,5 +38,6 @@ signinbtns[0].addEventListener('click', ()=>{
 		// The firebase.auth.AuthCredential type that was used.
 		var credential = error.credential;
 		// ...
+		window.location.href = "application/app.html";
 	});
 });
