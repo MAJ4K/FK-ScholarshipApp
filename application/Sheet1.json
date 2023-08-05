@@ -4,7 +4,9 @@
         "link": "https://www.google.com/url?q=https://www.hamiltonscholars.org/program-overview&sa=D&ust=1606097319637000&usg=AFQjCNEeL2l_C92NooDi-OE4gmRvM2vF6Q",
         "Opens": "November",
         "Due": "January",
-        "Amount": "500",
+        "Amount": [
+            "500"
+        ],
         "Renewable": "None",
         "Major Type": "General",
         "Grade Eligibility": "hs juniors",
@@ -22,7 +24,9 @@
         "link": "https://www.google.com/url?q=https://www.chameleonjohn.com/scholarship/universities/apply&sa=D&ust=1606097319638000&usg=AFQjCNH0Fmw_efVQ3oAnNyNqAwUukdLsNg",
         "Opens": "None",
         "Due": "January",
-        "Amount": "1000",
+        "Amount": [
+            "1000"
+        ],
         "Renewable": "No",
         "Major Type": "General",
         "Grade Eligibility": "high school",
@@ -40,7 +44,9 @@
         "link": "https://www.google.com/url?q=https://learnmore.scholarsapply.org/thebaxterfoundation/&sa=D&ust=1606097319639000&usg=AFQjCNFUUqDX6DIycV91fEjJML4uiXO7Lw",
         "Opens": "None",
         "Due": "January",
-        "Amount": "1500",
+        "Amount": [
+            "1500"
+        ],
         "Renewable": "No",
         "Major Type": "General",
         "Grade Eligibility": "None",
@@ -58,7 +64,9 @@
         "link": "https://www.google.com/url?q=https://www.reaganfoundation.org/education/scholarship-programs/ge-reagan-foundation-scholarship-program/&sa=D&ust=1606097319640000&usg=AFQjCNH1xz7_mVhEPNhjw8JKyYDrRPJeBg",
         "Opens": "None",
         "Due": "January",
-        "Amount": "40000",
+        "Amount": [
+            "40000"
+        ],
         "Renewable": "Yes",
         "Major Type": "General",
         "Grade Eligibility": "senior",
@@ -76,7 +84,10 @@
         "link": null,
         "Opens": "None",
         "Due": "January",
-        "Amount": "$500-$10,000",
+        "Amount": [
+            "$500",
+            "$10,000"
+        ],
         "Renewable": "No",
         "Major Type": "General",
         "Grade Eligibility": "high school",
@@ -94,7 +105,9 @@
         "link": "https://www.google.com/url?q=https://www.ronbrown.org/&sa=D&ust=1606097319641000&usg=AFQjCNGFRnvzoHeohW-1B_rXONsWax2Sow",
         "Opens": "None",
         "Due": "January",
-        "Amount": "40000",
+        "Amount": [
+            "40000"
+        ],
         "Renewable": "Yes",
         "Major Type": "General",
         "Grade Eligibility": "seniors",
@@ -112,7 +125,9 @@
         "link": "https://www.google.com/url?q=https://womensleadership.kpmg.us/charitable/application-overview.html&sa=D&ust=1606097319642000&usg=AFQjCNGBy0sT2K7lp-jTxvBg96IUy6hphg",
         "Opens": "None",
         "Due": "January",
-        "Amount": "10000",
+        "Amount": [
+            "10000"
+        ],
         "Renewable": "Yes",
         "Major Type": "STEM",
         "Grade Eligibility": "senior",
@@ -130,7 +145,9 @@
         "link": null,
         "Opens": "None",
         "Due": "January",
-        "Amount": "1000",
+        "Amount": [
+            "1000"
+        ],
         "Renewable": "Yes",
         "Major Type": "STEM",
         "Grade Eligibility": "senior",
@@ -184,7 +201,9 @@
         "link": "https://www.google.com/url?q=https://zphib1920.org/eblast/2019/april/Founders-Centennial-Scholarship-packet.pdf&sa=D&ust=1606097319646000&usg=AFQjCNF5pzFwikj_WRQLi5L-pXThDvmjoA",
         "Opens": "August",
         "Due": "January",
-        "Amount": "100000",
+        "Amount": [
+            "100000"
+        ],
         "Renewable": "Yes",
         "Major Type": "General",
         "Grade Eligibility": "senior",
@@ -202,7 +221,10 @@
         "link": "https://www.google.com/url?q=http://www.apiasf.org/scholarship_apiasf.html&sa=D&ust=1606097319646000&usg=AFQjCNGFNyGhMuJ5zoC6iuyMkQ3DxlZ0qA",
         "Opens": "September",
         "Due": "January",
-        "Amount": "$2,500-$20,000",
+        "Amount": [
+            "$2,500",
+            "$20,000"
+        ],
         "Renewable": "Yes",
         "Major Type": "General",
         "Grade Eligibility": "high school",
@@ -220,7 +242,9 @@
         "link": "https://www.google.com/url?q=http://www.deltaetaboule.com/index.php/about-delta-eta-boule-foundation/scholarship-program-a/scholarship-program&sa=D&ust=1606097319647000&usg=AFQjCNEP6mCChNc_pNhaHz0TU-c772CWtQ",
         "Opens": "None",
         "Due": "January",
-        "Amount": "2500",
+        "Amount": [
+            "2500"
+        ],
         "Renewable": "Yes",
         "Major Type": "General",
         "Grade Eligibility": "high school",
@@ -256,7 +280,9 @@
         "link": null,
         "Opens": "None",
         "Due": "February",
-        "Amount": "1000",
+        "Amount": [
+            "1000"
+        ],
         "Renewable": "No",
         "Major Type": "General",
         "Grade Eligibility": "9-11th grades",
@@ -274,7 +300,9 @@
         "link": "https://www.google.com/url?q=https://www.jackierobinson.org/&sa=D&ust=1606097319650000&usg=AFQjCNE_GU2Ao1x3OT24fomdDDn7QlTXhA",
         "Opens": "None",
         "Due": "February",
-        "Amount": "30000",
+        "Amount": [
+            "30000"
+        ],
         "Renewable": "Yes",
         "Major Type": "General",
         "Grade Eligibility": "seniors",
@@ -310,7 +338,10 @@
         "link": "https://www.google.com/url?q=https://www.reaganfoundation.org/education/scholarship-programs/ronald-reagan-presidential-foundation-scholars-program/&sa=D&ust=1606097319651000&usg=AFQjCNFihtrM1rJniXyaUU1AClSehBJvzQ",
         "Opens": "None",
         "Due": "February",
-        "Amount": "$1-10,000",
+        "Amount": [
+            "$1",
+            "10,000"
+        ],
         "Renewable": "Yes",
         "Major Type": "General",
         "Grade Eligibility": "seniors",
@@ -328,7 +359,9 @@
         "link": "https://www.google.com/url?q=https://nshssfoundation.org/scholarships/hollister-co-anti-bullying-scholarship-program/&sa=D&ust=1606097319652000&usg=AFQjCNGJEb2tjkZEcnrH5L-cxw9zr61wXQ",
         "Opens": "None",
         "Due": "February",
-        "Amount": "2500",
+        "Amount": [
+            "2500"
+        ],
         "Renewable": "Yes",
         "Major Type": "General",
         "Grade Eligibility": "senior",
@@ -346,7 +379,10 @@
         "link": "https://www.google.com/url?q=https://www.hsf.net/scholarship&sa=D&ust=1606097319653000&usg=AFQjCNHvaGhGKJmdlHv3sGP1Pn-HlWdA3Q",
         "Opens": "None",
         "Due": "February",
-        "Amount": "$500-5,000",
+        "Amount": [
+            "$500",
+            "5,000"
+        ],
         "Renewable": "Yes",
         "Major Type": "General",
         "Grade Eligibility": "Senior/undergrad",
@@ -364,7 +400,10 @@
         "link": "https://www.google.com/url?q=https://spirit.prudential.com/about/program-overview?lp%3D14869&sa=D&ust=1606097319654000&usg=AFQjCNGMCkbsH3Mwr5Bdp_h9KO-ZQgzmew",
         "Opens": "None",
         "Due": "February",
-        "Amount": "1-5,000",
+        "Amount": [
+            "1",
+            "5,000"
+        ],
         "Renewable": "No",
         "Major Type": "General",
         "Grade Eligibility": "high school",
@@ -382,7 +421,9 @@
         "link": "https://www.google.com/url?q=http://www.cifstate.org/parents-students/awards_and_scholarships/scholar-athlete&sa=D&ust=1606097319654000&usg=AFQjCNGVtrdonlBzVFgMNBUW2mnLwqQCsw",
         "Opens": "None",
         "Due": "February",
-        "Amount": "5000",
+        "Amount": [
+            "5000"
+        ],
         "Renewable": "No",
         "Major Type": "General",
         "Grade Eligibility": "senior",
@@ -400,7 +441,9 @@
         "link": "https://www.google.com/url?q=http://www.niada.com/foundation_scholarship.php&sa=D&ust=1606097319655000&usg=AFQjCNG-h063x-aXrN4lYaUqzuMY7Bdvtg",
         "Opens": "Now",
         "Due": "February",
-        "Amount": "3500",
+        "Amount": [
+            "3500"
+        ],
         "Renewable": "No",
         "Major Type": "General",
         "Grade Eligibility": "senior",
@@ -436,7 +479,9 @@
         "link": "https://www.google.com/url?q=https://www.livemasscholarship.com/%23how&sa=D&ust=1606097319657000&usg=AFQjCNE6tamQQ1XTuJrysLOu1FNoqUcdCw",
         "Opens": "January",
         "Due": "February",
-        "Amount": "25000",
+        "Amount": [
+            "25000"
+        ],
         "Renewable": "Yes",
         "Major Type": "STEM",
         "Grade Eligibility": "16-24",
@@ -454,7 +499,10 @@
         "link": "https://www.google.com/url?q=http://www.vrg.org/student/scholar.htm&sa=D&ust=1606097319657000&usg=AFQjCNGBAl3XzWhR7cqX8ub74xx4QPopSw",
         "Opens": "August",
         "Due": "February",
-        "Amount": "$5,000/$10,000",
+        "Amount": [
+            "$5,000",
+            "$10,000"
+        ],
         "Renewable": "Yes",
         "Major Type": "General",
         "Grade Eligibility": "senior",
@@ -472,7 +520,9 @@
         "link": "https://www.google.com/url?q=https://www.liveoutloud.info/programs/scholarship/&sa=D&ust=1606097319658000&usg=AFQjCNGpHFIAgWnnjPmLAebsYlRK8Xcu8A",
         "Opens": "None",
         "Due": "March",
-        "Amount": "10000",
+        "Amount": [
+            "10000"
+        ],
         "Renewable": "Yes",
         "Major Type": "General",
         "Grade Eligibility": "senior",
@@ -490,7 +540,9 @@
         "link": "https://www.google.com/url?q=https://www.microsoft.com/en-us/diversity/programs/microsoftdisabilityscholarship.aspx&sa=D&ust=1606097319659000&usg=AFQjCNGCH6UWBIJHBRouxzRv7oiPCkHbaw",
         "Opens": "February",
         "Due": "March",
-        "Amount": "5000",
+        "Amount": [
+            "5000"
+        ],
         "Renewable": "Yes",
         "Major Type": "STEM",
         "Grade Eligibility": "senior",
@@ -508,7 +560,9 @@
         "link": "https://www.google.com/url?q=https://www.ncsecufoundation.org/Projects/Scholarships.html&sa=D&ust=1606097319660000&usg=AFQjCNFDnsBzKTfeTCBkhyISAHOz8KvA8A",
         "Opens": "None",
         "Due": "March",
-        "Amount": "10000",
+        "Amount": [
+            "10000"
+        ],
         "Renewable": "Yes",
         "Major Type": "General",
         "Grade Eligibility": "senior/community college",
@@ -526,7 +580,9 @@
         "link": "https://www.google.com/url?q=http://www.ustafoundation.com/grants_scholarships/rosalind_p_walter_college_scholarship/&sa=D&ust=1606097319660000&usg=AFQjCNGU_OxpYAi9ENOe2O3iMZart8UH-g",
         "Opens": "Now",
         "Due": "March",
-        "Amount": "2500",
+        "Amount": [
+            "2500"
+        ],
         "Renewable": "Yes",
         "Major Type": "General",
         "Grade Eligibility": "senior",
@@ -562,7 +618,10 @@
         "link": "https://www.google.com/url?q=https://www.hsf.net/scholarship&sa=D&ust=1606097319662000&usg=AFQjCNHZbziAbh04MvSuApQagB1DYohc3g",
         "Opens": "January",
         "Due": "March",
-        "Amount": "$500-$5,000",
+        "Amount": [
+            "$500",
+            "$5,000"
+        ],
         "Renewable": "None",
         "Major Type": "General",
         "Grade Eligibility": "seniors/undergrad",
@@ -580,7 +639,9 @@
         "link": "https://www.google.com/url?q=https://www.acs.org/content/acs/en/funding-and-awards/scholarships/acsscholars/apply.html&sa=D&ust=1606097319663000&usg=AFQjCNENfFL4B3Ye3LffMwl18ICYNsyVRg",
         "Opens": "2020-11-01 00:00:00",
         "Due": "March",
-        "Amount": "5000",
+        "Amount": [
+            "5000"
+        ],
         "Renewable": "None",
         "Major Type": "STEM",
         "Grade Eligibility": "senior or undergrad",
@@ -616,7 +677,10 @@
         "link": "https://www.google.com/url?q=https://online.foundationsource.com/public/home/splawnscholarship&sa=D&ust=1606097319664000&usg=AFQjCNElPgQ3rxKDSGc-owlEkIZ1VV0e5w",
         "Opens": "None",
         "Due": "March/Sep",
-        "Amount": "$250-2,000",
+        "Amount": [
+            "$250",
+            "2,000"
+        ],
         "Renewable": "None",
         "Major Type": "General",
         "Grade Eligibility": "seniors",
@@ -634,7 +698,10 @@
         "link": "https://www.google.com/url?q=https://feea.org/our-programs/scholarships/%23scholar&sa=D&ust=1606097319665000&usg=AFQjCNHyEVBbz8zWUyd85JdNf4BQy7LoRw",
         "Opens": "August",
         "Due": "March",
-        "Amount": "$1-5,000",
+        "Amount": [
+            "$1",
+            "5,000"
+        ],
         "Renewable": "None",
         "Major Type": "General",
         "Grade Eligibility": "under 25",
@@ -670,7 +737,9 @@
         "link": "https://www.google.com/url?q=https://www.moneysolver.org/scholarships/st-patricks-day-scholarship/?utm_source%3Dscholarshipscom%26utm_medium%3Dlisting%26utm_campaign%3Dmarch&sa=D&ust=1606097319666000&usg=AFQjCNEli4Gq1VeWmCLKqfrZc0s_iCeZIQ",
         "Opens": "Now",
         "Due": "March",
-        "Amount": "1000",
+        "Amount": [
+            "1000"
+        ],
         "Renewable": "No",
         "Major Type": "General",
         "Grade Eligibility": "18 or older",
@@ -688,7 +757,9 @@
         "link": "https://www.google.com/url?q=https://tmcf.org/our-scholarships/current-scholarships/tmcf-kellogg-company-fund-scholarship/11540&sa=D&ust=1606097319667000&usg=AFQjCNHonuTsFyXefJaoZ4DKNpP7C_uJ6w",
         "Opens": "None",
         "Due": "March",
-        "Amount": "7000",
+        "Amount": [
+            "7000"
+        ],
         "Renewable": "No",
         "Major Type": "General",
         "Grade Eligibility": "undergrad",
@@ -706,7 +777,9 @@
         "link": "https://www.google.com/url?q=http://www.engebretsonfoundation.org/application.html&sa=D&ust=1606097319668000&usg=AFQjCNEugXCThY9lhmK64VeMaI6bChRBlg",
         "Opens": "Now",
         "Due": "March",
-        "Amount": "5000",
+        "Amount": [
+            "5000"
+        ],
         "Renewable": "No",
         "Major Type": "General",
         "Grade Eligibility": "senior",
@@ -724,7 +797,9 @@
         "link": "https://www.google.com/url?q=http://www.afsa.org/essay-contest&sa=D&ust=1606097319668000&usg=AFQjCNEGqOc_AAnBZehfHF3D7XHsgBNq-Q",
         "Opens": "None",
         "Due": "March",
-        "Amount": "2500",
+        "Amount": [
+            "2500"
+        ],
         "Renewable": "No",
         "Major Type": "General",
         "Grade Eligibility": "high school",
@@ -742,7 +817,9 @@
         "link": "https://www.google.com/url?q=https://www.microsoft.com/en-us/diversity/programs/blacks-scholarships.aspx&sa=D&ust=1606097319669000&usg=AFQjCNHH73stSzFyvtRhetpo-sM1kGK4fQ",
         "Opens": "None",
         "Due": "March",
-        "Amount": "5000",
+        "Amount": [
+            "5000"
+        ],
         "Renewable": "Yes",
         "Major Type": "STEM",
         "Grade Eligibility": "seniors",
@@ -760,7 +837,10 @@
         "link": "https://www.google.com/url?q=https://www.pge.com/en_US/residential/in-your-community/education-programs/grants-and-scholarships/bright-mind-scholarships/bright-mind-scholarships.page&sa=D&ust=1606097319670000&usg=AFQjCNGzzusRvwLEKcWjfMsC4APOwYDpeQ",
         "Opens": "None",
         "Due": "March",
-        "Amount": "$1-10,000",
+        "Amount": [
+            "$1",
+            "10,000"
+        ],
         "Renewable": "Yes",
         "Major Type": "STEM",
         "Grade Eligibility": "high school",
@@ -778,7 +858,9 @@
         "link": "https://www.google.com/url?q=https://www.tmcf.org/our-scholarships/current-scholarships/tmcf-walmart-foundation-first-generation-scholarship/14292&sa=D&ust=1606097319671000&usg=AFQjCNHd_48X9DPBlUT7fZ9WaNPmxuaBiQ",
         "Opens": "None",
         "Due": "March",
-        "Amount": "6200",
+        "Amount": [
+            "6200"
+        ],
         "Renewable": "Yes",
         "Major Type": "General",
         "Grade Eligibility": "senior",
@@ -796,7 +878,9 @@
         "link": "https://www.google.com/url?q=https://www.dccollegesuccessfoundation.org/scholarships/l1000/eligibility&sa=D&ust=1606097319672000&usg=AFQjCNHuheu85TJ5JdqOe_pn_AveOFbtJw",
         "Opens": "Now",
         "Due": "March",
-        "Amount": "5000",
+        "Amount": [
+            "5000"
+        ],
         "Renewable": "Yes",
         "Major Type": "General",
         "Grade Eligibility": "senior",
@@ -814,7 +898,9 @@
         "link": "https://www.google.com/url?q=http://communityfoundation.org/scholarships/apply/&sa=D&ust=1606097319673000&usg=AFQjCNGdrMc4XWMYEh6cl4W9w3fLUGffGQ",
         "Opens": "January",
         "Due": "March",
-        "Amount": "8000",
+        "Amount": [
+            "8000"
+        ],
         "Renewable": "Yes",
         "Major Type": "General",
         "Grade Eligibility": "None",
@@ -832,7 +918,9 @@
         "link": "https://www.google.com/url?q=https://www.gallerycollection.com/ScholarshipOfficialRules.pdf&sa=D&ust=1606097319673000&usg=AFQjCNHUj75c8VpgBxwpSKbTnrFgjHNg0Q",
         "Opens": "May",
         "Due": "March",
-        "Amount": "10000",
+        "Amount": [
+            "10000"
+        ],
         "Renewable": "No",
         "Major Type": "General",
         "Grade Eligibility": "high school/undergrad",
@@ -850,7 +938,9 @@
         "link": "https://www.google.com/url?q=https://akaeaf.org/scholarships&sa=D&ust=1606097319674000&usg=AFQjCNHZJdDZ9g76hZZnEbYWm0-NGrlIog",
         "Opens": "None",
         "Due": "April",
-        "Amount": "2500",
+        "Amount": [
+            "2500"
+        ],
         "Renewable": "No",
         "Major Type": "General",
         "Grade Eligibility": "undergrad",
@@ -868,7 +958,9 @@
         "link": "https://www.google.com/url?q=http://www.naacpldf.org/herbert-lehman-education-fund-scholarship&sa=D&ust=1606097319675000&usg=AFQjCNEJlvlE0CoIHguUXw8Iuy_n2KCAwQ",
         "Opens": "None",
         "Due": "April",
-        "Amount": "8000",
+        "Amount": [
+            "8000"
+        ],
         "Renewable": "Yes",
         "Major Type": "Professional",
         "Grade Eligibility": "undergrad",
@@ -886,7 +978,10 @@
         "link": "https://www.google.com/url?q=https://npg.org/2019-npg-essay-scholarship-contest.html&sa=D&ust=1606097319676000&usg=AFQjCNGvhu3ktKXSY22tO4IZA4QlDB_8gw",
         "Opens": "None",
         "Due": "April",
-        "Amount": "$750-2,000",
+        "Amount": [
+            "$750",
+            "2,000"
+        ],
         "Renewable": "No",
         "Major Type": "General",
         "Grade Eligibility": "high school",
@@ -904,7 +999,9 @@
         "link": "https://www.google.com/url?q=https://www.penguinrandomhouse.com/signet-essay-contest/&sa=D&ust=1606097319677000&usg=AFQjCNEQlBo1E_biCiSU-oMOzs1XOdMHMA",
         "Opens": "None",
         "Due": "April",
-        "Amount": "1000",
+        "Amount": [
+            "1000"
+        ],
         "Renewable": "No",
         "Major Type": "General",
         "Grade Eligibility": "high school",
@@ -922,7 +1019,9 @@
         "link": "https://www.google.com/url?q=https://www.wealthbyhealth.org/scholarship-programs&sa=D&ust=1606097319678000&usg=AFQjCNFTcshaVu3GpM1Z892YAXIkqEu_hQ",
         "Opens": "None",
         "Due": "April",
-        "Amount": "2000",
+        "Amount": [
+            "2000"
+        ],
         "Renewable": "No",
         "Major Type": "General",
         "Grade Eligibility": "senior",
@@ -940,7 +1039,10 @@
         "link": "https://www.google.com/url?q=https://www.cbcfinc.org/scholarships/&sa=D&ust=1606097319678000&usg=AFQjCNGTcY4lfeaMNR7OZqGIAOAo0Tnm3Q",
         "Opens": "February",
         "Due": "April",
-        "Amount": "$500-1,500",
+        "Amount": [
+            "$500",
+            "1,500"
+        ],
         "Renewable": "No",
         "Major Type": "General",
         "Grade Eligibility": "11th/12th grades",
@@ -958,7 +1060,9 @@
         "link": "https://www.google.com/url?q=http://janetlogandailyfoundation.org/application.asp&sa=D&ust=1606097319687000&usg=AFQjCNHYYl5TbAmvyJF94Jee_l2umbMsvQ",
         "Opens": "February",
         "Due": "April",
-        "Amount": "10000",
+        "Amount": [
+            "10000"
+        ],
         "Renewable": "Yes",
         "Major Type": "STEM",
         "Grade Eligibility": "senior",
@@ -976,7 +1080,9 @@
         "link": "https://www.google.com/url?q=https://www.sportsunlimitedinc.com/scholarship.html&sa=D&ust=1606097319688000&usg=AFQjCNGPEIqDD-awEwBk8C08rF0HHg3ijQ",
         "Opens": "Now",
         "Due": "April",
-        "Amount": "1000",
+        "Amount": [
+            "1000"
+        ],
         "Renewable": "Yes",
         "Major Type": "STEM",
         "Grade Eligibility": "hs senior/college freshman/sophomore",
@@ -1066,7 +1172,10 @@
         "link": "https://www.google.com/url?q=https://www.shawncartersf.com/&sa=D&ust=1606097319693000&usg=AFQjCNFC7cypggsoe9q2kUHcNoqjZGfNRQ",
         "Opens": "2020-04-01 00:00:00",
         "Due": "2020-04-30 00:00:00",
-        "Amount": "$1,000-1,500",
+        "Amount": [
+            "$1,000",
+            "1,500"
+        ],
         "Renewable": "No",
         "Major Type": "General",
         "Grade Eligibility": "Senior/undergrad",
@@ -1084,7 +1193,9 @@
         "link": "https://www.google.com/url?q=https://www.bottlingerlaw.com/scholarship/&sa=D&ust=1606097319694000&usg=AFQjCNF2DQT-lV_qSqWxrIpqDRh5eztAsw",
         "Opens": "Now",
         "Due": "2020-04-15 00:00:00",
-        "Amount": "1000",
+        "Amount": [
+            "1000"
+        ],
         "Renewable": "Yes",
         "Major Type": "General",
         "Grade Eligibility": "senior",
@@ -1102,7 +1213,9 @@
         "link": "https://www.google.com/url?q=https://www.dibellalawoffice.com/scholarship/requirements.html&sa=D&ust=1606097319695000&usg=AFQjCNHcKnlTyuKS8_Us90MwioZBFFJs1w",
         "Opens": "None",
         "Due": "april",
-        "Amount": "500",
+        "Amount": [
+            "500"
+        ],
         "Renewable": "No",
         "Major Type": "General",
         "Grade Eligibility": "senior",
@@ -1120,7 +1233,9 @@
         "link": "https://www.google.com/url?q=http://www.studentawardsearch.com/scholarships.htm&sa=D&ust=1606097319696000&usg=AFQjCNFEhLkssm4Zid_matBoDfAnHuXmHw",
         "Opens": "Now",
         "Due": "2020-05-22 00:00:00",
-        "Amount": "1000",
+        "Amount": [
+            "1000"
+        ],
         "Renewable": "Yes",
         "Major Type": "General",
         "Grade Eligibility": "any student",
@@ -1156,7 +1271,9 @@
         "link": "https://www.google.com/url?q=https://weisblattlaw.com/the-weisblatt-law-firm-llc-1000-00-scholarship/&sa=D&ust=1606097319698000&usg=AFQjCNHd4XzcAcwuk4tB_qwXHCzwP1JXIQ",
         "Opens": "None",
         "Due": "2020-05-01 00:00:00",
-        "Amount": "1000",
+        "Amount": [
+            "1000"
+        ],
         "Renewable": "No",
         "Major Type": "General",
         "Grade Eligibility": "senior",
@@ -1174,7 +1291,9 @@
         "link": "https://www.google.com/url?q=https://americancollegefoundation.org/college-planning-college-financial-aid-acf-welcome/&sa=D&ust=1606097319699000&usg=AFQjCNE_7M7WJeI8zVO7WF2v-G-Hd2ozIg",
         "Opens": "None",
         "Due": "May",
-        "Amount": "5000",
+        "Amount": [
+            "5000"
+        ],
         "Renewable": "No",
         "Major Type": "General",
         "Grade Eligibility": "high school",
@@ -1192,7 +1311,10 @@
         "link": "https://www.google.com/url?q=https://www.aynrand.org/students/essay-contests%23atlasshrugged-1&sa=D&ust=1606097319700000&usg=AFQjCNF9DiqByF_R15Fkk6mwU9ZuK3GW1w",
         "Opens": "None",
         "Due": "May",
-        "Amount": "$50-$10,000",
+        "Amount": [
+            "$50",
+            "$10,000"
+        ],
         "Renewable": "No",
         "Major Type": "General",
         "Grade Eligibility": "8th-12th grade",
@@ -1210,7 +1332,9 @@
         "link": "https://www.google.com/url?q=http://www.cpscholarship.com/apply-for-usa/&sa=D&ust=1606097319702000&usg=AFQjCNG9_gsOhgC-zgWDvzHrCzbLVX9oZg",
         "Opens": "None",
         "Due": "May",
-        "Amount": "2500",
+        "Amount": [
+            "2500"
+        ],
         "Renewable": "No",
         "Major Type": "General",
         "Grade Eligibility": "high school",
@@ -1228,7 +1352,10 @@
         "link": null,
         "Opens": "None",
         "Due": "2023-05-15 00:00:00",
-        "Amount": "$2,000-10,000",
+        "Amount": [
+            "$2,000",
+            "10,000"
+        ],
         "Renewable": "Yes",
         "Major Type": "Professional",
         "Grade Eligibility": "undergrad",
@@ -1246,7 +1373,9 @@
         "link": "https://www.google.com/url?q=https://www.stonewallfoundation.org/scholarships/&sa=D&ust=1606097319704000&usg=AFQjCNFVdTCElItSpRNC2IGPu7BDJuJb2A",
         "Opens": "None",
         "Due": "June",
-        "Amount": "25000",
+        "Amount": [
+            "25000"
+        ],
         "Renewable": "Yes",
         "Major Type": "General",
         "Grade Eligibility": "undergrad",
@@ -1264,7 +1393,10 @@
         "link": "https://www.google.com/url?q=https://www.stonewallfoundation.org/scholarships/&sa=D&ust=1606097319705000&usg=AFQjCNGTThg8ylao4NXizvLQrgoVpTyvjg",
         "Opens": "April",
         "Due": "June",
-        "Amount": "$1,500, 3,000",
+        "Amount": [
+            "$1,500,",
+            "3,000"
+        ],
         "Renewable": "No",
         "Major Type": "General",
         "Grade Eligibility": "senior/undergrad",
@@ -1282,7 +1414,9 @@
         "link": "https://www.google.com/url?q=http://www.cfge.org/grants_student.php%23award2&sa=D&ust=1606097319706000&usg=AFQjCNGBrCyubXnQBnDlEhOZdtR3DaWClw",
         "Opens": "None",
         "Due": "June",
-        "Amount": "1000",
+        "Amount": [
+            "1000"
+        ],
         "Renewable": "No",
         "Major Type": "General",
         "Grade Eligibility": "11th/12th grades",
@@ -1300,7 +1434,9 @@
         "link": "https://www.google.com/url?q=http://www.abbottandfenner.com/scholarships.php&sa=D&ust=1606097319707000&usg=AFQjCNFtDhVQBddUdLiKngjJPvQtxYB6cQ",
         "Opens": "None",
         "Due": "June",
-        "Amount": "1000",
+        "Amount": [
+            "1000"
+        ],
         "Renewable": "No",
         "Major Type": "General",
         "Grade Eligibility": "hs juniors/seniors",
@@ -1318,7 +1454,10 @@
         "link": "https://www.google.com/url?q=https://scholarsapply.org/sterbenz-ryan/&sa=D&ust=1606097319708000&usg=AFQjCNGzFZk4XQ9D4H6DR-PgAGpeoKKQtw",
         "Opens": "None",
         "Due": "June",
-        "Amount": "$5,000-15,000",
+        "Amount": [
+            "$5,000",
+            "15,000"
+        ],
         "Renewable": "Yes",
         "Major Type": "STEM",
         "Grade Eligibility": "senior/undergrad",
@@ -1354,7 +1493,9 @@
         "link": "https://www.google.com/url?q=https://www.cia.gov/careers/student-opportunities/undergraduate-scholarship-program.html&sa=D&ust=1606097319710000&usg=AFQjCNHkQyt9vPFijuT6Sw5Oka8RKNS_Pw",
         "Opens": "None",
         "Due": "July",
-        "Amount": "18000",
+        "Amount": [
+            "18000"
+        ],
         "Renewable": "Yes",
         "Major Type": "General",
         "Grade Eligibility": "18 yrs old",
@@ -1372,7 +1513,9 @@
         "link": "https://www.google.com/url?q=https://margarianlaw.com/Scholarship/&sa=D&ust=1606097319711000&usg=AFQjCNFBak2kk-QkgCzJXtud5DBt-JS7Hg",
         "Opens": "None",
         "Due": "July",
-        "Amount": "1000",
+        "Amount": [
+            "1000"
+        ],
         "Renewable": "No",
         "Major Type": "Professional",
         "Grade Eligibility": "juniors/seniors/undergrad",
@@ -1390,7 +1533,9 @@
         "link": "https://www.google.com/url?q=https://thepeckfirm.com/peck-law-firm-scholarship/&sa=D&ust=1606097319712000&usg=AFQjCNF9-bRxDQ28kyz9v83kd1kzsuSbHQ",
         "Opens": "None",
         "Due": "July",
-        "Amount": "2000",
+        "Amount": [
+            "2000"
+        ],
         "Renewable": "No",
         "Major Type": "General",
         "Grade Eligibility": "senior",
@@ -1426,7 +1571,9 @@
         "link": "https://www.google.com/url?q=https://www.goedekers.com/college-scholarship&sa=D&ust=1606097319714000&usg=AFQjCNEQ0lnLDH-BQS9RJPr4yECU3ug9ew",
         "Opens": "None",
         "Due": "July",
-        "Amount": "500",
+        "Amount": [
+            "500"
+        ],
         "Renewable": "No",
         "Major Type": "General",
         "Grade Eligibility": "undergrad",
@@ -1444,7 +1591,9 @@
         "link": "https://www.google.com/url?q=https://www.duffylawct.com/duffy-law-llc-1000-scholarship/&sa=D&ust=1606097319715000&usg=AFQjCNFVMBH6zQyCmOQlK_5ISc41M68PPQ",
         "Opens": "None",
         "Due": "2021",
-        "Amount": "1000",
+        "Amount": [
+            "1000"
+        ],
         "Renewable": "No",
         "Major Type": "General",
         "Grade Eligibility": "senior",
@@ -1462,7 +1611,9 @@
         "link": "https://www.google.com/url?q=https://www.coloradolaw.net/scholarship/&sa=D&ust=1606097319716000&usg=AFQjCNHK9FpkpnUNZAIdCaLd7TX6209Q-w",
         "Opens": "None",
         "Due": "2020-07-30 00:00:00",
-        "Amount": "2000",
+        "Amount": [
+            "2000"
+        ],
         "Renewable": "No",
         "Major Type": "General",
         "Grade Eligibility": "senior",
@@ -1480,7 +1631,9 @@
         "link": "https://www.google.com/url?q=https://resumecompanion.com/scholarship/&sa=D&ust=1606097319717000&usg=AFQjCNEJZgN-mBt23rC44KesmPO08Rny3Q",
         "Opens": "None",
         "Due": "July",
-        "Amount": "1000",
+        "Amount": [
+            "1000"
+        ],
         "Renewable": "No",
         "Major Type": "General",
         "Grade Eligibility": "senior/undergrad",
@@ -1516,7 +1669,9 @@
         "link": "https://www.google.com/url?q=https://scholarships.uncf.org/Program/Details/54f45439-d2a7-422c-8745-ed71b9b4db0e&sa=D&ust=1606097319719000&usg=AFQjCNFI5rNHi_YW0sVpsct0aL5fNir5jQ",
         "Opens": "None",
         "Due": "August",
-        "Amount": "5000",
+        "Amount": [
+            "5000"
+        ],
         "Renewable": "No",
         "Major Type": "Professional",
         "Grade Eligibility": "Senior/undergrad",
@@ -1534,7 +1689,9 @@
         "link": "https://www.google.com/url?q=https://adamkutnercares.com/submission-process-for-adam-kutners-helping-future-lawyers-scholarship-has-ended/&sa=D&ust=1606097319720000&usg=AFQjCNGY3G9VHPBSt3d31Oyyntpi7bMX8Q",
         "Opens": "None",
         "Due": "August",
-        "Amount": "2500",
+        "Amount": [
+            "2500"
+        ],
         "Renewable": "No",
         "Major Type": "General",
         "Grade Eligibility": "senior",
@@ -1552,7 +1709,9 @@
         "link": "https://www.google.com/url?q=https://scholarships.uncf.org/Program/Details/821f4e68-0e72-43b9-889f-046b618dbfdd&sa=D&ust=1606097319721000&usg=AFQjCNGRIxS8I3iKxuTtB0UjADiBkTslQg",
         "Opens": "None",
         "Due": "August",
-        "Amount": "5000",
+        "Amount": [
+            "5000"
+        ],
         "Renewable": "No",
         "Major Type": "STEM",
         "Grade Eligibility": "Senior/undergrad",
@@ -1570,7 +1729,10 @@
         "link": "https://www.google.com/url?q=https://www.dennyshungryforeducation.com/scholarships-dennysmemorialscholarship-college&sa=D&ust=1606097319721000&usg=AFQjCNFQAeEZM-IQ3R3MVOLm4g4Bhk2yTQ",
         "Opens": "None",
         "Due": "August",
-        "Amount": "$2,500, $5,000",
+        "Amount": [
+            "$2,500,",
+            "$5,000"
+        ],
         "Renewable": "No",
         "Major Type": "General",
         "Grade Eligibility": "high school/undergrad",
@@ -1588,7 +1750,9 @@
         "link": "https://www.google.com/url?q=https://www.phillyinjurylawyer.com/scholarship/&sa=D&ust=1606097319723000&usg=AFQjCNGsAWXpmocnqKR2XAeFdMvOPojnJw",
         "Opens": "None",
         "Due": "August",
-        "Amount": "1500",
+        "Amount": [
+            "1500"
+        ],
         "Renewable": "No",
         "Major Type": "General",
         "Grade Eligibility": "18+ undergrad",
@@ -1642,7 +1806,10 @@
         "link": "https://www.google.com/url?q=https://www.aynrand.org/students/essay-contests%23atlasshrugged-1&sa=D&ust=1606097319726000&usg=AFQjCNH-n3bW5nosyv8smOGIsgeCJ7i0vQ",
         "Opens": "None",
         "Due": "September",
-        "Amount": "$100-$25,000",
+        "Amount": [
+            "$100",
+            "$25,000"
+        ],
         "Renewable": "No",
         "Major Type": "General",
         "Grade Eligibility": "12th-grad school",
@@ -1660,7 +1827,10 @@
         "link": "https://www.google.com/url?q=https://scholars.horatioalger.org/scholarships/about-our-scholarship-programs/&sa=D&ust=1606097319727000&usg=AFQjCNEPwvpcDDf2aRjGc_caYOChojbqdw",
         "Opens": "None",
         "Due": "October",
-        "Amount": "$10,000, $25,000",
+        "Amount": [
+            "$10,000,",
+            "$25,000"
+        ],
         "Renewable": "Yes",
         "Major Type": "General",
         "Grade Eligibility": "senior",
@@ -1678,7 +1848,9 @@
         "link": "https://www.google.com/url?q=https://www.coca-colascholarsfoundation.org/&sa=D&ust=1606097319728000&usg=AFQjCNF9tont-8MxXu_HYBnwltEIZjdFgg",
         "Opens": "2020-08-01 00:00:00",
         "Due": "October",
-        "Amount": "20000",
+        "Amount": [
+            "20000"
+        ],
         "Renewable": "Yes",
         "Major Type": "General",
         "Grade Eligibility": "seniors",
@@ -1696,7 +1868,9 @@
         "link": "https://www.google.com/url?q=https://scholarships.gmsp.org/Program/Details/dbc1c3e6-0423-4e1c-8bec-0bce8b7eba2d&sa=D&ust=1606097319729000&usg=AFQjCNFkF9SDokF01VfLOlEjIRJ3y05_EQ",
         "Opens": "None",
         "Due": "October",
-        "Amount": "5000",
+        "Amount": [
+            "5000"
+        ],
         "Renewable": "No",
         "Major Type": "Arts",
         "Grade Eligibility": "undergrad",
@@ -1714,7 +1888,10 @@
         "link": "https://www.google.com/url?q=https://www.vfw.org/community/youth-and-education/youth-scholarships&sa=D&ust=1606097319730000&usg=AFQjCNHIbZOuvU4CewriZ0CeoKhkZGUNWg",
         "Opens": "August",
         "Due": "October",
-        "Amount": "$1,000-30,000",
+        "Amount": [
+            "$1,000",
+            "30,000"
+        ],
         "Renewable": "Yes",
         "Major Type": "General",
         "Grade Eligibility": "high school",
@@ -1750,7 +1927,9 @@
         "link": "https://www.google.com/url?q=https://www.dellscholars.org/&sa=D&ust=1606097319732000&usg=AFQjCNEqfnMNxesx1GfgmBVIS2B9bjvx4A",
         "Opens": "2020-10-01 00:00:00",
         "Due": "November",
-        "Amount": "20000",
+        "Amount": [
+            "20000"
+        ],
         "Renewable": "None",
         "Major Type": "General",
         "Grade Eligibility": "seniors",
@@ -1786,7 +1965,9 @@
         "link": "https://www.google.com/url?q=https://www.intelligencecareers.gov/icstudents.html&sa=D&ust=1606097319734000&usg=AFQjCNGMs3bY7PjvLjmlFkZwkt0idPIwSw",
         "Opens": "September",
         "Due": "November",
-        "Amount": "30000",
+        "Amount": [
+            "30000"
+        ],
         "Renewable": "Yes",
         "Major Type": "STEM",
         "Grade Eligibility": "seniors",
@@ -1804,7 +1985,10 @@
         "link": "https://www.google.com/url?q=https://www.elks.org/scholars/scholarships/mvs.cfm&sa=D&ust=1606097319735000&usg=AFQjCNFblb-MkgPU2BKw4P71PNcnwKUSFg",
         "Opens": "August",
         "Due": "November",
-        "Amount": "$4,000-$50,000",
+        "Amount": [
+            "$4,000",
+            "$50,000"
+        ],
         "Renewable": "Yes",
         "Major Type": "General",
         "Grade Eligibility": "seniors",
@@ -1858,7 +2042,10 @@
         "link": "https://www.google.com/url?q=https://jackandjillfoundation.org/scholarships/&sa=D&ust=1606097319739000&usg=AFQjCNGDwE_mFzw5Dd1pNr6x991-TmPWtA",
         "Opens": "October",
         "Due": "November",
-        "Amount": "$1,500-$2,500",
+        "Amount": [
+            "$1,500",
+            "$2,500"
+        ],
         "Renewable": "Yes",
         "Major Type": "General",
         "Grade Eligibility": "senior",
@@ -1876,7 +2063,9 @@
         "link": "https://www.google.com/url?q=https://corporate.comcast.com/news-information/news-feed/recognizing-the-best-and-brightest-nationwide&sa=D&ust=1606097319740000&usg=AFQjCNFn4aJQDzXGTw4MjH-zidJEVQ94XA",
         "Opens": "October",
         "Due": "November",
-        "Amount": "2500",
+        "Amount": [
+            "2500"
+        ],
         "Renewable": "No",
         "Major Type": "General",
         "Grade Eligibility": "seniors",
@@ -1894,7 +2083,9 @@
         "link": "https://www.google.com/url?q=https://www.jkcf.org/our-scholarships/college-scholarship-program/faqs/&sa=D&ust=1606097319741000&usg=AFQjCNFpSeuG6jwT5inCA8tNwSzZvLPugg",
         "Opens": "None",
         "Due": "December",
-        "Amount": "40000",
+        "Amount": [
+            "40000"
+        ],
         "Renewable": "Yes",
         "Major Type": "General",
         "Grade Eligibility": "senior",
@@ -1912,7 +2103,9 @@
         "link": "https://www.google.com/url?q=https://footlockerscholarathletes.com/&sa=D&ust=1606097319742000&usg=AFQjCNHgWFDq42hs102jY8C48psavfvSvQ",
         "Opens": "September/October",
         "Due": "December",
-        "Amount": "20000",
+        "Amount": [
+            "20000"
+        ],
         "Renewable": "Yes",
         "Major Type": "General",
         "Grade Eligibility": "senior",
@@ -1930,7 +2123,11 @@
         "link": "https://www.google.com/url?q=https://www.davidsongifted.org/Fellows-Scholarship&sa=D&ust=1606097319743000&usg=AFQjCNFoccDr88tltjpfKRMui6fpbKNx4A",
         "Opens": "None",
         "Due": "December",
-        "Amount": "$10,000, $25,000, $50,000",
+        "Amount": [
+            "$10,000,",
+            "$25,000,",
+            "$50,000"
+        ],
         "Renewable": "Yes",
         "Major Type": "General",
         "Grade Eligibility": "18 and under",
@@ -1948,7 +2145,9 @@
         "link": "https://www.google.com/url?q=https://buildyourfuture.withgoogle.com/scholarships/generation-google-scholarship/&sa=D&ust=1606097319744000&usg=AFQjCNFXJmSTh9lErMsxxBeYqKGWk8JY6w",
         "Opens": "None",
         "Due": "December",
-        "Amount": "10000",
+        "Amount": [
+            "10000"
+        ],
         "Renewable": "Yes",
         "Major Type": "STEM",
         "Grade Eligibility": "senior",
@@ -1966,7 +2165,9 @@
         "link": "https://www.google.com/url?q=https://bkmclamorefoundation.org/who-we-are/programs/burger-king-scholars-program/&sa=D&ust=1606097319745000&usg=AFQjCNGHrx4VOhBQEgTusvRS7op-5g_eRw",
         "Opens": "2020-10-15 00:00:00",
         "Due": "December",
-        "Amount": "1000",
+        "Amount": [
+            "1000"
+        ],
         "Renewable": "Yes",
         "Major Type": "General",
         "Grade Eligibility": "senior",
@@ -2002,7 +2203,9 @@
         "link": "https://www.google.com/url?q=http://www.blackprofessionalmen.org/scholarship/&sa=D&ust=1606097319747000&usg=AFQjCNHNG6brz07h5sPbctxBCK83vboc-w",
         "Opens": "2020-08-01 00:00:00",
         "Due": "December",
-        "Amount": "1000",
+        "Amount": [
+            "1000"
+        ],
         "Renewable": "No",
         "Major Type": "General",
         "Grade Eligibility": "high school",
@@ -2020,7 +2223,9 @@
         "link": "https://www.google.com/url?q=https://www.imagine-america.org/students/scholarships-education/highschoolscholarships/&sa=D&ust=1606097319748000&usg=AFQjCNGZ9YLyyzjZBvGWArIhgW-K_NBihg",
         "Opens": "None",
         "Due": "December",
-        "Amount": "1000",
+        "Amount": [
+            "1000"
+        ],
         "Renewable": "No",
         "Major Type": "General",
         "Grade Eligibility": "recent hs grads",
@@ -2038,7 +2243,9 @@
         "link": "https://www.google.com/url?q=https://www.dennyshungryforeducation.com/scholarships-mjf&sa=D&ust=1606097319749000&usg=AFQjCNGVOXgFb9JQePCje6CJ6szQ5dg52Q",
         "Opens": "September",
         "Due": "December",
-        "Amount": "1000",
+        "Amount": [
+            "1000"
+        ],
         "Renewable": "No",
         "Major Type": "General",
         "Grade Eligibility": "11 and 12th grade",
@@ -2056,7 +2263,9 @@
         "link": "https://www.google.com/url?q=https://www.dennyshungryforeducation.com/scholarships-uspaacc&sa=D&ust=1606097319750000&usg=AFQjCNEIMQIr-UlNA0tZLJQM8jnScb77Hg",
         "Opens": "2020-09-01 00:00:00",
         "Due": "December",
-        "Amount": "3000",
+        "Amount": [
+            "3000"
+        ],
         "Renewable": "No",
         "Major Type": "General",
         "Grade Eligibility": "high school",
@@ -2110,7 +2319,11 @@
         "link": "https://www.google.com/url?q=https://us.axa.com/axa-foundation/AXA-achievement-scholarship.html&sa=D&ust=1606097319753000&usg=AFQjCNFggbISKkiHon6RNsGYt4yuCSV2iA",
         "Opens": "2020-09-01 00:00:00",
         "Due": "December",
-        "Amount": "$2,500, $10,000, $25,000",
+        "Amount": [
+            "$2,500,",
+            "$10,000,",
+            "$25,000"
+        ],
         "Renewable": "None",
         "Major Type": "General",
         "Grade Eligibility": "seniors",
@@ -2128,7 +2341,9 @@
         "link": "https://www.google.com/url?q=https://formswift.com/startup-scholarship&sa=D&ust=1606097319754000&usg=AFQjCNFvlfBj5CUW-2KygoX0Ot2P5F26-A",
         "Opens": "None",
         "Due": "rolling",
-        "Amount": "1000",
+        "Amount": [
+            "1000"
+        ],
         "Renewable": "Yes",
         "Major Type": "General",
         "Grade Eligibility": "senior",
@@ -2236,7 +2451,9 @@
         "link": null,
         "Opens": "2022-10-01 00:00:00",
         "Due": "2023-04-15 00:00:00",
-        "Amount": "3000",
+        "Amount": [
+            "3000"
+        ],
         "Renewable": "8 Awards/ 1 Renewable for 4 Years",
         "Major Type": "None",
         "Grade Eligibility": "HS Seniors",
@@ -2254,7 +2471,9 @@
         "link": "Ira Dorsey Scholarship (PWC Alpha Phi Alpha Chapter)",
         "Opens": "2022-10-01 00:00:00",
         "Due": "2023-04-15 00:00:00",
-        "Amount": "5000",
+        "Amount": [
+            "5000"
+        ],
         "Renewable": "No",
         "Major Type": "None",
         "Grade Eligibility": "HS Seniors",
@@ -2272,7 +2491,9 @@
         "link": "Ira Dorsey Scholarship (PWC Alpha Phi Alpha Chapter)",
         "Opens": "2022-10-01 00:00:00",
         "Due": "2023-04-15 00:00:00",
-        "Amount": "2500",
+        "Amount": [
+            "2500"
+        ],
         "Renewable": "No",
         "Major Type": "IT-Related",
         "Grade Eligibility": "HS Seniors",
@@ -2290,7 +2511,9 @@
         "link": null,
         "Opens": "2022-10-01 00:00:00",
         "Due": "2023-03-17 00:00:00",
-        "Amount": "2000",
+        "Amount": [
+            "2000"
+        ],
         "Renewable": "No",
         "Major Type": "None",
         "Grade Eligibility": "HS Seniors",

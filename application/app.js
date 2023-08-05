@@ -5,7 +5,7 @@ const navbtns = document.getElementById("NAVIGATION").getElementsByTagName('inpu
 const maintabs = document.getElementsByTagName('main');
 
 const profileForm = document.getElementById("PROFILE");
-var profile = JSON.parse(localStorage.getItem("profile"));
+var profile = JSON.parse(localStorage.getItem("profile")) || {};
 
 const tabfiles = ['Sheet1.json']
 const schdatabtn = document.getElementById("SCHDATABTN");
@@ -29,6 +29,12 @@ var filterdata = {
 };
 if(JSON.parse(localStorage.getItem("filters")))
 	filterdata = JSON.parse(localStorage.getItem("filters"));
+
+var userdata = undefined;
+fetch("/user")
+	.then((response) => response.json())
+	.then((json) => userdata = json)
+	.then(() => userFetched());
 
 var sch_json = undefined;
 fetch(tabfiles[0])
@@ -96,6 +102,16 @@ surdelbtn.addEventListener('click',()=>{
 	filter.primaries[0].click();
 	document.getElementById('sureModal').getElementsByTagName('button')[0].click();
 });
+
+function userFetched() {
+	filterdata["filters"] = userdata["filters"];
+	for (const [key,value] of Object.entries(filterdata["filters"])){
+		addSecondFilter(key,value);
+	}
+	profile = userdata["profile"];
+	restoreProfileValues();
+}
+
 function addSecondFilter(filtername,data) {
 	filterdata.id += 1;
 	const inp = document.createElement('input');
@@ -136,6 +152,36 @@ function filterApplied() {
 	scholarshipContainer.style.setProperty('--all_card_display','none');
 }
 function filterScholarships(data) {
+	for (const card of scholarshipContainer.children) card.hidden = false;
+	if (data['rangef'] && data['ranget'])
+		for (const card of scholarshipContainer.children) {
+			const minamt = parseInt(card.getAttribute("minamt"));
+			const maxamt = parseInt(card.getAttribute("maxamt"));
+			if (isNaN(minamt)){card.hidden = true; continue;}
+			if (Math.max(data['rangef'],minamt)>Math.min(data['ranget'],maxamt)){
+				card.hidden = true;
+				continue;
+			}
+	}
+	if (data['opens'] != "-1" && data['closes'] != "-1"){
+		var filterranges = [[parseInt(data['opens']),parseInt(data['closes'])]]
+		if(data['opens'] > data['closes']) 
+			filterranges = [[0,parseInt(data['closes'])],[parseInt(data['opens']),11]] 
+		for (const card of scholarshipContainer.children) {
+			if(card.hidden)continue;
+			const cardopen = parseInt(card.getAttribute('opens'));
+			const cardcls = parseInt(card.getAttribute('due'));
+			var cardranges = [[cardopen,cardcls]];
+			if(cardopen > cardcls) cardranges = [[0,cardcls],[cardopen,11]];
+			for (const frange of filterranges) 
+				for (const crange of cardranges) {
+					if (card.hidden) break;
+					if (Math.max(frange[0],crange[0]) > Math.min(frange[1],crange[1]))
+						card.hidden = true;
+			}
+		}
+	}
+
 	scholarshipContainer.style.setProperty('--all_card_display','grid');
 	if (document.getElementById("FILTERSTYLE"))
 		document.head.removeChild(document.getElementById("FILTERSTYLE"));
@@ -148,7 +194,6 @@ function filterScholarships(data) {
 	const maj = /Major/.test(data['Major']);
 	// const elg = /Special/.test(data['Special']);
 
-	//  
 	const primefilter = `${(glg) ? '':`[gradee="${data['Level']}"]`}${(maj) ? '':`[major="${data['Major']}"]`}`;
 	var styleApplied = false;
 	for (const key of Object.keys(data)) {
@@ -256,12 +301,27 @@ function cardsFetched() {
 		const title = item["Title"];
 		const link = item["link"];
 		const img = "/icons/logo-king.png";
-		const amtWnd = `
-			${(item["Amount"] != "None") ? item["Amount"] : ""}
+		
+		const minamt = (Array.isArray(item["Amount"])) ? parseInt(item["Amount"][0].replace(/\D/g,"")):undefined;
+		const maxamt = (Array.isArray(item["Amount"])) ? parseInt(item["Amount"][item["Amount"].length - 1].replace(/\D/g,"")):undefined;
+		const amtFnct = (arr) => {
+			var s = "";
+			for (const x of arr) {
+				s += `<p>${x}</p>`;
+			}
+			return s;
+		}
+		const amt = `
+			${(item["Amount"] == "None") ? "" :
+				(Array.isArray(item["Amount"])) ? amtFnct(item["Amount"]) : 
+				(typeof item["Amount"] == 'string') ? item["Amount"] : ""}
+		`;
+		const dates = `<p>
 			${(item["Opens"] != "None" && item["Due"] != "None") ? item["Opens"] + "-" + item["Due"]  :
 				(item["Opens"] != "None") ? item["Opens"] : 
-				(item["Due"] != "None") ? item["Due"] : ""}
+				(item["Due"] != "None") ? item["Due"] : ""}</p>
 		`;
+		const datesatt = [item["Opens"],item["Due"]];
 		const qtemp = (condition,icon) => {
 			return (condition) ? `
 				<span class="badge bg-secondary">
@@ -294,13 +354,17 @@ function cardsFetched() {
 		<div class="v_divider"></div>
 		<div>
 			<h6>${title}</h6>
-			<p>${amtWnd}</p>
+			<span>${amt}<p class="sep"></p>${dates}</span>
 			<footer>${qualifiers}</footer>
 		</div>`;
 
 		card.setAttribute('favorite',false);
 		card.setAttribute('applied',false);
 		card.setAttribute('error',false);
+		(/N\/A|None|none/.test(item['Opens'])) ? card.setAttribute('opens',item['Opens']) : "";
+		(/N\/A|None|none/.test(item['Due'])) ? card.setAttribute('due',item['Due']) : "";
+		(minamt) ? card.setAttribute('minamt',minamt) : "";
+		(maxamt) ? card.setAttribute('maxamt',maxamt) : "";
 		(rnw) ? card.setAttribute('renewable',rnw):"";
 		(chr) ? card.setAttribute('character',chr):"";
 		(ack) ? card.setAttribute('merit',ack):"";
@@ -319,7 +383,8 @@ function cardsFetched() {
 		card.addEventListener('click', () => {
 			schModalCard = card;
 			scholarshipModal.getElementsByClassName('modal-title')[0].innerText = title;
-			scholarshipModal.getElementsByClassName('modal-body')[0].innerText = amtWnd;
+			scholarshipModal.getElementsByClassName('modal-body')[0].innerHTML = amt;
+			scholarshipModal.getElementsByClassName('modal-body')[0].innerText += dates;
 			scholarshipModal.getElementsByClassName('modal-body')[0].innerHTML += qualifiers;
 			scholarshipModal.getElementsByTagName('a')[0].href = link;
 			schdatabtn.click();

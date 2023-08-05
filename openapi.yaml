@@ -1,0 +1,93 @@
+swagger: '2.0'
+info:
+  title: fkscholarshipapp
+  description: Sample API on API Gateway with a Google Cloud Functions backend
+  version: 1.0.0
+schemes:
+  - https
+produces:
+  - text/html
+
+x-google-allow: all
+
+paths:
+  /user:
+    get:
+      summary: get the user data
+      operationId: user
+      x-google-backend:
+        address: https://us-east4-fkscholarshipapp.cloudfunctions.net/getTestUser
+      responses:
+        '200':
+          description: A successful response
+          schema:
+            type: string
+  /:
+    get:
+      summary: Greet a user
+      operationId: hello
+      x-google-backend:
+        disable_auth: true
+        address: https://storage.googleapis.com/fkscholarshipapp_testsite/index.html
+      responses:
+        '200':
+          description: A successful response
+          schema:
+            type: string
+  /{item}:
+    get:
+      summary: Greet a user
+      operationId: bucket
+      parameters:
+        - name: item
+          in: path
+          description: a path to an item in bucket
+          type: string
+          required: true
+      x-google-backend:
+        disable_auth: true
+        address: https://storage.googleapis.com/fkscholarshipapp_testsite
+        path_translation: APPEND_PATH_TO_ADDRESS
+      responses:
+        '200':
+          description: A successful response
+          schema:
+            type: string
+  /application/{item}:
+    get:
+      summary: Greet a user
+      operationId: userapp
+      parameters:
+        - name: item
+          in: path
+          description: a path to an item in bucket
+          type: string
+          required: true
+      x-google-backend:
+        disable_auth: true
+        address: https://storage.googleapis.com/fkscholarshipapp_testsite
+        path_translation: APPEND_PATH_TO_ADDRESS
+      responses:
+        '200':
+          description: A successful response
+          schema:
+            type: string
+  /icons/{item}:
+    get:
+      summary: Greet a user
+      operationId: icons
+      parameters:
+        - name: item
+          in: path
+          description: a path to an item in bucket
+          type: string
+          required: true
+      x-google-backend:
+        disable_auth: true
+        address: https://storage.googleapis.com/fkscholarshipapp_testsite
+        path_translation: APPEND_PATH_TO_ADDRESS
+      responses:
+        '200':
+          description: A successful response
+          schema:
+            type: string

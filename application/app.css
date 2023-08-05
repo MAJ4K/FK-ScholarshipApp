@@ -148,6 +148,12 @@ main.active{display: block;}
 	grid-row: 1; grid-column: 3;
 	
 }
+.content_card>div>span{
+	display:  flex;
+	flex-direction: row;
+	width: max-content;
+	background-color: var(--palette1);
+}
 .v_divider{
 	grid-row: 1; grid-column: 2;
 	width: 3px; background-color: var(--palette2);}

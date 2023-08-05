@@ -46,7 +46,7 @@
 		<div class="bg-light my-2 sticky-top p-0" id="FILTERMENU">
 			<section>
 				<div class="btn-group" role="group">
-					<input type="radio" class="btn-check" name="filters" id="Mflt0" autocomplete="off" checked>
+					<input type="radio" class="btn-check" name="filters" id="Mflt0" autocomplete="off" disabled>
 					<label class="btn btn-outline-secondary" for="Mflt0">Recomended</label>
 					
 					<input type="radio" class="btn-check" name="filters" id="Mflt1" autocomplete="off">
@@ -55,7 +55,7 @@
 					<input type="radio" class="btn-check" name="filters" id="Mflt2" autocomplete="off">
 					<label class="btn btn-outline-secondary" for="Mflt2">Applied</label>
 
-					<input type="radio" class="btn-check" name="filters" id="Mflt3" autocomplete="off">
+					<input type="radio" class="btn-check" name="filters" id="Mflt3" autocomplete="off" checked>
 					<label class="btn btn-outline-secondary" for="Mflt3">All</label>
 				</div>
 				<div class="btn-group" role="group">
@@ -82,6 +82,7 @@
 	<main class="container" id="PROFILE">
 		<img class="mx-auto my-3 d-block" src="/icons/user.png" width="125px" alt="">
 		<form class="container">
+			<p>ID: </p>
 			<div class="input-group mb-1">
 				<span class="input-group-text">Name</span>
 				<input type="text" class="form-control" placeholder="First" disabled>
@@ -191,35 +192,35 @@
 				<label class="form-label">Open Dates</label>
 				<div class="input-group mb-3">
 					<select class="form-select" name="opens" aria-label="Default select example">
-						<option selected="" value="0">Opens</option>
-						<option value="1">January</option>
-						<option value="2">February</option>
-						<option value="3">March</option>
-						<option value="4">April</option>
-						<option value="5">May</option>
-						<option value="6">June</option>
-						<option value="7">July</option>
-						<option value="8">August</option>
-						<option value="9">September</option>
-						<option value="10">October</option>
-						<option value="11">November</option>
-						<option value="12">December</option>
+						<option selected="" value="-1">Opens</option>
+						<option value="0">January</option>
+						<option value="1">February</option>
+						<option value="2">March</option>
+						<option value="3">April</option>
+						<option value="4">May</option>
+						<option value="5">June</option>
+						<option value="6">July</option>
+						<option value="7">August</option>
+						<option value="8">September</option>
+						<option value="9">October</option>
+						<option value="10">November</option>
+						<option value="11">December</option>
 					</select>
 					<span class="input-group-text">to</span>
 					<select class="form-select" name="closes" aria-label="Default select example">
-						<option selected="" value="0">Due</option>
-						<option value="1">January</option>
-						<option value="2">February</option>
-						<option value="3">March</option>
-						<option value="4">April</option>
-						<option value="5">May</option>
-						<option value="6">June</option>
-						<option value="7">July</option>
-						<option value="8">August</option>
-						<option value="9">September</option>
-						<option value="10">October</option>
-						<option value="11">November</option>
-						<option value="12">December</option>
+						<option selected="" value="-1">Due</option>
+						<option value="0">January</option>
+						<option value="1">February</option>
+						<option value="2">March</option>
+						<option value="3">April</option>
+						<option value="4">May</option>
+						<option value="5">June</option>
+						<option value="6">July</option>
+						<option value="7">August</option>
+						<option value="8">September</option>
+						<option value="9">October</option>
+						<option value="10">November</option>
+						<option value="11">December</option>
 					</select>
 				</div>
 				<div class="input-group mt-3 mb-3">
