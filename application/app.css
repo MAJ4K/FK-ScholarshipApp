@@ -146,17 +146,24 @@ main.active{display: block;}
 	display: flex;
 	flex-direction: column;
 	grid-row: 1; grid-column: 3;
-	
+	gap: 0.5rem;	
 }
 .content_card>div>span{
 	display:  flex;
 	flex-direction: row;
-	width: max-content;
-	background-color: var(--palette1);
+}
+.content_card>div>span p{margin: 0;}
+.content_card>div>span .sep{
+	min-width: .5em; height: 100%;
+	margin: 0 0.3em;
+	transform: skewX(15deg);
+	background-color: #fff;
 }
 .v_divider{
 	grid-row: 1; grid-column: 2;
-	width: 3px; background-color: var(--palette2);}
+	width: 3px; background-color: var(--palette2);
+	margin-right: 0.1rem;
+}
 .content_card footer {
 	display: flex;
 	flex-direction: row;

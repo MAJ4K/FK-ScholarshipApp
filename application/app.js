@@ -22,13 +22,11 @@ const filter = {
 	formerrdiv: document.getElementById("filterInvalidFeedback"),
 	addbtn: document.getElementById("addfltbtn"),
 	dismissbtn: document.getElementById('filterModal').getElementsByClassName('btn-close')[0]
-}
-var filterdata = {
+};
+var filterdata = JSON.parse(localStorage.getItem("filters")) || {
 	id: 23,
 	filters: {}
 };
-if(JSON.parse(localStorage.getItem("filters")))
-	filterdata = JSON.parse(localStorage.getItem("filters"));
 
 var userdata = undefined;
 fetch("/user")
@@ -76,7 +74,7 @@ filter.addbtn.addEventListener('click', ()=>{
 	}
 	filterdata.filters[filtername] = data;
 	localStorage.setItem("filters", JSON.stringify(filterdata));
-	
+	userdata["filterdata"] = filterdata;post();
 	addSecondFilter(filtername,data);	
 	filter.dismissbtn.click();	
 });
@@ -98,13 +96,14 @@ surdelbtn.addEventListener('click',()=>{
 	}
 	filterdata.filters = tempdict;
 	localStorage.setItem("filters", JSON.stringify(filterdata));
+	userdata['filterdata'] = filterdata;post();
 	filter.aux[0].hidden = true;
 	filter.primaries[0].click();
 	document.getElementById('sureModal').getElementsByTagName('button')[0].click();
 });
 
 function userFetched() {
-	filterdata["filters"] = userdata["filters"];
+	filterdata = userdata["filterdata"];
 	for (const [key,value] of Object.entries(filterdata["filters"])){
 		addSecondFilter(key,value);
 	}
@@ -252,6 +251,7 @@ function saveProfile(save) {
 			profile[item.children[0].innerText] = itemData;
 		}
 		localStorage.setItem('profile',JSON.stringify(profile));
+		userdata['profile'] = profile;post();
 	} else {restoreProfileValues();}
 }
 function restoreProfileValues() {
@@ -307,7 +307,7 @@ function cardsFetched() {
 		const amtFnct = (arr) => {
 			var s = "";
 			for (const x of arr) {
-				s += `<p>${x}</p>`;
+				s += `${x} `;
 			}
 			return s;
 		}
@@ -316,10 +316,10 @@ function cardsFetched() {
 				(Array.isArray(item["Amount"])) ? amtFnct(item["Amount"]) : 
 				(typeof item["Amount"] == 'string') ? item["Amount"] : ""}
 		`;
-		const dates = `<p>
+		const dates = `
 			${(item["Opens"] != "None" && item["Due"] != "None") ? item["Opens"] + "-" + item["Due"]  :
 				(item["Opens"] != "None") ? item["Opens"] : 
-				(item["Due"] != "None") ? item["Due"] : ""}</p>
+				(item["Due"] != "None") ? item["Due"] : ""}
 		`;
 		const datesatt = [item["Opens"],item["Due"]];
 		const qtemp = (condition,icon) => {
@@ -354,7 +354,11 @@ function cardsFetched() {
 		<div class="v_divider"></div>
 		<div>
 			<h6>${title}</h6>
-			<span>${amt}<p class="sep"></p>${dates}</span>
+			<span class="badge py-0 text-dark rounded-pill border border-secondary border-2">
+				<p>${amt}</p>
+				<p class="sep bg-secondary"></p>
+				<p>${dates}</p>
+			</span>
 			<footer>${qualifiers}</footer>
 		</div>`;
 
@@ -407,4 +411,14 @@ function isValidUrl(string) {
   } catch (err) {
     return false;
   }
+}
+
+function post() {
+	fetch("/user", {
+		method: "POST",
+		headers: {'Content-Type': 'application/json'}, 
+		body: JSON.stringify(userdata)
+	}).then(res => {
+		console.log("Request complete! response:", res);
+	});
 }
