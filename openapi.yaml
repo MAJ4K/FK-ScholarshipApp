@@ -9,14 +9,14 @@ produces:
   - text/html
 
 x-google-allow: all
+x-google-backend:
+  address: https://us-central1-fkscholarshipapp.cloudfunctions.net/UserAccess
 
 paths:
   /user:
     post:
-      summary: get the user data
+      summary: update user data
       operationId: userpost
-      x-google-backend:
-        address: https://us-east4-fkscholarshipapp.cloudfunctions.net/addUser
       responses:
         '200':
           description: A successful response
@@ -32,12 +32,9 @@ paths:
               message:
                 type: string
                 description: The message to be posted 
-  /user:
     get:
       summary: get the user data
       operationId: userget
-      x-google-backend:
-        address: https://us-east4-fkscholarshipapp.cloudfunctions.net/getTestUser
       responses:
         '200':
           description: A successful response

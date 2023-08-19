@@ -25,7 +25,8 @@ signinbtns[0].addEventListener('click', ()=>{
 		var token = credential.accessToken;
 		// The signed-in user info.
 		var user = result.user;
-		window.location.href = "application/app.html";
+		console.debug("Yatta");
+		// window.location.href = "application/app.html";
 		// IdP data available in result.additionalUserInfo.profile.
 			// ...
 	}).catch((error) => {
@@ -38,6 +39,6 @@ signinbtns[0].addEventListener('click', ()=>{
 		// The firebase.auth.AuthCredential type that was used.
 		var credential = error.credential;
 		// ...
-		window.location.href = "application/app.html";
+		console.error(error.code,error.message);
 	});
 });

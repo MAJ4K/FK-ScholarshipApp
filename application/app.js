@@ -417,7 +417,7 @@ function post() {
 	fetch("/user", {
 		method: "POST",
 		headers: {'Content-Type': 'application/json'}, 
-		body: JSON.stringify(userdata)
+		body: "JSON.stringify(userdata)"
 	}).then(res => {
 		console.log("Request complete! response:", res);
 	});
