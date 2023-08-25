@@ -3,55 +3,50 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Table Feed</title>
+	<title>Document</title>
 	<style>
-		*{
+		* {
 			box-sizing: border-box;
-			text-decoration: none;
 			margin: 0; padding: 0;
+			text-decoration: none;
 			outline: none;
-			border: none;
 		}
-		body{
+		body {
 			width: 100vw; height: 100vh;
+			background-color: #cccccc;
 			display: flex;
 			flex-direction: column;
 			align-items: center;
 			justify-content: center;
-			gap: 0.25em;
-		}
-		figure{
-			padding: 1em;
-			border-radius: 1em;
-			max-width: 95vw;
-			width: 40em;
-		}
-		button{
-			border-radius: 1em;
-		}
-		p[title]{
-			height: 0.2em; width: 100%;
-			margin: 0.25em 0;
-			background-color: black;
-		}
-		.frosted{
-			background: linear-gradient(135, #ffffff1a, #fff0);
-			-webkit-backdrop-filter: blur(10px);
-		}
-		.loginBtn{
-			width: 100%;
-			text-align: center;
-			text-justify: center;
 		}
 	</style>
+	<script src="https://accounts.google.com/gsi/client" async defer></script>
 </head>
 <body>
-	<figure class="frosted">
-		<h1>Log In</h1>
-		<p title="Hello"></p>
-		<button class="loginBtn" type="button">
-			<img src="icons/logo-king.png"> FutureKings
-		</button>
-	</figure>
+<span>
+	<div id="g_id_onload"
+		data-client_id="2587253159-l3mljeof06hdf61v3aaej64vu1rjmumf.apps.googleusercontent.com"
+		data-context="signup"
+		data-ux_mode="popup"
+		data-callback="handleCred"
+		data-nonce=""
+		data-auto_prompt="false">
+	</div>
+	<div class="g_id_signin"
+		data-type="standard"
+		data-shape="pill"
+		data-theme="outline"
+		data-text="signin"
+		data-size="large"
+		data-logo_alignment="center"
+		data-width="250">
+	</div>
+</span>
 </body>
+<script>
+	function handleCred(params) {
+		console.log(params);
+	}
+</script>
+<!-- <script src="script.js"></script> -->
 </html>
