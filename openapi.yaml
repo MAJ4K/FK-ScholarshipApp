@@ -12,11 +12,23 @@ x-google-allow: all
 x-google-backend:
   address: https://us-central1-fkscholarshipapp.cloudfunctions.net/UserAccess
 
+securityDefinitions:
+  google_id_token:
+    authorizationUrl: ""
+    flow: "implicit"
+    type: "oauth2"
+    x-google-issuer: "https://accounts.google.com"
+    x-google-jwks_uri: "https://www.googleapis.com/oauth2/v3/certs"
+    # Optional. Replace YOUR-CLIENT-ID with your client ID
+    x-google-audiences: "2587253159-l3mljeof06hdf61v3aaej64vu1rjmumf.apps.googleusercontent.com"
+
 paths:
   /user:
     post:
       summary: update user data
       operationId: userpost
+      security:
+        - google_id_token: []
       responses:
         '200':
           description: A successful response
@@ -35,6 +47,8 @@ paths:
     get:
       summary: get the user data
       operationId: userget
+      security:
+        - google_id_token: []
       responses:
         '200':
           description: A successful response
@@ -66,6 +80,8 @@ paths:
         disable_auth: true
         address: https://storage.googleapis.com/fkscholarshipapp_testsite
         path_translation: APPEND_PATH_TO_ADDRESS
+      security:
+        - google_id_token: []
       responses:
         '200':
           description: A successful response
@@ -85,6 +101,8 @@ paths:
         disable_auth: true
         address: https://storage.googleapis.com/fkscholarshipapp_testsite
         path_translation: APPEND_PATH_TO_ADDRESS
+      security:
+        - google_id_token: []
       responses:
         '200':
           description: A successful response
@@ -104,6 +122,8 @@ paths:
         disable_auth: true
         address: https://storage.googleapis.com/fkscholarshipapp_testsite
         path_translation: APPEND_PATH_TO_ADDRESS
+      security:
+        - google_id_token: []
       responses:
         '200':
           description: A successful response
