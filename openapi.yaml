@@ -80,8 +80,6 @@ paths:
         disable_auth: true
         address: https://storage.googleapis.com/fkscholarshipapp_testsite
         path_translation: APPEND_PATH_TO_ADDRESS
-      security:
-        - google_id_token: []
       responses:
         '200':
           description: A successful response
