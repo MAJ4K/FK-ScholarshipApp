@@ -2,8 +2,8 @@
 	"name":"PWA Test",
 	"short_name":"PWA Test",
 	"start_url":".",
-	"background_color":"#6dcbd1",
-	"theme_color":"#003442",
+	"background_color":"#b8860b",
+	"theme_color":"#daa520",
 	"display":"standalone",
 	"icons":[
 		{

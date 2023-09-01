@@ -21,7 +21,6 @@
 			align-items: center;
 			justify-content: center;
 		}
-		.loginBtn img{height: 3rem;}
 	</style>
 	<script src="https://accounts.google.com/gsi/client" async defer></script>
 </head>
@@ -47,8 +46,26 @@
 </span>
 </body>
 <script>
+	var worker = undefined;
+	if ('serviceWorker' in navigator){
+		navigator.serviceWorker.register(`/sw.js`)
+		.then(registration =>{
+			worker = registration.active
+			console.debug("SW Registered", registration);
+		}).catch (err => {
+			console.error("SW Registration Failed!", err);
+		});
+	} else {
+		console.error("This app is not supported");
+	}
+
 	function handleCred(params) {
-		console.log(params.credential);
+		var data = {
+			type: 'login',
+			data: params.credential
+		}
+		if (!worker) {return;}
+		worker.postMessage(data);
 	}
 </script>
 </html>
