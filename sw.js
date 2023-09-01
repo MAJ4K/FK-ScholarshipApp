@@ -7,14 +7,22 @@ self.addEventListener('install', e =>{
 });
 
 self.addEventListener('activate', e => {
-	clients.claim();
+	e.waitUntil(clients.claim());
 });
 
 self.addEventListener('fetch', e => {
+	const processRequest = () => {
+		if (self.location.origin != getOriginFromUrl(e.request.url) || !credential){
+			return e.request;
+		}
+		const myHeaders = new Headers();
+		myHeaders.append("test", "Hello World");
+		return new Request(e.request,{headers: myHeaders});
+	}
 	e.respondWith(
 		caches.match(e.request)
 		.then(response => {
-			return response || fetch(e.request);
+			return response || fetch(processRequest());
 		})
 	);
 });
@@ -29,3 +37,10 @@ const messageHandler = {
 }
 
 self.onmessage = (e) => {messageHandler[e.data.type](e)}
+
+const getOriginFromUrl = (url) => {
+  const pathArray = url.split('/');
+  const protocol = pathArray[0];
+  const host = pathArray[2];
+  return protocol + '//' + host;
+};
