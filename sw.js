@@ -16,7 +16,8 @@ self.addEventListener('fetch', e => {
 			return e.request;
 		}
 		const myHeaders = new Headers();
-		myHeaders.append('Authorization', 'Bearer ' + credential);
+		// myHeaders.append('Authorization', 'Bearer ' + credential);
+		myHeaders.append('user',credential);
 		return new Request(e.request,{headers: myHeaders});
 	}
 	e.respondWith(
