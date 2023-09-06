@@ -418,7 +418,6 @@ function post() {
 		method: "POST",
 		headers: {'Content-Type': 'application/json'}, 
 		body: "JSON.stringify(userdata)"
-	}).then(res => {
-		console.log("Request complete! response:", res);
-	});
+	}).then((response) => response.json())
+	.then((json) => console.log(json));
 }
