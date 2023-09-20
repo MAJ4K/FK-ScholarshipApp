@@ -13,14 +13,14 @@ const stripparams = [
 		type:'section',
 		classes: 'd-flex flex-row flex-nowrap gap-1 overflow-auto',
 		children:[
-			{type:'div',classes:'btn-group',
+			{type:'div',classes:'btn-group',handle:'primary_filters',
 			children:[
 				{type:'rad-l', id:"Recomended", text:"Recomended"},
 				{type:'rad-l', id:"Applied", text:"Applied"},
 				{type:'rad-l', id:"Favorites", text:"Favorites"},
 				{type:'rad-l', id:"AllScholar", text:"All"}
 			]},
-			{type:'div',classes:'btn-group',
+			{type:'div',classes:'btn-group',handle:'secondary_filters',
 			children:[
 				{type:'rad-l', added:"secondary", id:"test", text:"test"},
 				{type:'rad-l', added:"secondary", id:"test1", text:"test"},
@@ -30,7 +30,8 @@ const stripparams = [
 			]}
 		]
 	},
-	{type:'div', classes:'btn-group p-0 m-0', children:[
+	{type:'div', classes:'btn-group p-0 m-0', handle:'filter_fncts',
+	children:[
 		{type:'button',classes:'btn btn-danger',text:'del'},
 		{type:'button',classes:'btn btn-primary',text:'add'}
 	]}

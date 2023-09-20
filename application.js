@@ -26,12 +26,14 @@ const elmtBlender = {
 		label.setAttribute('for',data.id);
 		label.innerText = data.text;
 		label.preNode = radio;
+		(data.handle) ? label.id = data.handle:"";
 		return label;
 	},
 	'default': (data) => {
 		const elmt = document.createElement(data.type);
 		(data.classes) ? elmt.classList.add(...data.classes.split(' ')):"";
 		(data.text) ? elmt.innerText = data.text:"";
+		(data.handle) ? elmt.id = data.handle:"";
 		return elmt;
 	}
 }
@@ -61,10 +63,10 @@ class Page {
 		this.title = title;
 		// create a page with connected nav button
 		const navHTML = `
-			<input type="radio" class="btn-check" name="navigation" id="${title}" autocomplete="off">
-			<label class="btn btn-outline-primary" for="${title}">${title}</label>
+			<input type="radio" class="btn-check" name="navigation" id="${title}_nav" autocomplete="off">
+			<label class="btn btn-outline-primary" for="${title}_nav">${title}</label>
 		` ;
-		const pageHTML = `<main class="container" id="${title}"></main>`;
+		const pageHTML = `<main class="container" id="${title}_nav"></main>`;
 		nav.insertAdjacentHTML('afterbegin',navHTML);
 		nav.insertAdjacentHTML('afterend',pageHTML);
 
