@@ -30,7 +30,8 @@ nav>label {
 	width: 100%;
 }
 #LoadingIndicator {
-	background-color: green;
+	border: solid 0.1rem gray;
+	border-radius: .5rem;
 	height: 100%;
 	aspect-ratio: 1;
 }
@@ -40,10 +41,14 @@ main {
 	flex-direction: column;
 	width: 100%; height: 100%;
 	grid-row: 1; grid-column: 1/-1;
+	overflow-x: hidden; overflow-y: scroll;
 }
 
 main.active
 {display: flex;}
+
+.bg-0
+{background-color: var(--palette0);}
 
 
 @media only screen and (orientation: landscape) {
