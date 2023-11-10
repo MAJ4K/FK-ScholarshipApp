@@ -1,16 +1,12 @@
+import Page from '/application.js'
 const nav = document.getElementsByTagName('nav')[0];
-	const navbtns = nav.getElementsByTagName('label');
 
-for (const btn of navbtns) {
-	btn.addEventListener('click', () => changeTab(btn));
-}
+const profiles = new Page('Profile')
+const page = new Page('Scholarships');
+const page2 = new Page('Internships');
 
-function changeTab(navbtn) {
-	const id = navbtn.attributes.for.value;
-	const pages = document.getElementsByTagName('main');
+profiles.page.innerText = 'profile'; 
+page.page.innerText = page.title; 
+page2.page.innerText = page2.title; 
 
-	for (const page of pages) {
-		page.classList.remove('active');
-		if (page.id == id) page.classList.add('active');
-	}
-}
+page.navbtn[0].click();
