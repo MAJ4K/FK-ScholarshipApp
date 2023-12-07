@@ -83,7 +83,7 @@ export default class ContentPage extends Page{
 		super(title);
 	}
 
-	createJumbotron(){
+	createJumbotron(params){
 		const carHTML = `
 		<!-- Carousel -->
 		<section id="demo" class="carousel slide my-1" data-bs-ride="carousel">
@@ -132,26 +132,32 @@ export default class ContentPage extends Page{
 		strip.radioNumber = Page.radioCounter;
 		return strip;
 	}
-	createContent(){
+	createContent(data,params){
 		const contentHTML = `<section class="row m-0"></section>`;
 		this.page.insertAdjacentHTML('beforeend',contentHTML);
 		const container = this.page.children[this.page.children.length - 1];
 
-		container.insertAdjacentHTML('beforeend',ContentPage.cardtypes.long);
+		for (const item of data) {
+			container.insertAdjacentHTML('beforeend',ContentPage.cardtypes.long(item,params));
+		}
 
 		return container;
 	}
 
 	static cardtypes = {
-		long : `
-		<div class="card col-md-6">
-			<div class="card-body">
-				<h4 class="card-title">Card title</h4>
-				<p class="card-text">Some example text. Some example text.</p>
-				<a href="#" class="card-link">Card link</a>
-				<a href="#" class="card-link">Another link</a>
-			</div>
-		</div>`
+		long : (data,params) => {
+			const title = (params.title) ? `<h4 class="card-title">${data[params.title]}</h4>`:'';
+			const para = (params.p) ? `<p class="card-text">${data[params.p]}</p>`:'';
+			return `
+			<div class="card col-md-6">
+				<div class="card-body">
+					${title}
+					${para}
+					<a href="#" class="card-link">Card link</a>
+					<a href="#" class="card-link">Another link</a>
+				</div>
+			</div>`
+		}
 	}
 }
 

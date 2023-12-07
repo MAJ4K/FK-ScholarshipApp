@@ -5,7 +5,7 @@ const profPage = new FPage('Profile');
 const schPage = new CPage('Scholarships');
 const testPage = new CPage('test');
 
-testPage.navbtn[0].click();
+schPage.navbtn[0].click();
 
 
 const stripparams = [
@@ -43,11 +43,23 @@ const formparams = [
 	{"Level":['']},
 	{"Major":["Computer Engineering"]}
 ]
+
+const schParams = {title:'Title',p:'Title'};
 let debuglist = [];
 debuglist.push(schPage.createJumbotron());
 debuglist.push(schPage.createNavStrip(stripparams));
-debuglist.push(schPage.createContent());
-debuglist.push(testPage.createContent());
+// debuglist.push(testPage.createContent());
 debuglist.push(profPage.createImg());
 debuglist.push(profPage.createForm(formparams));
+
+
+var scholarship_data;
+fetch('./Sheet1.json')
+    .then((response) => response.json())
+    .then((json) => {
+		console.log('hello');
+		debuglist.push(schPage.createContent(json,schParams));
+	});
+
+
 console.debug(debuglist);
