@@ -56,6 +56,18 @@ export function r_Layout(objData,r_key = null){
 	return elements;
 }
 
+function cardElmt(data,params) {
+	if(data == 'None') return '';
+	var content = '';
+	if (params.keys) for (const key of params.keys) {
+		(!/N\/A|None/.test(data[key])) ?
+			content += `<${params.subtag}>${data[key]}</${params.subtag.split(' ')[0]}>`:'';
+	}
+	if (!content) content = data ;
+	var html = `<${params.tag} class='${params.classes}'>${content}</${params.tag.split(' ')[0]}>`
+	return html
+}
+
 
 
 class Page {
@@ -146,15 +158,25 @@ export default class ContentPage extends Page{
 
 	static cardtypes = {
 		long : (data,params) => {
-			const title = (params.title) ? `<h4 class="card-title">${data[params.title]}</h4>`:'';
-			const para = (params.p) ? `<p class="card-text">${data[params.p]}</p>`:'';
+			const title = (params.title) ? cardElmt(data[params.title],{tag:'h4 class="card-title"'}):'';
+			const badge = (params.badge) ? cardElmt(data[params.badge],{tag:'div class="badge text-dark bg-primary rounded-pill"'}):'';
+			var attributes = '';
+			var customElements = '';
+			for (var key of Object.keys(params)) {
+				if (/title|badge|attributes/.test(key)) continue;
+				customElements += cardElmt(data,params[key]) + '\n';
+			}
+			for (const attrib of params.attributes) {
+				if (!/No|None|N\/A/.test(data[attrib])){
+					attributes += `${attrib}="${data[attrib]}"`;
+				}
+			}
 			return `
-			<div class="card col-md-6">
+			<div class="card col-md-6" ${attributes}>
 				<div class="card-body">
 					${title}
-					${para}
-					<a href="#" class="card-link">Card link</a>
-					<a href="#" class="card-link">Another link</a>
+					${badge}
+					${customElements}
 				</div>
 			</div>`
 		}

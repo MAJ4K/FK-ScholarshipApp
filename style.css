@@ -50,6 +50,34 @@ main.active
 .bg-0
 {background-color: var(--palette0);}
 
+.card .icon-group>img{
+	width: 2em; aspect-ratio: 1;
+	padding: 0.2em;
+	display: none;
+}
+.card-body>span{
+	font-weight: bolder;
+	display: flex; flex-direction: row;
+	flex-wrap: wrap; column-gap: .5em;
+}
+.card-body>span>.infoItem:not(:first-child){
+	display: flex; gap: .5em;
+	justify-content: center; align-items: center;
+}
+.card-body>span>.infoItem:not(:first-child):before{
+	content: "";
+	position: relative; display: block;
+	background-color: black;
+	width: .5em; height: .5em;
+	border-radius: 100%;
+}
+.card[renewable] .icon-group>img:nth-child(1),
+.card[character-based] .icon-group>img:nth-child(2),
+.card[merit-based] .icon-group>img:nth-child(3),
+.card[need-based] .icon-group>img:nth-child(4),
+.card[gender-based="Male"] .icon-group>img:nth-child(5),
+.card[gender-based="Female"] .icon-group>img:nth-child(6)
+{display: block;}
 
 @media only screen and (orientation: landscape) {
 	nav {
