@@ -1,4 +1,4 @@
-import CPage,{FormPage as FPage} from '/application.js'
+import CPage,{FormPage as FPage, Modal} from '/application.js'
 const nav = document.getElementsByTagName('nav')[0];
 
 const profPage = new FPage('Profile');
@@ -110,9 +110,12 @@ const filters = {
 	actions: document.getElementById('filter_fncts').children,
 }
 
+const filterModal = new Modal('filterModal');
+
 filters.actions[0].addEventListener('click',() => {
 	console.log('delete filter');
 });
 filters.actions[1].addEventListener('click',() => {
 	console.log('add filter');
+	filterModal.element.classList.add('active');
 });

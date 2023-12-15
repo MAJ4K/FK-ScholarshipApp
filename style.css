@@ -79,6 +79,7 @@ main.active
 .card[gender-based="Female"] .icon-group>img:nth-child(6)
 {display: block;}
 
+
 @media only screen and (orientation: landscape) {
 	nav {
 		grid-row: 1/-1; grid-column: 1;

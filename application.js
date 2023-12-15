@@ -258,3 +258,13 @@ export class FormPage extends Page {
 		return formElmt;
 	}
 }
+
+
+export class Modal{
+	constructor(id){
+		this.element = document.createElement('figure');
+		this.element.id = id;
+		this.element.classList.add(...["MOD"])
+		document.body.appendChild(this.element);
+	}
+}
