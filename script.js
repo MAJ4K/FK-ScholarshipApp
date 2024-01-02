@@ -1,4 +1,20 @@
 import CPage,{FormPage as FPage, Modal} from '/application.js'
+
+class Profile {
+	constructor(){
+		this.id = '320fjwe2w3';
+		this.name = ['',''];
+		this.email = [''];
+		this.level = [''];
+		this.major = [''];
+		this.data = {};
+	}
+
+	getdata(key){return this.data[key];}
+	overwriteData(key,item){this.data[key] = item;}
+}
+
+const user = new Profile();
 const nav = document.getElementsByTagName('nav')[0];
 
 const profPage = new FPage('Profile');
@@ -21,19 +37,13 @@ const stripparams = [
 				{type:'rad-l', id:"AllScholar", text:"All"}
 			]},
 			{type:'div',classes:'btn-group',handle:'secondary_filters',
-			children:[
-				{type:'rad-l', added:"secondary", id:"test", text:"test"},
-				{type:'rad-l', added:"secondary", id:"test1", text:"test"},
-				{type:'rad-l', added:"secondary", id:"test2", text:"test"},
-				{type:'rad-l', added:"secondary", id:"test3", text:"test"},
-				{type:'rad-l', added:"secondary", id:"test4", text:"test"},
-			]}
+			children:[]}
 		]
 	},
 	{type:'div', classes:'btn-group p-0 m-0', handle:'filter_fncts',
 	children:[
-		{type:'button',classes:'btn btn-danger',text:'del'},
-		{type:'button',classes:'btn btn-primary',text:'add'}
+		{type:'button',classes:'btn btn-danger',text:'del', data_bs_toggle:"modal", data_bs_target:"#Delete_Filter_Modal"},
+		{type:'button',classes:'btn btn-primary',text:'add', data_bs_toggle:"modal", data_bs_target:"#Add_Filter_Modal"}
 	]}
 ]
 
@@ -48,7 +58,7 @@ const schParams = {
 	title:'Title',badge:'Amount',
 	Dategroup:{tag:'span', subtag:'div class="infoItem"', keys:['Opens','Due']},
 	IMGgroup:{tag:'div class="btn-group text-dark bg-secondary icon-group"'},
-	infoGroup:{tag:'span', subtag: 'div class="infoItem"',
+	infoGroup:{tag:'span', subtag:'div class="infoItem"',
 		keys:['Major Type','Grade Eligibility','GPA','Geography','Special Eligibility',]},
 	attributes:['Opens','Due','Renewable','Service/\ncharacter-based','Academic Merit-based','Need-based','Gender-based','Must identify as Black/ minority','link'],
 };
@@ -62,14 +72,14 @@ debuglist.push(profPage.createImg());
 debuglist.push(profPage.createForm(formparams));
 
 
-var scholarship_data;
 fetch('./Sheet1.json')
     .then((response) => response.json())
     .then((json) => {
 		debuglist.push(schPage.createContent(json,schParams));
 	})
 	.then(()=>{
-		const cardIconGroups = document.getElementsByClassName('icon-group');
+		const cardIconGroups = 
+			document.getElementsByClassName('icon-group');
 		const IconsTemplate = [
 			document.createElement('img'),
 			document.createElement('img'),
@@ -100,22 +110,117 @@ console.debug(debuglist);
 
 /////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////
+/////////////////////Scholarship Filters/////////////////////
 /////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////
-
-const filters = {
-	primaries: document.getElementById('primary_filters').getElementsByTagName('label'),
+const filters_nav = {
+	primaries: document.getElementById('primary_filters'),
 	secondaries: document.getElementById('secondary_filters'),
 	actions: document.getElementById('filter_fncts').children,
 }
 
-const filterModal = new Modal('filterModal');
+const filterparams = [
+	{"Label":[''], 'required':true},
+	{"_IMGbtn":[
+		'renewable.png','character.png','merit.png',
+		'need.png','male.png','female.png'], type: 'rad-l'},
+	{"Window":['',''], type: 'range'},
+	{"GPA":[''], type: 'range'},
+	{"Major":["Computer Engineering"]},
+	{"Key Words":["STEM, senior, sports"]}
+]
 
-filters.actions[0].addEventListener('click',() => {
-	console.log('delete filter');
+const filterModal = new Modal('Add Filter');
+filterModal.createForm(filterparams);
+const filterDelPrompt = new Modal('Delete Filter?',6);
+
+const filterModalbtns = [];
+filterModalbtns.push(...filterModal.element
+	.getElementsByClassName('modal-footer')[0]
+	.getElementsByTagName('button')
+)
+filterModalbtns.push(...filterDelPrompt.element
+	.getElementsByClassName('modal-footer')[0]
+	.getElementsByTagName('button')
+)
+
+//'Submit' add filter form after clicking Apply
+filterModalbtns[0].addEventListener('click',()=>{
+	const form = filterModal.form
+	const feilds = form.getElementsByTagName('input');
+	const filterdata = user.getdata('filters') || {};
+	
+	// Validate form feilds
+	var isValid = true;
+	const invalidateForm = (errtext,fid = 0) => {
+		feilds[fid].classList.add('is-invalid');
+		isValid = false;
+		console.log(errtext);
+	}
+	for (const filter of Object.keys(filterdata)) {
+		if (filter == feilds[0].value){
+			invalidateForm("There is already a filter with that label");
+			break;
+		}
+	}
+	if(!/^[\w.-]+$/gi.test(feilds[0].value)){
+		invalidateForm(`Improper Formatting: 
+		label must contain 1 or more characters
+		Allowed Characters = [0-9][a-z][A-Z][_]
+		`)
+	}
+	if(!isValid){return}
+
+	//assemble new filter data
+	const filterAssembly = {}
+	const addvalue = (name,value) => {
+		if(filterAssembly[name]) 
+			filterAssembly[name].push(value);
+		else filterAssembly[name] = [value];
+	}
+	for (const feild of feilds) {
+		if (feild.name == 'Label') continue;
+		switch (feild.type) {
+			case 'checkbox':
+				addvalue(feild.name,feild.checked);
+				break;
+			default:
+				addvalue(feild.name,feild.value);
+		}
+	}
+	//Save filter data
+	filterdata[feilds[0].value] = filterAssembly;
+	user.overwriteData('filters',filterdata);
+
+	updateFilters();
+
+	filterModal.close();
 });
-filters.actions[1].addEventListener('click',() => {
-	console.log('add filter');
-	filterModal.element.classList.add('active');
-});
+
+//Update Secondary filters in Scholarships Tab
+function updateFilters() {
+	const nodeAssembly = [];
+	//assemble new filter btns
+	for (const filter of Object.entries(user.getdata('filters'))) {
+		const check = document.createElement('input');
+		const label = document.createElement('label');
+		check.type = 'radio'
+		check.classList.add('btn-check')
+		check.name = filters_nav.primaries.getElementsByTagName('input')[0].name
+		check.id = filter[0]
+		check.autocomplete = 'off'
+		label.classList.add('btn','btn-outline-secondary')
+		label.setAttribute('for',filter[0]);
+		label.innerText = filter[0];
+		nodeAssembly.push(check);
+		nodeAssembly.push(label);
+	}
+	//Replace buttons from filters_nav.secondaries
+	filters_nav.secondaries.replaceChildren(...nodeAssembly);
+}
+/////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////
+

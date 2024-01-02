@@ -1,4 +1,13 @@
+//////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////
+// This whole thing needs comments atleast where there are 	//
+//					classes & Functions						//
+//////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////
+
+
 const nav = document.getElementsByTagName('nav')[0];
+
 
 
 export function changeTab(navbtn) {
@@ -34,6 +43,8 @@ const elmtBlender = {
 		(data.classes) ? elmt.classList.add(...data.classes.split(' ')):"";
 		(data.text) ? elmt.innerText = data.text:"";
 		(data.handle) ? elmt.id = data.handle:"";
+		(data.data_bs_toggle) ? elmt.setAttribute("data-bs-toggle", data.data_bs_toggle):"";
+		(data.data_bs_target) ? elmt.setAttribute("data-bs-target", data.data_bs_target):"";
 		return elmt;
 	}
 }
@@ -235,23 +246,7 @@ export class FormPage extends Page {
 		});
 		btnsElmt.append(formBtns[2],formBtns[1]);
 		
-		for (const group of params) {
-			const keys = Object.keys(group);
-			const elmt = document.createElement('div');
-			elmt.classList.add('input-group','row','mx-0');
-			const label = document.createElement('span');
-			label.classList.add('input-group-text','col-sm-2');
-			label.innerText = keys[0];
-			elmt.appendChild(label);
-			for (const feild of group[keys[0]]) {
-				const subElmt = document.createElement('input');
-				subElmt.type = (group.type) ? group.type : 'text';
-				subElmt.classList.add('form-control');
-				subElmt.placeholder = feild;
-				elmt.appendChild(subElmt);
-			}
-			formElmt.appendChild(elmt);
-		}
+		formSetup(formElmt,params);
 		formElmt.appendChild(btnsElmt);
 		formElmt.appendChild(formBtns[0]);
 
@@ -261,10 +256,76 @@ export class FormPage extends Page {
 
 
 export class Modal{
-	constructor(id){
-		this.element = document.createElement('figure');
-		this.element.id = id;
-		this.element.classList.add(...["MOD"])
-		document.body.appendChild(this.element);
+	constructor(title,btnMode = 1){
+		const id = title.replace(" ","_").replace(/[\W]/gi,"");
+		
+		const btnsHtml = `
+			${(btnMode & 1) ? `<button type="button" class="btn btn-primary">Apply</button>`:''}
+			${(btnMode & 2) ? `<button type="button" class="btn btn-danger">Delete</button>`:''}
+			${(btnMode & 4) ? `<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>`:''}`
+		const modalHtml = `
+		<figure class="modal" id="${id}_Modal">
+		<div class="modal-dialog"><div class="modal-content">
+
+			<!-- Modal Header -->
+			<div class="modal-header">
+				<h4 class="modal-title">${title}</h4>
+				<input type="button" class="btn-close" data-bs-dismiss="modal">
+			</div>
+
+			<!-- Modal footer -->
+			<div class="modal-footer">
+				${btnsHtml}
+			</div>
+
+		</div></div>
+		</figure>`;
+		document.body.insertAdjacentHTML('beforeend',modalHtml);
+
+		this.element = document.body.children[document.body.children.length - 1];
+	}
+
+	close(){
+		const btn = this.element.getElementsByClassName('btn-close')[0];
+		btn.click();
+	}
+
+	createForm(params){
+		this.form = document.createElement('form');
+		this.form.classList.add('modal-body');
+		const header = this.element.getElementsByClassName('modal-header')[0];
+		header.insertAdjacentElement('afterend',this.form);
+
+		formSetup(this.form,params);
+		return this.form;
+	}
+}
+
+function formSetup(form,params) {
+	for (const group of params) {
+		const keys = Object.keys(group);
+		const elmt = document.createElement('div');
+		(group.type == 'rad-l') ? 
+			elmt.classList.add('btn-group') :
+			elmt.classList.add('input-group', 'mx-0');
+		const label = document.createElement('span');
+		label.classList.add('input-group-text','col-sm-2');
+		label.innerText = keys[0];
+		(keys[0][0] != '_') ? elmt.appendChild(label):'';
+		for (const feild of group[keys[0]]) {
+			const subtype = (group.type) ? group.type : 'text';
+			const require = (group.required) ? 'required':'';
+			var subElmtHtml = `
+				<input type="${subtype}" name="${keys[0]}" class="form-control" placeholder="${feild}" ${require}>`;
+			if (group.type == 'rad-l'){
+				const feildb = feild.split('.');
+				const labelitem = (feildb[1] == 'png') ? `<img src="icons/${feild}" class="form-icons">` : feild;
+				subElmtHtml = `
+					<input type="checkbox" class="btn-check" name="pageRadio1" id="${feildb[0]}" autocomplete="off">
+					<label class="btn btn-outline-secondary" for="${feildb[0]}">${labelitem}</label>`;
+			}
+			elmt.insertAdjacentHTML('beforeend',subElmtHtml);
+		}
+		form.appendChild(elmt);
 	}
 }

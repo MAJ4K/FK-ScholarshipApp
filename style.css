@@ -79,6 +79,8 @@ main.active
 .card[gender-based="Female"] .icon-group>img:nth-child(6)
 {display: block;}
 
+form>* {margin-bottom: .5em;}
+.form-icons{ width: 1.7rem; aspect-ratio: 1;}
 
 @media only screen and (orientation: landscape) {
 	nav {
