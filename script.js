@@ -17,9 +17,9 @@ class Profile {
 const user = new Profile();
 const nav = document.getElementsByTagName('nav')[0];
 
-const profPage = new FPage('Profile');
-const schPage = new CPage('Scholarships');
-const testPage = new CPage('test');
+const profPage = new FPage('Profile',document.getElementById('UserNavs'));
+const schPage = new CPage('Scholarships',document.getElementById('UserNavs'));
+const testPage = new CPage('test',document.getElementById('UserNavs'));
 
 schPage.navbtn[0].click();
 
@@ -144,7 +144,7 @@ filterModalbtns.push(...filterDelPrompt.element
 	.getElementsByTagName('button')
 )
 
-//'Submit' add filter form after clicking Apply
+//"Submit" add filter form after clicking Apply
 filterModalbtns[0].addEventListener('click',()=>{
 	const form = filterModal.form
 	const feilds = form.getElementsByTagName('input');
@@ -194,6 +194,17 @@ filterModalbtns[0].addEventListener('click',()=>{
 
 	updateFilters();
 
+	//Clear Modal
+	for (const feild of feilds) {
+		switch (feild.type) {
+			case 'checkbox':
+				feild.checked = false;
+				break;
+			default:
+				feild.value = '';
+		}
+	}
+
 	filterModal.close();
 });
 
@@ -201,22 +212,38 @@ filterModalbtns[0].addEventListener('click',()=>{
 function updateFilters() {
 	const nodeAssembly = [];
 	//assemble new filter btns
-	for (const filter of Object.entries(user.getdata('filters'))) {
+	for (const filter of Object.entries(user.getdata('filters'))){
 		const check = document.createElement('input');
 		const label = document.createElement('label');
 		check.type = 'radio'
 		check.classList.add('btn-check')
-		check.name = filters_nav.primaries.getElementsByTagName('input')[0].name
+		check.name = filters_nav.primaries
+			.getElementsByTagName('input')[0].name
 		check.id = filter[0]
 		check.autocomplete = 'off'
 		label.classList.add('btn','btn-outline-secondary')
 		label.setAttribute('for',filter[0]);
 		label.innerText = filter[0];
+		label.addEventListener('click',()=>filterByData(...filter))
 		nodeAssembly.push(check);
 		nodeAssembly.push(label);
 	}
 	//Replace buttons from filters_nav.secondaries
 	filters_nav.secondaries.replaceChildren(...nodeAssembly);
+}
+
+//Recomended: filter scholarships as uploaded from the Internet
+
+//Applied & Favorites: filter scholarships to 
+//show only Applied or Favorited
+
+//All filter: erase active filter mode and show all Scholarships
+filters_nav.primaries.getElementsByTagName('input')[3]
+	.addEventListener('click',() => {});
+filters_nav.primaries.getElementsByTagName('input')[3].click();
+
+//Secondary Filters: show scholarships according to data
+function filterByData(name,data) {
 }
 /////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////

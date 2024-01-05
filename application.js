@@ -6,10 +6,6 @@
 //////////////////////////////////////////////////////////////
 
 
-const nav = document.getElementsByTagName('nav')[0];
-
-
-
 export function changeTab(navbtn) {
 	const id = navbtn.attributes.for.value;
 	const tabs = document.getElementsByTagName('main');
@@ -80,30 +76,34 @@ function cardElmt(data,params) {
 }
 
 
-
+//Page class creates a main page 
+//and a btn to navigate to the page
+//!!! THIS IS A VIRTUAL CLASS 
 class Page {
-	constructor(title){
+	constructor(title,navlocation){
 		this.title = title;
-		// create a page with connected nav button
+		// create a nav button and place it at the location
 		const navHTML = `
 			<input type="radio" class="btn-check" name="navigation" id="${title}_nav" autocomplete="off">
 			<label class="btn btn-outline-primary" for="${title}_nav">${title}</label>
 		` ;
-		const pageHTML = `<main class="container" id="${title}_nav"></main>`;
-		nav.insertAdjacentHTML('afterbegin',navHTML);
-		nav.insertAdjacentHTML('afterend',pageHTML);
+		navlocation.insertAdjacentHTML('afterbegin',navHTML);
+		this.navbtn = [navlocation.children[0],navlocation.children[1]];
 
-		this.navbtn = [nav.children[0],nav.children[1]];
-		this.page = nav.nextSibling;
+		// create a page and place it in the body of document
+		const pageHTML = `<main class="container" id="${title}_nav"></main>`;
+		document.body.insertAdjacentHTML('beforeend',pageHTML);
+		this.page = document.body.lastChild;
 
 		this.navbtn[0].addEventListener('click',()=>changeTab(this.navbtn[1]));
 	}
 	static radioCounter = 0;
 }
 
+//ContentPage allows the creation of content.
 export default class ContentPage extends Page{
-	constructor(title){
-		super(title);
+	constructor(title,navlocation){
+		super(title,navlocation);
 	}
 
 	createJumbotron(params){
@@ -144,12 +144,14 @@ export default class ContentPage extends Page{
 		return this.page.children[this.page.children.length - 1];
 	}
 	createNavStrip(params){
+		// add to Page.radioCounter to avoid crossing radios
 		Page.radioCounter += 1;
 		const stripHTML = `
 		<section class="d-flex flex-row flex-nowrap gap-1 navbar sticky-top p-0 bg-0 rounded-2">
 		</section>`;
 		this.page.insertAdjacentHTML('beforeend',stripHTML);
 		const strip = this.page.children[this.page.children.length - 1];
+		//r_ to denote recursive calls 
 		for (const child of r_Layout(params,'children')){
 			strip.appendChild(child);};
 		strip.radioNumber = Page.radioCounter;
@@ -194,12 +196,14 @@ export default class ContentPage extends Page{
 	}
 }
 
-
+//FormPage allows the addition of a form to the document
+// in page form
 export class FormPage extends Page {
-	constructor(title){
-		super(title)
+	constructor(title,navlocation){
+		super(title,navlocation);
 	}
 
+	// adds an image to the content of the page
 	createImg(){
 		const bgElmt = document.createElement('span');
 		const imgElmt = document.createElement('img');
@@ -213,6 +217,8 @@ export class FormPage extends Page {
 
 		return imgElmt;
 	}
+	// creates a form for the page
+	// !!SHOULD DELETE PREVIOUS FORM!!
 	createForm(params){
 		const formElmt = document.createElement('form');
 		const btnsElmt = document.createElement('div');
@@ -220,35 +226,37 @@ export class FormPage extends Page {
 		btnsElmt.classList.add('mx-0','mt-1');
 		this.page.appendChild(formElmt);
 
-		const formBtns = [
-			document.createElement('button'),
-			document.createElement('button'),
-			document.createElement('button')
-		]
-		formBtns[0].innerText = 'Edit';
-		formBtns[0].type = 'button'
-		formBtns[0].classList.add('btn','btn-warning','mt-1');
-		formBtns[0].hidden = true;
-		formBtns[1].innerText = 'Save';
-		formBtns[1].classList.add('btn','btn-primary');
-		formBtns[1].type = 'button'
-		formBtns[2].innerText = 'Cancel';
-		formBtns[2].classList.add('btn','btn-danger');
-		formBtns[2].type = 'button'
-		formBtns.forEach(element => {
+		const formBtns = {
+			edit:document.createElement('button'),
+			save:document.createElement('button'),
+			cancel:document.createElement('button')
+		};
+		this.formBtns = formBtns;
+		formBtns.edit.innerText = 'Edit';
+		formBtns.edit.type = 'button'
+		formBtns.edit.classList.add('btn','btn-warning','mt-1');
+		formBtns.edit.hidden = true;
+		formBtns.save.innerText = 'Save';
+		formBtns.save.classList.add('btn','btn-primary');
+		formBtns.save.type = 'button'
+		formBtns.cancel.innerText = 'Cancel';
+		formBtns.cancel.classList.add('btn','btn-danger');
+		formBtns.cancel.type = 'button'
+		for (const element of Object.values(formBtns)) {
 			element.addEventListener('click',()=>{
-				formBtns[0].hidden = btnsElmt.hidden;
+				formBtns.edit.hidden = btnsElmt.hidden;
 				btnsElmt.hidden = !btnsElmt.hidden;
 				for (const inp of formElmt.getElementsByTagName('input')) {
 					inp.disabled = btnsElmt.hidden;
 				}
 			})
-		});
-		btnsElmt.append(formBtns[2],formBtns[1]);
+		}
+		btnsElmt.append(formBtns.cancel,formBtns.save);
 		
 		formSetup(formElmt,params);
 		formElmt.appendChild(btnsElmt);
-		formElmt.appendChild(formBtns[0]);
+		formElmt.appendChild(formBtns.edit);
+		formBtns.cancel.click();
 
 		return formElmt;
 	}
@@ -301,6 +309,7 @@ export class Modal{
 	}
 }
 
+// sets up a form for Modal and Page use
 function formSetup(form,params) {
 	for (const group of params) {
 		const keys = Object.keys(group);

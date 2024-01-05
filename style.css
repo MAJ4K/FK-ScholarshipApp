@@ -18,9 +18,15 @@ body {
 	grid-template-rows: 1fr auto;
 }
 
-nav {
+nav{
 	display: flex;
 	grid-row: 2; grid-column: 1/-1;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: start;
+}
+nav>section{
+	display: flex;
 	flex-flow: row nowrap;
 	justify-content: center;
 	align-items: start;
@@ -83,12 +89,16 @@ form>* {margin-bottom: .5em;}
 .form-icons{ width: 1.7rem; aspect-ratio: 1;}
 
 @media only screen and (orientation: landscape) {
-	nav {
+	nav{
 		grid-row: 1/-1; grid-column: 1;
+		flex-direction: column;
+	}
+	nav>section{
 		flex-direction: column;
 		justify-content: start;
 	}
-	nav>label {
+	nav>section>label {
+		width: 100%;
 		flex: initial !important;
 	}
 	#LoadingIndicator {
