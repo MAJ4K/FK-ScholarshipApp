@@ -239,11 +239,19 @@ function updateFilters() {
 
 //All filter: erase active filter mode and show all Scholarships
 filters_nav.primaries.getElementsByTagName('input')[3]
-	.addEventListener('click',() => {});
+	.addEventListener('click',() => {
+		document.getElementById('SCH_FILTER')?.remove();
+	});
 filters_nav.primaries.getElementsByTagName('input')[3].click();
 
 //Secondary Filters: show scholarships according to data
+const schStyle = document.createElement('style');
+schStyle.id = 'SCH_FILTER';
+document.head.appendChild(schStyle);
 function filterByData(name,data) {
+	schStyle.innerText = `
+	button, input {background-color: red;}
+	`;
 }
 /////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////
