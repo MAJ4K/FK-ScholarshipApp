@@ -86,14 +86,16 @@ fetch('./Sheet1.json')
 			document.createElement('img'),
 			document.createElement('img'),
 			document.createElement('img'),
+			document.createElement('img'),
 			document.createElement('img')
 		]
 		IconsTemplate[0].src = 'icons/renewable.png';
 		IconsTemplate[1].src = 'icons/character.png';
 		IconsTemplate[2].src = 'icons/merit.png';
 		IconsTemplate[3].src = 'icons/need.png';
-		IconsTemplate[4].src = 'icons/male.png';
-		IconsTemplate[5].src = 'icons/female.png';
+		IconsTemplate[4].src = 'icons/minority.png';
+		IconsTemplate[5].src = 'icons/male.png';
+		IconsTemplate[6].src = 'icons/female.png';
 		for (const iconGroup of cardIconGroups) {
 			const dup = [];
 			for (const temp of IconsTemplate) {
@@ -123,7 +125,7 @@ const filterparams = [
 	{"Label":[''], 'required':true},
 	{"_IMGbtn":[
 		'renewable.png','character.png','merit.png',
-		'need.png','male.png','female.png'], type: 'rad-l'},
+		'need.png','minority.png','male.png','female.png'], type: 'rad-l'},
 	{"Window":['',''], type: 'range'},
 	{"GPA":[''], type: 'range'},
 	{"Major":["Computer Engineering"]},
@@ -232,6 +234,9 @@ function updateFilters() {
 	filters_nav.secondaries.replaceChildren(...nodeAssembly);
 }
 
+const schStyle = document.createElement('style');
+schStyle.id = 'SCH_FILTER';
+document.head.appendChild(schStyle);
 //Recomended: filter scholarships as uploaded from the Internet
 
 //Applied & Favorites: filter scholarships to 
@@ -240,17 +245,22 @@ function updateFilters() {
 //All filter: erase active filter mode and show all Scholarships
 filters_nav.primaries.getElementsByTagName('input')[3]
 	.addEventListener('click',() => {
-		document.getElementById('SCH_FILTER')?.remove();
+		schStyle.innerText = "";
 	});
 filters_nav.primaries.getElementsByTagName('input')[3].click();
 
 //Secondary Filters: show scholarships according to data
-const schStyle = document.createElement('style');
-schStyle.id = 'SCH_FILTER';
-document.head.appendChild(schStyle);
 function filterByData(name,data) {
+	console.log(name,data);
 	schStyle.innerText = `
-	button, input {background-color: red;}
+		#Scholarships_nav .card {display: none;}
+		${(data.pageRadio1[0]) ? "#Scholarships_nav .card[renewable] {display: block;}" : ""}
+		${(data.pageRadio1[1]) ? "#Scholarships_nav .card[character-based] {display: block;}" : ""}
+		${(data.pageRadio1[2]) ? "#Scholarships_nav .card[merit-based] {display: block;}" : ""}
+		${(data.pageRadio1[3]) ? "#Scholarships_nav .card[need-based] {display: block;}" : ""}
+		${(data.pageRadio1[4]) ? "#Scholarships_nav .card[minority] {display: block;}" : ""}
+		${(data.pageRadio1[5]) ? '#Scholarships_nav .card[gender-based="Male"] {display: block;}' : ""}
+		${(data.pageRadio1[6]) ? '#Scholarships_nav .card[gender-based="Female"] {display: block;}' : ""}
 	`;
 }
 /////////////////////////////////////////////////////////////////
