@@ -1,4 +1,5 @@
 import CPage,{FormPage as FPage, Modal} from '/application.js'
+import CInp from '/CustomInputs.js'
 
 class Profile {
 	constructor(){
@@ -124,8 +125,8 @@ const filterparams = [
 	{"_IMGbtn":[
 		'renewable.png','character.png','merit.png',
 		'need.png','male.png','female.png'], type: 'rad-l'},
-	{"Window":['',''], type: 'range'},
-	{"GPA":[''], type: 'range'},
+	{"Window":['1 12'], type: 'double-range'},
+	{"GPA":['0 8'], type: 'double-range'},
 	{"Major":["Computer Engineering"]},
 	{"Key Words":["STEM, senior, sports"]}
 ]
@@ -148,6 +149,7 @@ filterModalbtns.push(...filterDelPrompt.element
 filterModalbtns[0].addEventListener('click',()=>{
 	const form = filterModal.form
 	const feilds = form.getElementsByTagName('input');
+	const custom_feilds = form.getElementsByTagName('custom-input');
 	const filterdata = user.getdata('filters') || {};
 	
 	// Validate form feilds
@@ -187,6 +189,9 @@ filterModalbtns[0].addEventListener('click',()=>{
 			default:
 				addvalue(feild.name,feild.value);
 		}
+	}
+	for (const feild of custom_feilds) {
+		addvalue(feild.getAttribute('name'),feild.value)
 	}
 	//Save filter data
 	filterdata[feilds[0].value] = filterAssembly;
@@ -249,6 +254,7 @@ const schStyle = document.createElement('style');
 schStyle.id = 'SCH_FILTER';
 document.head.appendChild(schStyle);
 function filterByData(name,data) {
+	console.log(data);
 	schStyle.innerText = `
 	button, input {background-color: red;}
 	`;

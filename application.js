@@ -333,6 +333,9 @@ function formSetup(form,params) {
 					<input type="checkbox" class="btn-check" name="pageRadio1" id="${feildb[0]}" autocomplete="off">
 					<label class="btn btn-outline-secondary" for="${feildb[0]}">${labelitem}</label>`;
 			}
+			if (group.type == 'double-range'){
+				subElmtHtml = `<custom-input type="double-range" name="${keys[0]}" range="${feild}"></custom-input>`
+			}
 			elmt.insertAdjacentHTML('beforeend',subElmtHtml);
 		}
 		form.appendChild(elmt);

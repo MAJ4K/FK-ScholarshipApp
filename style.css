@@ -87,6 +87,7 @@ main.active
 
 form>* {margin-bottom: .5em;}
 .form-icons{ width: 1.7rem; aspect-ratio: 1;}
+custom-input{ height: 2.5rem;}
 
 @media only screen and (orientation: landscape) {
 	nav{
