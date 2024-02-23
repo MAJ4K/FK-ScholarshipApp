@@ -61,7 +61,7 @@ const schParams = {
 	IMGgroup:{tag:'div class="btn-group text-dark bg-secondary icon-group"'},
 	infoGroup:{tag:'span', subtag:'div class="infoItem"',
 		keys:['Major Type','Grade Eligibility','GPA','Geography','Special Eligibility',]},
-	attributes:['Opens','Due','Renewable','Service/\ncharacter-based','Academic Merit-based','Need-based','Gender-based','Must identify as Black/ minority','link'],
+	attributes:['Opens','Due','Renewable','Service/\ncharacter-based','Academic Merit-based','Need-based','Gender-based','Must identify as Black/ minority','GPA','link'],
 };
 
 
@@ -251,6 +251,9 @@ document.head.appendChild(schStyle);
 filters_nav.primaries.getElementsByTagName('input')[3]
 	.addEventListener('click',() => {
 		schStyle.innerText = "";
+		for (const card of document.getElementsByClassName('card')) {
+			card.classList.remove('filtered');
+		}
 	});
 filters_nav.primaries.getElementsByTagName('input')[3].click();
 
@@ -266,7 +269,35 @@ function filterByData(name,data) {
 		${(data.pageRadio1[4]) ? "#Scholarships_nav .card[minority] {display: block;}" : ""}
 		${(data.pageRadio1[5]) ? '#Scholarships_nav .card[gender-based="Male"] {display: block;}' : ""}
 		${(data.pageRadio1[6]) ? '#Scholarships_nav .card[gender-based="Female"] {display: block;}' : ""}
+		${'#Scholarships_nav .card.filtered {display: block;}'}
 	`;
+	for (const card of document.getElementsByClassName('card')) {
+		card.classList.remove('filtered');
+		//test whether gpa is in range
+		const card_gpa = [card.getAttribute('gpa'),card.getAttribute('gpa')];
+		if(isTwoRangesOverlap(data.GPA[0],[card_gpa])){card.classList.add('filtered')}
+		//test whether window is in range
+		const card_win = () => {
+			var result = [monthTransform[card.getAttribute('opens')],monthTransform[card.getAttribute('due')]];
+			if(result[0] < result[1]) return [[result]]
+			else return [[1,result[1]],[result[0],12]]
+		};
+		if(isTwoRangesOverlap(data.Window[0],card_win())){card.classList.add('filtered')}
+	}
+}
+
+function isTwoRangesOverlap(rangeTest,ranges) {
+	for (const range of ranges) {
+		if (Math.max(rangeTest[0],range[0]) <= Math.min(rangeTest[1],range[1])) return true;
+	}
+	return false;
+}
+
+const monthTransform = {
+	January : 1,	February : 2,	March : 3,
+	April : 4,	May : 5,	June : 6,
+	July : 7,	August : 8,	September : 9,
+	October : 10,	November : 11,	December : 12
 }
 /////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////

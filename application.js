@@ -180,7 +180,7 @@ export default class ContentPage extends Page{
 				customElements += cardElmt(data,params[key]) + '\n';
 			}
 			for (const attrib of params.attributes) {
-				if (!/No|None|N\/A/.test(data[attrib])){
+				if (!/\b(?:No|no|None|none|N\/A)\b/.test(data[attrib])){
 					attributes += `${attrib}="${data[attrib]}"`;
 				}
 			}
