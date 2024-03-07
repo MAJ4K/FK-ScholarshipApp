@@ -20,7 +20,6 @@ const nav = document.getElementsByTagName('nav')[0];
 
 const profPage = new FPage('Profile',document.getElementById('UserNavs'));
 const schPage = new CPage('Scholarships',document.getElementById('UserNavs'));
-const testPage = new CPage('test',document.getElementById('UserNavs'));
 
 schPage.navbtn[0].click();
 
