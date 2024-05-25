@@ -7,7 +7,7 @@ const adminStyle = document.createElement('style');
 
 adminStyle.textContent = `
 #addContentBtn{
-	background-color: blue;
+	border: solid royalblue 0.2em;
 	width: 10em; height: 10em;
 	margin: auto;
 	border-radius: .5em;
@@ -64,6 +64,7 @@ document.getElementsByTagName('nav')[0].insertAdjacentElement('afterbegin',nav);
 			item.type = 'button';
 			item.addEventListener('click',() => content_item_settings(file));
 			item.value = file.name.split('.')[0];
+			item.classList.add('btn');
 			item_container.appendChild(item);
 		}
 		if (item_container.children.length == 0) return;
